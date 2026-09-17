@@ -1,0 +1,108 @@
+{
+  "status": true,
+  "page": {
+    "next": "/team/get-team-match-photo/4978895?pageno=2&datetime=1789449702297"
+  },
+  "data": [
+    {
+      "media_id": 1115850,
+      "media": "https://media.cricheroes.in/match_media/1784353198824_H4Ylf6TaPYuv.jpg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "R.Nikhil",
+      "uploaded_date": "2026-07-18T05:39:58.000Z",
+      "uploaded_by_id": 10229576
+    },
+    {
+      "media_id": 1025286,
+      "media": "https://media.cricheroes.in/match_media/1763201721525_bCf3Pb28c9pb.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:15:21.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 1025285,
+      "media": "https://media.cricheroes.in/match_media/1763201720701_gUJKmEnJhWbm.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:15:20.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 1025284,
+      "media": "https://media.cricheroes.in/match_media/1763201720083_it1n8OvC9sLE.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:15:20.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 1025283,
+      "media": "https://media.cricheroes.in/match_media/1763201676409_BCyCSxTVFrLI.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "landscape",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:14:36.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 1025282,
+      "media": "https://media.cricheroes.in/match_media/1763201675727_fzIGirxcCmF3.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:14:35.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 1025281,
+      "media": "https://media.cricheroes.in/match_media/1763201674453_A6o1cv8cQu9w.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:14:34.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 1025280,
+      "media": "https://media.cricheroes.in/match_media/1763201673534_2BjHa5f2A6hb.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:14:33.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 1025279,
+      "media": "https://media.cricheroes.in/match_media/1763201672071_R4QWm9yOnuxd.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Vicky",
+      "uploaded_date": "2025-11-15T10:14:32.000Z",
+      "uploaded_by_id": 21685780
+    },
+    {
+      "media_id": 777493,
+      "media": "https://media.cricheroes.in/match_media/1709354909173_f05O3vAJMuNq.jpeg",
+      "is_photo": 1,
+      "media_type": "image/jpeg",
+      "orientation": "portrait",
+      "uploaded_by": "Nandha Bharathi",
+      "uploaded_date": "2024-03-02T04:48:29.000Z",
+      "uploaded_by_id": 21570719
+    }
+  ]
+}

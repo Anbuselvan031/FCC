@@ -1,0 +1,35 @@
+{
+  "name": "fahrenheit-cricket-backend",
+  "version": "1.0.0",
+  "description": "Official Backend REST API for Fahrenheit Cricket Club (Coimbatore, CricHeroes Team ID: 4978895)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "test": "node src/scripts/testEndpoints.js"
+  },
+  "keywords": [
+    "cricket",
+    "cricheroes",
+    "fahrenheit-cc",
+    "express",
+    "mongodb",
+    "mongoose",
+    "rest-api"
+  ],
+  "author": "Fahrenheit Cricket Club",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

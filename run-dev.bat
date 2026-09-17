@@ -1,0 +1,3 @@
+@echo off
+echo Starting Fahrenheit Cricket Club Frontend Development Server...
+"C:\Program Files\Adobe\Adobe Creative Cloud Experience\libs\node.exe" .\node_modules\vite\bin\vite.js --host

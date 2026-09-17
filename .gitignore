@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+.pnpm-store/
+
+# Production builds
+dist/
+dist-ssr/
+*.local
+
+# Environment variables & secrets
+.env
+.env.local
+.env.production
+.env.development.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary and scrap files
+scratch/
+temp_profile/
+"console.log(d))"
+"m[1])"

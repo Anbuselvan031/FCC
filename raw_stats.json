@@ -1,0 +1,49 @@
+{
+  "status": true,
+  "data": [
+    {
+      "title": "Matches",
+      "value": 319
+    },
+    {
+      "title": "Upcoming",
+      "value": 2
+    },
+    {
+      "title": "Won",
+      "value": 148
+    },
+    {
+      "title": "Lost",
+      "value": 162
+    },
+    {
+      "title": "Tie",
+      "value": 3
+    },
+    {
+      "title": "Drawn",
+      "value": 0
+    },
+    {
+      "title": "NR",
+      "value": 4
+    },
+    {
+      "title": "Win",
+      "value": "47.7%"
+    },
+    {
+      "title": "Toss Won",
+      "value": 159
+    },
+    {
+      "title": "Bat First",
+      "value": 83
+    },
+    {
+      "title": "Field First",
+      "value": 76
+    }
+  ]
+}
