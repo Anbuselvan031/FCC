@@ -25,10 +25,15 @@ export default function GalleryGrid({ photos = [], onPhotoClick }) {
               src={photo.url}
               alt={photo.title}
               loading="lazy"
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 filter brightness-95 group-hover:brightness-105"
               onError={(e) => {
                 e.target.onerror = null;
-                e.target.src = "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg";
+                if (photo.fallbackUrl && e.target.src !== photo.fallbackUrl) {
+                  e.target.src = photo.fallbackUrl;
+                } else {
+                  e.target.src = "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg";
+                }
               }}
             />
 

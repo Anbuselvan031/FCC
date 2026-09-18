@@ -62,9 +62,9 @@ export default function MatchCard({ match }) {
       </div>
 
       {/* Teams & Scores Layout */}
-      <div className="py-6 grid grid-cols-1 md:grid-cols-11 items-center gap-4">
+      <div className="py-6 flex items-center justify-between gap-3 sm:gap-4">
         {/* FCC */}
-        <div className="md:col-span-5 flex items-center gap-3 sm:gap-4">
+        <div className="flex-1 min-w-0 flex items-center gap-3 sm:gap-3.5">
           <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full p-0.5 bg-gradient-to-tr from-orange-600 to-amber-500 flex-shrink-0 shadow transition-transform duration-300 group-hover:scale-105">
             <img
               src={match.fcc.logo}
@@ -72,8 +72,11 @@ export default function MatchCard({ match }) {
               className="w-full h-full object-cover rounded-full bg-slate-900"
             />
           </div>
-          <div>
-            <h4 className="font-display text-lg sm:text-xl font-bold uppercase text-white tracking-wide group-hover:text-orange-400 transition-colors">
+          <div className="min-w-0 flex-1">
+            <h4
+              className="font-display text-base sm:text-lg font-bold uppercase text-white tracking-wide truncate group-hover:text-orange-400 transition-colors"
+              title={match.fcc.name}
+            >
               {match.fcc.name}
             </h4>
             <div className="font-mono text-xl sm:text-2xl font-black text-orange-400">
@@ -83,16 +86,19 @@ export default function MatchCard({ match }) {
         </div>
 
         {/* VS / Divider */}
-        <div className="md:col-span-1 flex items-center justify-center">
+        <div className="flex-shrink-0 px-2 flex items-center justify-center">
           <span className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 text-xs font-display font-bold flex items-center justify-center border border-slate-700 transition-transform duration-300 group-hover:rotate-12 group-hover:border-orange-500/40">
             VS
           </span>
         </div>
 
         {/* Opponent */}
-        <div className="md:col-span-5 flex items-center justify-start md:justify-end gap-3 sm:gap-4 flex-row-reverse md:flex-row text-left md:text-right">
-          <div>
-            <h4 className="font-display text-lg sm:text-xl font-bold uppercase text-white tracking-wide group-hover:text-slate-200 transition-colors">
+        <div className="flex-1 min-w-0 flex items-center justify-end gap-3 sm:gap-3.5 text-right">
+          <div className="min-w-0 flex-1">
+            <h4
+              className="font-display text-base sm:text-lg font-bold uppercase text-white tracking-wide truncate group-hover:text-slate-200 transition-colors"
+              title={match.opponent.name}
+            >
               {match.opponent.name}
             </h4>
             <div className="font-mono text-xl sm:text-2xl font-black text-slate-300">

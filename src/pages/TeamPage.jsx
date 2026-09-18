@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import teamData from '../data/teamData';
 import playersData from '../data/playersData';
+import SlidingPlayerShowcase from '../components/home/SlidingPlayerShowcase';
 
 export default function TeamPage() {
   const stats = teamData.statsSummary || {};
@@ -194,7 +195,12 @@ export default function TeamPage() {
         </div>
       </div>
 
-      {/* 4. VISION & CORE VALUES */}
+      {/* 4. DYNAMIC ANIMATED CRICKET SQUAD SHOWCASE */}
+      <div id="sliding-team-showcase">
+        <SlidingPlayerShowcase />
+      </div>
+
+      {/* 5. VISION & CORE VALUES */}
       <div className="space-y-8">
         <div className="text-center max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-orange-400 mb-2">

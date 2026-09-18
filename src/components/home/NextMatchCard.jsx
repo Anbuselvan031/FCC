@@ -44,47 +44,53 @@ export default function NextMatchCard() {
       </div>
 
       {/* Match Clashes Display */}
-      <div className="py-6 sm:py-8 grid grid-cols-1 md:grid-cols-11 items-center gap-6 text-center">
+      <div className="py-6 sm:py-8 flex items-center justify-between gap-3 sm:gap-6 text-center">
         {/* FCC */}
-        <div className="md:col-span-5 flex flex-col items-center gap-3">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-1 bg-gradient-to-tr from-orange-600 to-amber-500 shadow-xl shadow-orange-950/60 transition-transform duration-300 group-hover:scale-105">
+        <div className="flex-1 min-w-0 flex flex-col items-center gap-2.5">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-1 bg-gradient-to-tr from-orange-600 to-amber-500 shadow-xl shadow-orange-950/60 transition-transform duration-300 group-hover:scale-105">
             <img
               src={nextMatch.fcc.logo}
               alt={nextMatch.fcc.name}
               className="w-full h-full object-cover rounded-full bg-slate-900"
             />
           </div>
-          <div>
-            <h4 className="font-display text-xl sm:text-2xl font-bold text-white uppercase tracking-wide group-hover:text-orange-400 transition-colors">
+          <div className="w-full">
+            <h4
+              className="font-display text-base sm:text-lg font-bold text-white uppercase tracking-wide truncate group-hover:text-orange-400 transition-colors"
+              title={nextMatch.fcc.name}
+            >
               {nextMatch.fcc.name}
             </h4>
-            <p className="text-[11px] text-orange-400 font-semibold tracking-wider uppercase">
+            <p className="text-[10px] text-orange-400 font-semibold tracking-wider uppercase mt-0.5">
               HOME SQUAD
             </p>
           </div>
         </div>
 
         {/* VS Center */}
-        <div className="md:col-span-1 flex flex-col items-center justify-center">
-          <span className="font-display text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-400 transition-transform duration-300 group-hover:scale-110">
+        <div className="flex-shrink-0 px-2 sm:px-4 flex flex-col items-center justify-center">
+          <span className="font-display text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-400 transition-transform duration-300 group-hover:scale-110">
             VS
           </span>
         </div>
 
         {/* Opponent */}
-        <div className="md:col-span-5 flex flex-col items-center gap-3">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full p-1 bg-slate-800 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:scale-105">
+        <div className="flex-1 min-w-0 flex flex-col items-center gap-2.5">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-1 bg-slate-800 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:scale-105">
             <img
               src={nextMatch.opponent.logo}
               alt={nextMatch.opponent.name}
               className="w-full h-full object-cover rounded-full bg-slate-900"
             />
           </div>
-          <div>
-            <h4 className="font-display text-xl sm:text-2xl font-bold text-white uppercase tracking-wide group-hover:text-slate-200 transition-colors">
+          <div className="w-full">
+            <h4
+              className="font-display text-base sm:text-lg font-bold text-white uppercase tracking-wide truncate group-hover:text-slate-200 transition-colors"
+              title={nextMatch.opponent.name}
+            >
               {nextMatch.opponent.name}
             </h4>
-            <p className="text-[11px] text-slate-400 font-semibold tracking-wider uppercase">
+            <p className="text-[10px] text-slate-400 font-semibold tracking-wider uppercase mt-0.5">
               CHALLENGERS
             </p>
           </div>

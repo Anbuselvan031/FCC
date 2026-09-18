@@ -101,7 +101,16 @@ export default function GalleryLightbox({
         <img
           src={currentPhoto.url}
           alt={currentPhoto.title}
+          referrerPolicy="no-referrer"
           className="max-w-full max-h-[72vh] object-contain rounded-xl shadow-2xl transition-transform"
+          onError={(e) => {
+            e.target.onerror = null;
+            if (currentPhoto.fallbackUrl && e.target.src !== currentPhoto.fallbackUrl) {
+              e.target.src = currentPhoto.fallbackUrl;
+            } else {
+              e.target.src = "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg";
+            }
+          }}
         />
 
         {/* Photo Info Banner */}

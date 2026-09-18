@@ -7,6 +7,7 @@ import LatestMatchCard from '../components/home/LatestMatchCard';
 import NextMatchCard from '../components/home/NextMatchCard';
 import RecentForm from '../components/home/RecentForm';
 import FeaturedPlayers from '../components/home/FeaturedPlayers';
+import SlidingPlayerShowcase from '../components/home/SlidingPlayerShowcase';
 import TeamJourney from '../components/home/TeamJourney';
 import teamData from '../data/teamData';
 
@@ -73,12 +74,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. FEATURED PLAYERS (PLAYERS TO WATCH) */}
+      {/* 4. DYNAMIC ANIMATED CRICKET SLIDER SHOWCASE */}
+      <div id="sliding-team-showcase" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SlidingPlayerShowcase />
+      </div>
+
+      {/* 5. FEATURED PLAYERS (PLAYERS TO WATCH) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FeaturedPlayers />
       </div>
 
-      {/* 5. TEAM JOURNEY & MILESTONES */}
+      {/* 6. TEAM JOURNEY & MILESTONES */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <TeamJourney />
       </div>

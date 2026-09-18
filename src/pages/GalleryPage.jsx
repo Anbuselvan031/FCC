@@ -4,7 +4,7 @@ import FilterTabs from '../components/common/FilterTabs';
 import GalleryGrid from '../components/gallery/GalleryGrid';
 import GalleryLightbox from '../components/gallery/GalleryLightbox';
 import galleryService from '../services/galleryService';
-import galleryDataFallback, { galleryCategories } from '../data/galleryData';
+import galleryDataFallback, { galleryCategories, galleryData } from '../data/galleryData';
 
 export default function GalleryPage() {
   const [galleryList, setGalleryList] = useState(galleryDataFallback);
@@ -73,7 +73,7 @@ export default function GalleryPage() {
         </div>
 
         <span className="text-xs font-mono text-slate-400 px-3 py-1.5 rounded-xl bg-[#0d1424] border border-slate-800 w-fit">
-          Archived Media: <strong className="text-orange-400">{galleryData.length}</strong> photos
+          Archived Media: <strong className="text-orange-400">{galleryList.length}</strong> photos
         </span>
       </div>
 
@@ -99,10 +99,15 @@ export default function GalleryPage() {
               <img
                 src={photo.url}
                 alt={photo.title}
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg";
+                  if (photo.fallbackUrl && e.target.src !== photo.fallbackUrl) {
+                    e.target.src = photo.fallbackUrl;
+                  } else {
+                    e.target.src = "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg";
+                  }
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#070a0f] via-[#070a0f]/40 to-transparent" />

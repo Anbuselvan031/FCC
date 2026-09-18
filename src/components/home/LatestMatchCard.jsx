@@ -53,49 +53,62 @@ export default function LatestMatchCard() {
       </div>
 
       {/* Teams and Scores Showcase */}
-      <div className="py-6 sm:py-8 grid grid-cols-1 md:grid-cols-11 items-center gap-6">
-        {/* FCC */}
-        <div className="md:col-span-5 flex items-center gap-4 sm:gap-5">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full p-1 bg-gradient-to-tr from-orange-600 via-amber-500 to-orange-400 flex-shrink-0 shadow-lg shadow-orange-950 transition-transform duration-300 group-hover:scale-105">
+      <div className="py-6 sm:py-8 flex items-center justify-between gap-3 sm:gap-5">
+        {/* FCC (Home) */}
+        <div className="flex-1 min-w-0 flex items-center gap-3 sm:gap-4">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full p-1 bg-gradient-to-tr from-orange-600 via-amber-500 to-orange-400 flex-shrink-0 shadow-lg shadow-orange-950/70 transition-transform duration-300 group-hover:scale-105">
             <img
               src={latest.fcc.logo}
               alt={latest.fcc.name}
               className="w-full h-full object-cover rounded-full bg-slate-900"
             />
           </div>
-          <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <h3 className="font-display text-xl sm:text-2xl font-bold tracking-wide text-white uppercase group-hover:text-orange-400 transition-colors">
-                {latest.fcc.name}
-              </h3>
-              <span className="px-1.5 py-0.5 rounded bg-orange-500/20 text-orange-400 text-[10px] font-bold">
+          <div className="min-w-0 flex-1 space-y-0.5">
+            <div className="flex items-center gap-1.5 mb-1">
+              <span className="px-2 py-0.5 rounded bg-orange-500/20 text-orange-400 border border-orange-500/30 text-[10px] font-extrabold uppercase tracking-wider">
                 HOME
               </span>
             </div>
-            <div className="font-mono text-2xl sm:text-3xl font-extrabold text-orange-400 tracking-tight">
+            <h3
+              className="font-display text-base sm:text-lg font-bold tracking-wide text-white uppercase truncate group-hover:text-orange-400 transition-colors leading-snug"
+              title={latest.fcc.name}
+            >
+              {latest.fcc.name}
+            </h3>
+            <div className="font-mono text-2xl sm:text-3xl font-black text-orange-400 tracking-tight">
               {latest.fcc.score}
             </div>
           </div>
         </div>
 
         {/* VS / Badge Center */}
-        <div className="md:col-span-1 flex flex-col items-center justify-center">
-          <span className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-xs font-display font-bold text-slate-400 transition-transform duration-300 group-hover:rotate-12 group-hover:border-orange-500/40">
-            VS
-          </span>
+        <div className="flex-shrink-0 px-2 sm:px-4 flex flex-col items-center justify-center">
+          <div className="w-10 h-10 rounded-full bg-[#080d18] border border-slate-700/80 flex items-center justify-center shadow-xl shadow-black/80 transition-all duration-300 group-hover:border-orange-500/60 group-hover:scale-110">
+            <span className="font-display text-xs font-black text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-amber-300 tracking-wider">
+              VS
+            </span>
+          </div>
         </div>
 
-        {/* Opponent */}
-        <div className="md:col-span-5 flex items-center justify-start md:justify-end gap-4 sm:gap-5 flex-row-reverse md:flex-row text-left md:text-right">
-          <div className="space-y-1">
-            <h3 className="font-display text-xl sm:text-2xl font-bold tracking-wide text-white uppercase group-hover:text-slate-200 transition-colors">
+        {/* Opponent (Away) */}
+        <div className="flex-1 min-w-0 flex items-center justify-end gap-3 sm:gap-4 text-right">
+          <div className="min-w-0 flex-1 space-y-0.5">
+            <div className="flex items-center justify-end gap-1.5 mb-1">
+              <span className="px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700 text-[10px] font-extrabold uppercase tracking-wider">
+                AWAY
+              </span>
+            </div>
+            <h3
+              className="font-display text-base sm:text-lg font-bold tracking-wide text-white uppercase truncate group-hover:text-slate-200 transition-colors leading-snug"
+              title={latest.opponent.name}
+            >
               {latest.opponent.name}
             </h3>
-            <div className="font-mono text-2xl sm:text-3xl font-extrabold text-slate-300 tracking-tight">
+            <div className="font-mono text-2xl sm:text-3xl font-black text-slate-300 tracking-tight">
               {latest.opponent.score}
             </div>
           </div>
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full p-1 bg-slate-800 border border-slate-700 flex-shrink-0 shadow-lg transition-transform duration-300 group-hover:scale-105">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full p-1 bg-slate-800 border border-slate-700 flex-shrink-0 shadow-lg transition-transform duration-300 group-hover:scale-105">
             <img
               src={latest.opponent.logo}
               alt={latest.opponent.name}
@@ -105,30 +118,36 @@ export default function LatestMatchCard() {
         </div>
       </div>
 
-      {/* Result Banner & Player of the Match */}
-      <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
-        {/* Result Badge */}
-        <div className="flex items-center gap-3 w-full sm:w-auto">
-          <div
-            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold uppercase tracking-widest flex items-center gap-2 ${
-              isWin
-                ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-md shadow-emerald-950'
-                : 'bg-red-500/20 text-red-400 border border-red-500/40 shadow-md shadow-red-950'
-            }`}
-          >
-            <ShieldCheck className="w-4 h-4" />
-            {latest.result}
+      {/* Player of the Match Feature Banner */}
+      {latest.playerOfTheMatch && (
+        <div className="mb-5 px-3.5 py-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div className="flex items-center gap-2 min-w-0">
+            <Award className="w-4 h-4 text-amber-400 flex-shrink-0" />
+            <span className="text-slate-400 font-bold uppercase tracking-wider text-[11px] flex-shrink-0">
+              Player of the Match:
+            </span>
+            <strong className="text-white font-semibold truncate">
+              {latest.playerOfTheMatch.name}
+            </strong>
           </div>
+          <span className="text-amber-400/90 font-mono text-[11px] px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 whitespace-nowrap">
+            {latest.playerOfTheMatch.performance}
+          </span>
+        </div>
+      )}
 
-          {/* Player of the Match Pill */}
-          {latest.playerOfTheMatch && (
-            <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">
-              <Award className="w-4 h-4 text-amber-400" />
-              <span className="text-slate-400">POM:</span>
-              <strong className="text-white">{latest.playerOfTheMatch.name}</strong>
-              <span className="text-amber-400/90 font-mono text-[11px]">({latest.playerOfTheMatch.performance})</span>
-            </div>
-          )}
+      {/* Result Banner & Action Button */}
+      <div className="pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Result Badge */}
+        <div
+          className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-extrabold uppercase tracking-wider flex items-center gap-2 w-full sm:w-auto justify-center sm:justify-start ${
+            isWin
+              ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-md shadow-emerald-950'
+              : 'bg-red-500/20 text-red-400 border border-red-500/40 shadow-md shadow-red-950'
+          }`}
+        >
+          <ShieldCheck className="w-4 h-4 flex-shrink-0" />
+          <span>{latest.result}</span>
         </div>
 
         {/* Action Button */}

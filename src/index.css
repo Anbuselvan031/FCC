@@ -243,3 +243,205 @@
 .delay-400 { animation-delay: 400ms; }
 .delay-500 { animation-delay: 500ms; }
 
+/* Cricket Character & Pitch Sliding Animations */
+@keyframes cricketSlideRight {
+  0% {
+    transform: translateX(-120%) scale(0.95);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-40%) scale(1.02);
+  }
+  65% {
+    transform: translateX(10%) scale(1);
+  }
+  85% {
+    transform: translateX(2%) scale(1);
+  }
+  100% {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes cricketSlideLeft {
+  0% {
+    transform: translateX(120%) scaleX(-1) scaleY(0.95);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(40%) scaleX(-1) scaleY(1.02);
+  }
+  65% {
+    transform: translateX(-10%) scaleX(-1) scaleY(1);
+  }
+  85% {
+    transform: translateX(-2%) scaleX(-1) scaleY(1);
+  }
+  100% {
+    transform: translateX(0%) scaleX(-1) scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes batScrape {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg) translateY(1px);
+  }
+  50% {
+    transform: rotate(2deg) translateY(-1px);
+  }
+  75% {
+    transform: rotate(-1.5deg) translateY(1px);
+  }
+}
+
+@keyframes turfDustPuff {
+  0% {
+    transform: scale(0.2) translate(0, 0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.2) translate(-30px, -15px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.8) translate(-60px, -25px);
+    opacity: 0;
+  }
+}
+
+@keyframes grassBladeKick {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-45px, -25px) rotate(-120deg) scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-80px, 15px) rotate(-280deg) scale(0.4);
+    opacity: 0;
+  }
+}
+
+@keyframes creaseFlash {
+  0% {
+    box-shadow: 0 0 0 rgba(249, 115, 22, 0);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  30% {
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.9), 0 0 50px rgba(251, 191, 36, 0.6);
+    border-color: #fb923c;
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes mascotBounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  35% {
+    transform: translateY(-8px) scale(1.02);
+  }
+  70% {
+    transform: translateY(2px) scale(0.98);
+  }
+}
+
+.animate-slide-right {
+  animation: cricketSlideRight 0.85s cubic-bezier(0.18, 0.89, 0.32, 1.15) forwards;
+}
+
+.animate-slide-left {
+  animation: cricketSlideLeft 0.85s cubic-bezier(0.18, 0.89, 0.32, 1.15) forwards;
+}
+
+.animate-bat-scrape {
+  animation: batScrape 0.35s ease-in-out infinite;
+}
+
+.animate-turf-dust {
+  animation: turfDustPuff 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-grass-kick {
+  animation: grassBladeKick 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-crease-flash {
+  animation: creaseFlash 1.2s ease-out;
+}
+
+.animate-mascot-bounce {
+  animation: mascotBounce 2.5s ease-in-out infinite;
+}
+
+/* Cricket pitch grass pattern */
+.cricket-turf-bg {
+  background: 
+    linear-gradient(180deg, rgba(7, 10, 15, 0.94) 0%, rgba(13, 26, 18, 0.75) 45%, rgba(6, 18, 12, 0.92) 100%),
+    repeating-linear-gradient(90deg, rgba(16, 185, 129, 0.04) 0px, rgba(16, 185, 129, 0.04) 40px, rgba(34, 197, 94, 0.015) 40px, rgba(34, 197, 94, 0.015) 80px);
+}
+
+/* 4D Temporal & Prismatic Holographic Utilities */
+@keyframes hologramScan {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(200%);
+    opacity: 0.2;
+  }
+}
+
+.animate-hologram-scan {
+  animation: hologramScan 2.8s linear infinite;
+}
+
+@keyframes chronoPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(249, 115, 22, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 24px rgba(251, 191, 36, 0.8)) drop-shadow(0 0 40px rgba(56, 189, 248, 0.4));
+  }
+}
+
+.animate-chrono-pulse {
+  animation: chronoPulse 3s ease-in-out infinite;
+}
+
+@keyframes shockwaveRing {
+  0% {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.animate-shockwave-ring {
+  animation: shockwaveRing 0.7s cubic-bezier(0.1, 0.8, 0.2, 1) forwards;
+}
+
+.perspective-1400 {
+  perspective: 1400px;
+}
+
+

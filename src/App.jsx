@@ -1,9 +1,10 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
 import AdminContactModal from './components/common/AdminContactModal';
+import CricketMascotWidget from './components/animation/CricketMascotWidget';
 
 import HomePage from './pages/HomePage';
 import TeamPage from './pages/TeamPage';
@@ -20,6 +21,9 @@ import AdminLoginPage from './pages/admin/AdminLoginPage';
 import AdminDashboardPage from './pages/admin/AdminDashboardPage';
 
 export default function App() {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
     <div className="flex flex-col min-h-screen bg-[#070a0f] text-slate-100 selection:bg-orange-500 selection:text-white">
       <ScrollToTop />
@@ -45,6 +49,7 @@ export default function App() {
 
       <Footer />
       <AdminContactModal />
+      {isHomePage && <CricketMascotWidget />}
     </div>
   );
 }
