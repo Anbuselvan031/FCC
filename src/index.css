@@ -7,10 +7,14 @@
     color-scheme: dark;
   }
   
-  body {
+  html, body {
     background-color: #070a0f;
     color: #f8fafc;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
   }
 
   /* Custom scrollbar */
@@ -214,7 +218,7 @@
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* Scale Entrance */
@@ -230,7 +234,7 @@
 }
 
 .animate-scale-in {
-  animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* Staggered Animation Delays */
@@ -444,4 +448,196 @@
   perspective: 1400px;
 }
 
+/* 3D Pop Out & Floating Hero Logo */
+@keyframes logo3dPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) translateZ(-100px) rotateX(20deg) rotateY(-15deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.08) translateZ(60px) rotateX(-5deg) rotateY(5deg);
+  }
+  82% {
+    transform: scale(0.97) translateZ(25px) rotateX(2deg) rotateY(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(40px) rotateX(0deg) rotateY(0deg);
+  }
+}
 
+@keyframes logo3dFloatLoop {
+  0%, 100% {
+    transform: translateY(0px) rotateX(4deg) rotateY(-4deg) scale3d(1, 1, 1);
+  }
+  50% {
+    transform: translateY(-8px) rotateX(-4deg) rotateY(4deg) scale3d(1.02, 1.02, 1.02);
+  }
+}
+
+@keyframes logoOrangeGlowPulse {
+  0%, 100% {
+    opacity: 0.65;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.animate-logo-3d-pop {
+  animation: logo3dPopIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-logo-3d-float {
+  animation: logo3dFloatLoop 5s ease-in-out infinite;
+}
+
+.animate-logo-glow {
+  animation: logoOrangeGlowPulse 3s ease-in-out infinite;
+}
+
+/* Logo Lightbox Modal Animations (260ms-280ms duration) */
+@keyframes logoBackdropFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes logoBackdropFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes logoModalPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes logoModalPopOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+}
+
+.animate-logo-backdrop-in {
+  animation: logoBackdropFadeIn 0.28s ease-out forwards;
+}
+
+.animate-logo-backdrop-out {
+  animation: logoBackdropFadeOut 0.24s ease-in forwards;
+}
+
+.animate-logo-scale-in {
+  animation: logoModalPopIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-logo-scale-out {
+  animation: logoModalPopOut 0.24s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE UI & SOLID RENDERING ARCHITECTURE
+   Guarantees solid, clean, consistent UI rendering across phone screens
+   (320px, 360px, 375px, 390px, 414px, 430px) and tablets.
+   Prevents backdrop blur dropouts, WebKit 3D compositing holes, animation freezes,
+   and horizontal overflows without altering the existing design aesthetics.
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* 1. SOLID OPAQUE BASES: Fallback for dropped backdrop-filter on mobile GPUs */
+  .glass-nav {
+    background-color: #070a0f !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .glass-card {
+    background-color: #0d1424 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  }
+
+  .glass-card-subtle {
+    background-color: #0a0f1d !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  }
+
+  /* 2. INSTANT VISIBILITY: Prevent animation delays or offscreen throttling from hiding UI */
+  .animate-fade-in-up,
+  .animate-scale-in {
+    opacity: 1 !important;
+    animation-delay: 0s !important;
+    animation-duration: 0.25s !important;
+    animation-fill-mode: forwards !important;
+    transform: none !important;
+  }
+
+  .delay-75,
+  .delay-100,
+  .delay-150,
+  .delay-200,
+  .delay-250,
+  .delay-300,
+  .delay-400,
+  .delay-500 {
+    animation-delay: 0s !important;
+  }
+
+  /* 3. 3D CONTEXT FLATTENING: Fix WebKit mobile layer compositing holes */
+  .perspective-1400,
+  [style*="perspective"] {
+    perspective: none !important;
+  }
+
+  .preserve-3d-mobile,
+  [style*="preserve-3d"] {
+    transform-style: flat !important;
+  }
+
+  .three-d-layer {
+    transform: none !important;
+  }
+
+  /* 4. OVERFLOW AND VIEWPORT PROTECTION */
+  html, body, #root {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    position: relative;
+  }
+
+  /* Ambient glow blobs constrained to viewport */
+  .ambient-glow-blob {
+    max-width: 90vw !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Small mobile width optimizations (320px - 375px) */
+@media (max-width: 375px) {
+  .text-5xl {
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
+  }
+  .text-4xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+  }
+}

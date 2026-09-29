@@ -2,21 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Trophy, Flame, MapPin, Calendar, ArrowRight, ChevronDown } from 'lucide-react';
 import teamData from '../../data/teamData';
+import InteractiveHeroLogo from './InteractiveHeroLogo';
 
 export default function Hero() {
   return (
     <section className="relative min-h-[92vh] sm:min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#070a0f]">
       {/* Background Image with Cinematic Cricket Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src={teamData.heroImage}
+          src={teamData.heroImage || teamData.coverImage}
           alt="Cricket Stadium Floodlights"
           className="w-full h-full object-cover object-center scale-105 animate-pulse-slow filter brightness-[0.35] contrast-125"
         />
         {/* Gradients and radial glows */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#070a0f] via-[#070a0f]/60 to-black/80" />
         <div className="absolute inset-0 bg-gradient-radial from-orange-600/15 via-transparent to-transparent opacity-80" />
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-500/10 blur-[130px] rounded-full pointer-events-none" />
+        <div className="ambient-glow-blob absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-500/10 blur-[130px] rounded-full pointer-events-none" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
@@ -26,20 +27,11 @@ export default function Hero() {
           <span>OFFICIAL DIGITAL HOME • COIMBATORE</span>
         </div>
 
-        {/* Club Crest with glowing ring and floating animation */}
-        <div className="relative mb-6 group cursor-pointer animate-float">
-          <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-orange-600 via-amber-500 to-orange-400 opacity-75 blur-md group-hover:opacity-100 transition-opacity duration-300 animate-pulse-glow"></div>
-          <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-[#090d16] border-2 border-orange-500/60 shadow-2xl transition-transform duration-300 group-hover:scale-105">
-            <img
-              src={teamData.logo}
-              alt="Fahrenheit Cricket Club Crest"
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-        </div>
+        {/* Club Crest with 3D Pop-Out & Floating Interaction */}
+        <InteractiveHeroLogo />
 
         {/* Hero Title */}
-        <h1 className="font-display font-black text-5xl sm:text-7xl md:text-8xl tracking-tight text-white uppercase leading-[0.9] sm:leading-[0.88] max-w-4xl animate-fade-in-up">
+        <h1 className="font-display font-black text-4xl sm:text-7xl md:text-8xl tracking-tight text-white uppercase leading-[0.92] sm:leading-[0.88] max-w-4xl animate-fade-in-up">
           FAHRENHEIT
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-400 to-orange-500 hover:brightness-110 transition-all duration-300">
             CRICKET CLUB

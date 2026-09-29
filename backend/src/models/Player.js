@@ -33,11 +33,19 @@ const playerSchema = new mongoose.Schema(
       type: String,
       default: null,
     },
+    bowlingSpeed: {
+      type: String,
+      default: null,
+    },
     jerseyNumber: {
       type: String,
       default: null,
     },
     isCaptain: {
+      type: Boolean,
+      default: false,
+    },
+    isViceCaptain: {
       type: Boolean,
       default: false,
     },
@@ -105,6 +113,7 @@ const playerSchema = new mongoose.Schema(
       strikeRate: { type: mongoose.Schema.Types.Mixed, default: null },
       maidens: { type: mongoose.Schema.Types.Mixed, default: null },
       bestBowling: { type: mongoose.Schema.Types.Mixed, default: null },
+      speed: { type: String, default: null },
     },
     fielding: {
       matches: { type: mongoose.Schema.Types.Mixed, default: null },

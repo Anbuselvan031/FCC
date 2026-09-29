@@ -43,7 +43,7 @@ export default function TeamJourney() {
                 {/* Timeline Card */}
                 <div className="ml-10 sm:ml-0 sm:w-1/2">
                   <div
-                    className={`p-6 rounded-2xl bg-[#0d1424]/90 border border-slate-800 hover:border-orange-500/40 shadow-xl transition-all duration-300 group hover:-translate-y-1.5 hover:shadow-orange-500/10 shine-sweep ${
+                    className={`p-5 sm:p-6 rounded-2xl bg-[#0d1424] border border-slate-800 hover:border-orange-500/40 shadow-xl transition-all duration-300 group hover:-translate-y-1.5 hover:shadow-orange-500/10 shine-sweep ${
                       isEven ? 'sm:text-left' : 'sm:text-right'
                     }`}
                   >

@@ -129,6 +129,11 @@ export default function PlayerDetailPage() {
                   CLUB CAPTAIN
                 </span>
               )}
+              {player.isViceCaptain && (
+                <span className="px-3 py-1 rounded-lg bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-sm">
+                  VICE CAPTAIN
+                </span>
+              )}
               {player.isPro && (
                 <span className="px-3 py-1 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-sm">
                   PRO REGISTERED

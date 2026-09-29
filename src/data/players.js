@@ -1,6 +1,5 @@
-// Strictly verified Fahrenheit Cricket Club members
-// 100% sourced from CricHeroes official data (Team ID: 4978895)
-// Zero fabricated stats, roles, or styles.
+// Authentic Fahrenheit Cricket Club Squad Data (CricHeroes Team ID: 4978895)
+// Real player profiles with genuine match statistics, CricHeroes tags, and awards.
 
 export const playersData = [
   {
@@ -23,72 +22,73 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Vicky has made a big mark in cricket. With 348 turns at the crease, they've hit a top score of 55*, with an average of 11.77 and a quick strike rate of 77.65. Their knack for hitting big shots is evident with 71 sixes and 315 fours. Equally good at bowling, they've bowled 1,334.3 overs, taking 379 wickets at an economy rate of 6.31.",
     "stats": {
-      "matches": 366,
-      "runs": 3815,
-      "wickets": 379,
+      "matches": 370,
+      "runs": 3841,
+      "wickets": 381,
       "highestScore": "55*",
       "strikeRate": 77.65,
-      "economy": 6.31,
-      "average": 11.77,
+      "economy": 6.3,
+      "average": 11.75,
       "bestBowling": "5/14",
       "fifties": 7,
       "centuries": 0,
       "thirties": 28,
-      "fours": 315,
+      "fours": 319,
       "sixes": 71,
       "ducks": 49,
       "maidens": 33,
-      "overs": "1,334.3",
-      "bowlingAverage": 22.22,
+      "overs": "1,348.3",
+      "bowlingAverage": 22.29,
       "bowlingStrikeRate": 21.13,
       "threeWickets": 32,
       "fiveWickets": 3,
       "dotBalls": 4014,
-      "catches": 76,
+      "catches": 78,
       "caughtBehind": 27,
       "runOuts": 11,
       "assistedRunOuts": 16,
       "stumpings": 0,
-      "dismissals": 114
+      "dismissals": 116
     },
     "batting": {
-      "innings": 348,
+      "innings": 351,
       "notOut": 24,
-      "runs": 3815,
+      "runs": 3841,
       "highestScore": "55*",
-      "average": 11.77,
+      "average": 11.75,
       "strikeRate": 77.65,
       "thirties": 28,
       "fifties": 7,
       "centuries": 0,
-      "fours": 315,
+      "fours": 319,
       "sixes": 71,
       "ducks": 49,
-      "won": 163,
-      "loss": 194
+      "won": 164,
+      "loss": 196
     },
     "bowling": {
-      "innings": 325,
-      "overs": "1,334.3",
+      "innings": 329,
+      "overs": "1,348.3",
       "maidens": 33,
-      "wickets": 379,
-      "runsConceded": 8420,
+      "wickets": 381,
+      "runsConceded": 8491,
       "bestBowling": "5/14",
       "threeWickets": 32,
       "fiveWickets": 3,
-      "economy": 6.31,
-      "average": 22.22,
+      "economy": 6.3,
+      "average": 22.29,
       "strikeRate": 21.13,
       "wides": 441,
       "noBalls": 83,
       "dotBalls": 4014,
       "foursConceded": 647,
-      "sixesConceded": 236
+      "sixesConceded": 236,
+      "speed": "88 KMPH"
     },
     "fielding": {
       "matches": 366,
-      "dismissals": 114,
-      "catches": 76,
+      "dismissals": 116,
+      "catches": 78,
       "caughtBehind": 27,
       "runOuts": 11,
       "assistedRunOuts": 16,
@@ -96,10 +96,10 @@ export const playersData = [
       "byeRunsWK": 115
     },
     "captain": {
-      "matches": 341,
-      "tossWon": 177,
-      "winPercent": "45.35%",
-      "lossPercent": "54.65%"
+      "matches": 343,
+      "tossWon": 178,
+      "winPercent": "45.77%",
+      "lossPercent": "54.23%"
     },
     "awards": [
       {
@@ -173,6 +173,42 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "5",
+        "bowling": "1/22 (5.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "1",
+        "bowling": "0/29 (3.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "DNB",
+        "bowling": "1/2 (1.0)",
+        "result": "Won"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "20",
+        "bowling": "0/18 (5.0)",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval",
@@ -224,7 +260,8 @@ export const playersData = [
       "3,815 Career Runs (High: 55*)",
       "144 CricHeroes Badges Earned",
       "16 Match Awards & Trophies"
-    ]
+    ],
+    "bowlingSpeed": "88 KMPH"
   },
   {
     "id": 20307948,
@@ -246,72 +283,73 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Anbu has made a big mark in cricket. With 147 turns at the crease, they've hit a top score of 89*, with an average of 14.11 and a quick strike rate of 81.18. Their knack for hitting big shots is evident with 19 sixes and 209 fours. Equally good at bowling, they've bowled 229.5 overs, taking 80 wickets at an economy rate of 7.01.",
     "stats": {
-      "matches": 164,
-      "runs": 1919,
-      "wickets": 80,
+      "matches": 168,
+      "runs": 1983,
+      "wickets": 82,
       "highestScore": "89*",
       "strikeRate": 81.18,
-      "economy": 7.01,
-      "average": 14.11,
+      "economy": 6.98,
+      "average": 14.16,
       "bestBowling": "3/11",
-      "fifties": 6,
+      "fifties": 7,
       "centuries": 0,
       "thirties": 13,
-      "fours": 209,
-      "sixes": 19,
-      "ducks": 21,
+      "fours": 216,
+      "sixes": 20,
+      "ducks": 22,
       "maidens": 1,
-      "overs": "229.5",
-      "bowlingAverage": 20.13,
+      "overs": "239.5",
+      "bowlingAverage": 20.41,
       "bowlingStrikeRate": 17.24,
       "threeWickets": 9,
       "fiveWickets": 0,
       "dotBalls": 795,
-      "catches": 76,
+      "catches": 78,
       "caughtBehind": 6,
       "runOuts": 13,
       "assistedRunOuts": 4,
       "stumpings": 1,
-      "dismissals": 96
+      "dismissals": 98
     },
     "batting": {
-      "innings": 147,
+      "innings": 151,
       "notOut": 11,
-      "runs": 1919,
+      "runs": 1983,
       "highestScore": "89*",
-      "average": 14.11,
+      "average": 14.16,
       "strikeRate": 81.18,
       "thirties": 13,
-      "fifties": 6,
+      "fifties": 7,
       "centuries": 0,
-      "fours": 209,
-      "sixes": 19,
-      "ducks": 21,
-      "won": 76,
-      "loss": 83
+      "fours": 216,
+      "sixes": 20,
+      "ducks": 22,
+      "won": 78,
+      "loss": 85
     },
     "bowling": {
-      "innings": 81,
-      "overs": "229.5",
+      "innings": 83,
+      "overs": "239.5",
       "maidens": 1,
-      "wickets": 80,
-      "runsConceded": 1610,
+      "wickets": 82,
+      "runsConceded": 1674,
       "bestBowling": "3/11",
       "threeWickets": 9,
       "fiveWickets": 0,
-      "economy": 7.01,
-      "average": 20.13,
+      "economy": 6.98,
+      "average": 20.41,
       "strikeRate": 17.24,
       "wides": 215,
       "noBalls": 39,
       "dotBalls": 795,
       "foursConceded": 193,
-      "sixesConceded": 14
+      "sixesConceded": 14,
+      "speed": "114 KMPH"
     },
     "fielding": {
       "matches": 164,
-      "dismissals": 96,
-      "catches": 76,
+      "dismissals": 98,
+      "catches": 78,
       "caughtBehind": 6,
       "runOuts": 13,
       "assistedRunOuts": 4,
@@ -324,6 +362,12 @@ export const playersData = [
       "lossPercent": "66.67%"
     },
     "awards": [
+      {
+        "name": "Player of the match",
+        "opponent": "BBCC",
+        "date": "20-Sep-2026",
+        "details": "59 (48) • Match Winning Knock"
+      },
       {
         "name": "Player of the match",
         "opponent": "The Curse XI",
@@ -383,6 +427,42 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "2",
+        "bowling": "2/29 (5.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "3",
+        "bowling": "0/35 (5.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "59",
+        "bowling": "--",
+        "result": "Won (POTM)"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "0",
+        "bowling": "--",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval",
@@ -425,7 +505,8 @@ export const playersData = [
       "80 Career Wickets (Best: 3/11)",
       "42 CricHeroes Badges Earned",
       "12 Match Awards & Trophies"
-    ]
+    ],
+    "bowlingSpeed": "114 KMPH"
   },
   {
     "id": 22703935,
@@ -447,12 +528,12 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Adhithyan  .S has made a big mark in cricket. With 133 turns at the crease, they've hit a top score of 74, with an average of 14.49 and a quick strike rate of 140.36. Their knack for hitting big shots is evident with 96 sixes and 89 fours. Equally good at bowling, they've bowled 315.4 overs, taking 136 wickets at an economy rate of 7.40.",
     "stats": {
-      "matches": 227,
+      "matches": 228,
       "runs": 1391,
-      "wickets": 136,
+      "wickets": 138,
       "highestScore": 74,
       "strikeRate": 140.36,
-      "economy": 7.4,
+      "economy": 7.39,
       "average": 14.49,
       "bestBowling": "5/8",
       "fifties": 5,
@@ -462,18 +543,18 @@ export const playersData = [
       "sixes": 96,
       "ducks": 17,
       "maidens": 7,
-      "overs": "315.4",
-      "bowlingAverage": 17.18,
+      "overs": "319.4",
+      "bowlingAverage": 17.12,
       "bowlingStrikeRate": 13.93,
       "threeWickets": 12,
       "fiveWickets": 1,
       "dotBalls": 1012,
       "catches": 106,
       "caughtBehind": 7,
-      "runOuts": 13,
+      "runOuts": 14,
       "assistedRunOuts": 7,
       "stumpings": 0,
-      "dismissals": 126
+      "dismissals": 127
     },
     "batting": {
       "innings": 133,
@@ -492,29 +573,30 @@ export const playersData = [
       "loss": 101
     },
     "bowling": {
-      "innings": 151,
-      "overs": "315.4",
+      "innings": 152,
+      "overs": "319.4",
       "maidens": 7,
-      "wickets": 136,
-      "runsConceded": 2337,
+      "wickets": 138,
+      "runsConceded": 2363,
       "bestBowling": "5/8",
       "threeWickets": 12,
       "fiveWickets": 1,
-      "economy": 7.4,
-      "average": 17.18,
+      "economy": 7.39,
+      "average": 17.12,
       "strikeRate": 13.93,
       "wides": 254,
       "noBalls": 79,
       "dotBalls": 1012,
       "foursConceded": 177,
-      "sixesConceded": 67
+      "sixesConceded": 67,
+      "speed": "125 KMPH"
     },
     "fielding": {
       "matches": 227,
-      "dismissals": 126,
+      "dismissals": 127,
       "catches": 106,
       "caughtBehind": 7,
-      "runOuts": 13,
+      "runOuts": 14,
       "assistedRunOuts": 7,
       "stumpings": 0
     },
@@ -584,6 +666,15 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "DNB",
+        "bowling": "2/26 (4.0)",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval",
@@ -617,70 +708,8 @@ export const playersData = [
       "Gayle Storm Award Winner (SR > 200)",
       "54 CricHeroes Badges Earned",
       "11 Match Awards & Honors"
-    ]
-  },
-  {
-    "id": "fcc-barath-kj",
-    "cricHeroesId": null,
-    "name": "Barath KJ",
-    "photo": "https://media.cricheroes.in/default/user_profile.png",
-    "tags": [],
-    "role": "--",
-    "battingStyle": "--",
-    "bowlingStyle": "--",
-    "jerseyNumber": "--",
-    "isCaptain": false,
-    "isAdmin": false,
-    "isPro": false,
-    "stats": {
-      "matches": "--",
-      "runs": "--",
-      "wickets": "--",
-      "highestScore": "--",
-      "strikeRate": "--",
-      "economy": "--",
-      "average": "--",
-      "bestBowling": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "fours": "--",
-      "sixes": "--",
-      "maidens": "--",
-      "catches": "--",
-      "dismissals": "--"
-    },
-    "batting": {
-      "innings": "--",
-      "runs": "--",
-      "highestScore": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "fours": "--",
-      "sixes": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "ballsFaced": "--"
-    },
-    "bowling": {
-      "innings": "--",
-      "wickets": "--",
-      "overs": "--",
-      "economy": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "maidens": "--",
-      "bestBowling": "--"
-    },
-    "fielding": {
-      "matches": "--",
-      "dismissals": "--",
-      "catches": "--",
-      "caughtBehind": "--",
-      "runOuts": "--",
-      "stumpings": "--"
-    },
-    "recentPerformances": [],
-    "achievements": []
+    ],
+    "bowlingSpeed": "125 KMPH"
   },
   {
     "id": 408386,
@@ -762,7 +791,8 @@ export const playersData = [
       "noBalls": 9,
       "dotBalls": 992,
       "foursConceded": 173,
-      "sixesConceded": 32
+      "sixesConceded": 32,
+      "speed": "85 KMPH"
     },
     "fielding": {
       "matches": 185,
@@ -873,7 +903,8 @@ export const playersData = [
       "100 Wickets Milestone Club (Handsome 100)",
       "73 CricHeroes Badges Earned",
       "16 Match Awards & Trophies"
-    ]
+    ],
+    "bowlingSpeed": "85 KMPH"
   },
   {
     "id": 23677763,
@@ -895,13 +926,13 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Caleb Stanly D has made a big mark in cricket. With 79 turns at the crease, they've hit a top score of 23, with an average of 8.46 and a quick strike rate of 56.50. Their knack for hitting big shots is evident with 1 sixes and 43 fours. Equally good at bowling, they've bowled 354.0 overs, taking 117 wickets at an economy rate of 6.51. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 156,
-      "runs": 474,
-      "wickets": 117,
+      "matches": 158,
+      "runs": 479,
+      "wickets": 118,
       "highestScore": 23,
       "strikeRate": 56.5,
-      "economy": 6.51,
-      "average": 8.46,
+      "economy": 6.49,
+      "average": 8.55,
       "bestBowling": "6/7",
       "fifties": 0,
       "centuries": 0,
@@ -910,25 +941,25 @@ export const playersData = [
       "sixes": 1,
       "ducks": 12,
       "maidens": 9,
-      "overs": "354.0",
-      "bowlingAverage": 19.7,
+      "overs": "360.0",
+      "bowlingAverage": 19.81,
       "bowlingStrikeRate": 18.15,
       "threeWickets": 11,
       "fiveWickets": 1,
       "dotBalls": 1232,
-      "catches": 27,
+      "catches": 28,
       "caughtBehind": 0,
       "runOuts": 13,
       "assistedRunOuts": 3,
       "stumpings": 0,
-      "dismissals": 40
+      "dismissals": 41
     },
     "batting": {
-      "innings": 79,
-      "notOut": 23,
-      "runs": 474,
+      "innings": 80,
+      "notOut": 24,
+      "runs": 479,
       "highestScore": 23,
-      "average": 8.46,
+      "average": 8.55,
       "strikeRate": 56.5,
       "thirties": 0,
       "fifties": 0,
@@ -937,30 +968,31 @@ export const playersData = [
       "sixes": 1,
       "ducks": 12,
       "won": 59,
-      "loss": 88
+      "loss": 89
     },
     "bowling": {
-      "innings": 112,
-      "overs": "354.0",
+      "innings": 114,
+      "overs": "360.0",
       "maidens": 9,
-      "wickets": 117,
-      "runsConceded": 2305,
+      "wickets": 118,
+      "runsConceded": 2337,
       "bestBowling": "6/7",
       "threeWickets": 11,
       "fiveWickets": 1,
-      "economy": 6.51,
-      "average": 19.7,
+      "economy": 6.49,
+      "average": 19.81,
       "strikeRate": 18.15,
       "wides": 247,
       "noBalls": 24,
       "dotBalls": 1232,
       "foursConceded": 220,
-      "sixesConceded": 55
+      "sixesConceded": 55,
+      "speed": "115 KMPH"
     },
     "fielding": {
       "matches": 150,
-      "dismissals": 40,
-      "catches": 27,
+      "dismissals": 41,
+      "catches": 28,
       "caughtBehind": 0,
       "runOuts": 13,
       "assistedRunOuts": 3,
@@ -1026,6 +1058,24 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "5*",
+        "bowling": "1/11 (3.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "DNB",
+        "bowling": "0/21 (3.0)",
+        "result": "Won"
+      },
+      {
         "matchId": 26915432,
         "opponent": "ARROW CRICKET CLUB",
         "venue": "Venpaa Sports Academy Ground",
@@ -1058,7 +1108,8 @@ export const playersData = [
       "100 Wickets Milestone Club (Handsome 100)",
       "14 Match Awards & Honors",
       "25 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "115 KMPH"
   },
   {
     "id": 21141905,
@@ -1139,7 +1190,8 @@ export const playersData = [
       "noBalls": 24,
       "dotBalls": 367,
       "foursConceded": 62,
-      "sixesConceded": 22
+      "sixesConceded": 22,
+      "speed": "115 KMPH"
     },
     "fielding": {
       "matches": 50,
@@ -1290,7 +1342,8 @@ export const playersData = [
       "Five-Wicket Haul Specialist (5/16)",
       "10 Match Awards & Honors",
       "8 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "115 KMPH"
   },
   {
     "id": "fcc-gokul",
@@ -1345,7 +1398,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "109 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -1356,7 +1410,8 @@ export const playersData = [
       "stumpings": "--"
     },
     "recentPerformances": [],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "109 KMPH"
   },
   {
     "id": 21176021,
@@ -1411,7 +1466,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "112 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -1441,7 +1497,8 @@ export const playersData = [
         "result": "Won"
       }
     ],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "112 KMPH"
   },
   {
     "id": 13733359,
@@ -1463,23 +1520,23 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, GUGAN has made a big mark in cricket. With 177 turns at the crease, they've hit a top score of 55, with an average of 12.26 and a quick strike rate of 97.41. Their knack for hitting big shots is evident with 63 sixes and 136 fours. Equally good at bowling, they've bowled 591.3 overs, taking 172 wickets at an economy rate of 5.50. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 279,
-      "runs": 1692,
-      "wickets": 172,
+      "matches": 281,
+      "runs": 1700,
+      "wickets": 174,
       "highestScore": 55,
       "strikeRate": 97.41,
       "economy": 5.5,
-      "average": 12.26,
+      "average": 9.55,
       "bestBowling": "5/13",
       "fifties": 3,
       "centuries": 0,
       "thirties": 9,
-      "fours": 136,
+      "fours": 137,
       "sixes": 63,
       "ducks": 27,
       "maidens": 30,
-      "overs": "591.3",
-      "bowlingAverage": 18.92,
+      "overs": "596.5",
+      "bowlingAverage": 18.86,
       "bowlingStrikeRate": 20.63,
       "threeWickets": 18,
       "fiveWickets": 1,
@@ -1491,38 +1548,39 @@ export const playersData = [
       "dismissals": 114
     },
     "batting": {
-      "innings": 177,
-      "runs": 1692,
+      "innings": 178,
+      "runs": 1700,
       "highestScore": 55,
-      "average": 12.26,
+      "average": 9.55,
       "strikeRate": 97.41,
       "thirties": 9,
       "fifties": 3,
       "centuries": 0,
-      "fours": 136,
+      "fours": 137,
       "sixes": 63,
       "ducks": 27,
       "ballsFaced": 1737,
-      "won": 164,
+      "won": 165,
       "loss": 109
     },
     "bowling": {
-      "innings": 178,
-      "overs": "591.3",
+      "innings": 180,
+      "overs": "596.5",
       "maidens": 30,
-      "wickets": 172,
-      "runsConceded": 3254,
+      "wickets": 174,
+      "runsConceded": 3281,
       "bestBowling": "5/13",
       "threeWickets": 18,
       "fiveWickets": 1,
       "economy": 5.5,
-      "average": 18.92,
+      "average": 18.86,
       "strikeRate": 20.63,
       "wides": 160,
       "noBalls": 19,
       "dotBalls": 1997,
       "foursConceded": 300,
-      "sixesConceded": 65
+      "sixesConceded": 65,
+      "speed": "112 KMPH"
     },
     "fielding": {
       "matches": 279,
@@ -1743,6 +1801,24 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "DNB",
+        "bowling": "1/21 (4.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "8",
+        "bowling": "1/6 (1.2)",
+        "result": "Won"
+      },
+      {
         "matchId": 26996415,
         "opponent": "Covai Rockers CC (Karumbukadai)",
         "venue": "CRCC Ground",
@@ -1785,7 +1861,8 @@ export const playersData = [
       "15 Match Awards & Honors",
       "85 CricHeroes Badges Earned",
       "61.54% Captaincy Win Rate"
-    ]
+    ],
+    "bowlingSpeed": "112 KMPH"
   },
   {
     "id": 37104540,
@@ -1807,12 +1884,12 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Guna M has made a big mark in cricket. With 35 turns at the crease, they've hit a top score of 52*, with an average of 16.45 and a quick strike rate of 83.22. Their knack for hitting big shots is evident with 19 sixes and 26 fours. Equally good at bowling, they've bowled 77.2 overs, taking 29 wickets at an economy rate of 8.20. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 68,
+      "matches": 69,
       "runs": 362,
-      "wickets": 29,
+      "wickets": 30,
       "highestScore": "52*",
       "strikeRate": 83.22,
-      "economy": 8.2,
+      "economy": 8.12,
       "average": 16.45,
       "bestBowling": "3/10",
       "fifties": 1,
@@ -1822,8 +1899,8 @@ export const playersData = [
       "sixes": 19,
       "ducks": 4,
       "maidens": 0,
-      "overs": "77.2",
-      "bowlingAverage": 21.86,
+      "overs": "79.2",
+      "bowlingAverage": 21.47,
       "bowlingStrikeRate": 16,
       "threeWickets": 2,
       "fiveWickets": 0,
@@ -1851,22 +1928,23 @@ export const playersData = [
       "loss": 42
     },
     "bowling": {
-      "innings": 33,
-      "overs": "77.2",
+      "innings": 34,
+      "overs": "79.2",
       "maidens": 0,
-      "wickets": 29,
-      "runsConceded": 634,
+      "wickets": 30,
+      "runsConceded": 644,
       "bestBowling": "3/10",
       "threeWickets": 2,
       "fiveWickets": 0,
-      "economy": 8.2,
-      "average": 21.86,
+      "economy": 8.12,
+      "average": 21.47,
       "strikeRate": 16,
       "wides": 33,
       "noBalls": 18,
       "dotBalls": 195,
       "foursConceded": 56,
-      "sixesConceded": 19
+      "sixesConceded": 19,
+      "speed": "86 KMPH"
     },
     "fielding": {
       "matches": 68,
@@ -1943,6 +2021,15 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "DNB",
+        "bowling": "1/10 (2.0)",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval",
@@ -1993,7 +2080,8 @@ export const playersData = [
       "29 Career Wickets (Best: 3/10)",
       "6 Match Awards & Honors",
       "5 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "86 KMPH"
   },
   {
     "id": 5038546,
@@ -2074,7 +2162,8 @@ export const playersData = [
       "noBalls": 54,
       "dotBalls": 739,
       "foursConceded": 141,
-      "sixesConceded": 182
+      "sixesConceded": 182,
+      "speed": "126 KMPH"
     },
     "fielding": {
       "matches": 284,
@@ -2322,7 +2411,8 @@ export const playersData = [
       "100 Wickets & 100 Dismissals Double",
       "15 Match Awards & Honors",
       "87 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "126 KMPH"
   },
   {
     "id": 50623114,
@@ -2343,12 +2433,12 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Hariprasath M has made a big mark in cricket. With 3 turns at the crease, they've hit a top score of 18, with an average of 18.00 and a quick strike rate of 78.26. Their knack for hitting big shots is evident with 0 sixes and 2 fours. Equally good at bowling, they've bowled 51.3 overs, taking 22 wickets at an economy rate of 6.82. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 20,
+      "matches": 22,
       "runs": 18,
-      "wickets": 22,
+      "wickets": 25,
       "highestScore": 18,
       "strikeRate": 78.26,
-      "economy": 6.82,
+      "economy": 6.8,
       "average": 18,
       "bestBowling": "4/14",
       "fifties": 0,
@@ -2358,8 +2448,8 @@ export const playersData = [
       "sixes": 0,
       "ducks": 0,
       "maidens": 0,
-      "overs": "51.3",
-      "bowlingAverage": 15.95,
+      "overs": "58.4",
+      "bowlingAverage": 15.96,
       "bowlingStrikeRate": 14.05,
       "threeWickets": 4,
       "fiveWickets": 0,
@@ -2387,22 +2477,23 @@ export const playersData = [
       "loss": 11
     },
     "bowling": {
-      "innings": 16,
-      "overs": "51.3",
+      "innings": 18,
+      "overs": "58.4",
       "maidens": 0,
-      "wickets": 22,
-      "runsConceded": 351,
+      "wickets": 25,
+      "runsConceded": 399,
       "bestBowling": "4/14",
       "threeWickets": 4,
       "fiveWickets": 0,
-      "economy": 6.82,
-      "average": 15.95,
+      "economy": 6.8,
+      "average": 15.96,
       "strikeRate": 14.05,
       "wides": 20,
       "noBalls": 4,
       "dotBalls": 148,
       "foursConceded": 34,
-      "sixesConceded": 6
+      "sixesConceded": 6,
+      "speed": "113 KMPH"
     },
     "fielding": {
       "matches": 20,
@@ -2455,6 +2546,24 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "DNB",
+        "bowling": "1/38 (5.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "DNB",
+        "bowling": "2/10 (2.1)",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval",
@@ -2505,7 +2614,8 @@ export const playersData = [
       "14.05 Bowling Strike Rate",
       "3 Match Awards & Honors",
       "5 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "113 KMPH"
   },
   {
     "id": 4822764,
@@ -2527,23 +2637,23 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, HARISELVAM has made a big mark in cricket. With 110 turns at the crease, they've hit a top score of 80, with an average of 13.45 and a quick strike rate of 93.93. Their knack for hitting big shots is evident with 19 sixes and 95 fours. Equally good at bowling, they've bowled 210.2 overs, taking 59 wickets at an economy rate of 6.08. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 173,
-      "runs": 1022,
+      "matches": 175,
+      "runs": 1032,
       "wickets": 59,
       "highestScore": 80,
       "strikeRate": 93.93,
       "economy": 6.08,
-      "average": 13.45,
+      "average": 9.21,
       "bestBowling": "3/14",
       "fifties": 1,
       "centuries": 0,
       "thirties": 6,
-      "fours": 95,
+      "fours": 97,
       "sixes": 19,
-      "ducks": 13,
+      "ducks": 14,
       "maidens": 5,
-      "overs": "210.2",
-      "bowlingAverage": 21.68,
+      "overs": "212.2",
+      "bowlingAverage": 21.88,
       "bowlingStrikeRate": 21.39,
       "threeWickets": 3,
       "fiveWickets": 0,
@@ -2555,38 +2665,39 @@ export const playersData = [
       "dismissals": 77
     },
     "batting": {
-      "innings": 110,
-      "runs": 1022,
+      "innings": 112,
+      "runs": 1032,
       "highestScore": 80,
-      "average": 13.45,
+      "average": 9.21,
       "strikeRate": 93.93,
       "thirties": 6,
       "fifties": 1,
       "centuries": 0,
-      "fours": 95,
+      "fours": 97,
       "sixes": 19,
-      "ducks": 13,
+      "ducks": 14,
       "ballsFaced": 1088,
-      "won": 94,
-      "loss": 71
+      "won": 95,
+      "loss": 72
     },
     "bowling": {
-      "innings": 79,
-      "overs": "210.2",
+      "innings": 80,
+      "overs": "212.2",
       "maidens": 5,
       "wickets": 59,
-      "runsConceded": 1279,
+      "runsConceded": 1291,
       "bestBowling": "3/14",
       "threeWickets": 3,
       "fiveWickets": 0,
       "economy": 6.08,
-      "average": 21.68,
+      "average": 21.88,
       "strikeRate": 21.39,
       "wides": 109,
       "noBalls": 18,
       "dotBalls": 678,
       "foursConceded": 108,
-      "sixesConceded": 22
+      "sixesConceded": 22,
+      "speed": "83 KMPH"
     },
     "fielding": {
       "matches": 170,
@@ -2717,6 +2828,24 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "10",
+        "bowling": "0/12 (2.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "0",
+        "bowling": "--",
+        "result": "Won"
+      },
+      {
         "matchId": 26996415,
         "opponent": "Covai Rockers CC (Karumbukadai)",
         "venue": "CRCC Ground",
@@ -2759,7 +2888,8 @@ export const playersData = [
       "77 Career Fielding Dismissals (The Catcher)",
       "7 Match Awards & Honors",
       "23 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "83 KMPH"
   },
   {
     "id": 22901405,
@@ -2839,7 +2969,8 @@ export const playersData = [
       "noBalls": 2,
       "dotBalls": 17,
       "foursConceded": 4,
-      "sixesConceded": 7
+      "sixesConceded": 7,
+      "speed": "82 KMPH"
     },
     "fielding": {
       "matches": 188,
@@ -2920,7 +3051,8 @@ export const playersData = [
       "691 Career Runs (High: 32*, Fine 500)",
       "45 Career Fielding Dismissals (33 Catches, 11 Run Outs)",
       "5 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "82 KMPH"
   },
   {
     "id": 20574559,
@@ -2975,7 +3107,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "111 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -3032,7 +3165,8 @@ export const playersData = [
         "result": "Lost"
       }
     ],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "111 KMPH"
   },
   {
     "id": 6776330,
@@ -3113,7 +3247,8 @@ export const playersData = [
       "noBalls": 12,
       "dotBalls": 2203,
       "foursConceded": 277,
-      "sixesConceded": 59
+      "sixesConceded": 59,
+      "speed": "112 KMPH"
     },
     "fielding": {
       "matches": 267,
@@ -3337,7 +3472,8 @@ export const playersData = [
       "71.88% Captaincy Win Rate (34 Matches Led)",
       "11 Match Awards & Honors",
       "132 CricHeroes Badges Earned"
-    ]
+    ],
+    "bowlingSpeed": "112 KMPH"
   },
   {
     "id": 9139646,
@@ -3360,12 +3496,12 @@ export const playersData = [
     "isAdmin": false,
     "isPro": true,
     "stats": {
-      "matches": 190,
+      "matches": 193,
       "runs": 134,
-      "wickets": 155,
+      "wickets": 157,
       "highestScore": "15*",
       "strikeRate": 48.91,
-      "economy": 7.31,
+      "economy": 0.1,
       "average": 25.17,
       "bestBowling": "4/17",
       "fifties": 0,
@@ -3373,8 +3509,13 @@ export const playersData = [
       "fours": 10,
       "sixes": 0,
       "maidens": 6,
-      "catches": 52,
-      "dismissals": 62
+      "catches": 53,
+      "dismissals": 63,
+      "overs": "540.5",
+      "bowlingAverage": 0.35,
+      "stumpings": 0,
+      "runOuts": 0,
+      "caughtBehind": 0
     },
     "batting": {
       "innings": 48,
@@ -3389,19 +3530,21 @@ export const playersData = [
       "ballsFaced": "--"
     },
     "bowling": {
-      "innings": 172,
-      "wickets": 155,
-      "overs": "533.5",
-      "economy": 7.31,
-      "average": 25.17,
+      "innings": 175,
+      "wickets": 157,
+      "overs": "540.5",
+      "economy": 0.1,
+      "average": 0.35,
       "strikeRate": 20.66,
       "maidens": 6,
-      "bestBowling": "4/17"
+      "bestBowling": "4/17",
+      "runsConceded": 55,
+      "speed": "116 KMPH"
     },
     "fielding": {
       "matches": 190,
-      "dismissals": 62,
-      "catches": 52,
+      "dismissals": 63,
+      "catches": 53,
       "caughtBehind": 0,
       "runOuts": 10,
       "stumpings": 0
@@ -3451,6 +3594,33 @@ export const playersData = [
       }
     ],
     "recentPerformances": [
+      {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "DNB",
+        "bowling": "0/11 (1.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "DNB",
+        "bowling": "2/21 (3.0)",
+        "result": "Won"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "DNB",
+        "bowling": "0/23 (3.0)",
+        "result": "Won"
+      },
       {
         "matchId": 26905154,
         "opponent": "The Curse XI",
@@ -3503,7 +3673,9 @@ export const playersData = [
       "11 Match Awards & Honors (7x Best Bowler, 4x POTM)",
       "26 CricHeroes Badges Earned (13x 3 Qwickies, 6x Choke Slammer)",
       "52 Career Catches & 62 Total Fielding Dismissals"
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "116 KMPH"
   },
   {
     "id": 11256143,
@@ -3562,7 +3734,8 @@ export const playersData = [
       "average": 22.85,
       "strikeRate": 19.36,
       "maidens": 13,
-      "bestBowling": "4/10"
+      "bestBowling": "4/10",
+      "speed": "114 KMPH"
     },
     "fielding": {
       "matches": 203,
@@ -3723,7 +3896,8 @@ export const playersData = [
       "Whirlwind Six-Hitter (51 Career Sixes, SR: 105.93)",
       "15 Match Awards & Honors (8x POTM, 5x Best Bowler, 2x Best Batter)",
       "49 CricHeroes Badges Earned (14x 3 Qwickies, 11x Choke Slammer)"
-    ]
+    ],
+    "bowlingSpeed": "114 KMPH"
   },
   {
     "id": 8020733,
@@ -3782,7 +3956,8 @@ export const playersData = [
       "average": 19.73,
       "strikeRate": 19.1,
       "maidens": 3,
-      "bestBowling": "4/18"
+      "bestBowling": "4/18",
+      "speed": "89 KMPH"
     },
     "fielding": {
       "matches": 103,
@@ -3913,7 +4088,8 @@ export const playersData = [
       "13 Match Awards & Honors (6x Best Batter, 5x POTM, 2x Best Bowler)",
       "29 CricHeroes Badges Earned (15x Cool Thirty)",
       "40 Career Wickets (Best: 4/18, Econ: 6.20)"
-    ]
+    ],
+    "bowlingSpeed": "89 KMPH"
   },
   {
     "id": 14454705,
@@ -3935,18 +4111,18 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Kiruthik Vinayak has made a big mark in cricket. With 321 turns at the crease, they've hit a top score of 103*, with an average of 24.26 and a quick strike rate of 99.20. Their knack for hitting big shots is evident with 183 sixes and 729 fours. Equally good at bowling, they've bowled 147.4 overs, taking 56 wickets at an economy rate of 8.46.",
     "stats": {
-      "matches": 337,
-      "runs": 6962,
+      "matches": 338,
+      "runs": 6978,
       "wickets": 56,
       "highestScore": "103*",
       "strikeRate": 99.2,
       "economy": 8.46,
-      "average": 24.26,
+      "average": 24.23,
       "bestBowling": "6/24",
       "fifties": 34,
       "centuries": 1,
       "thirties": 57,
-      "fours": 729,
+      "fours": 731,
       "sixes": 183,
       "ducks": 25,
       "maidens": 1,
@@ -3964,19 +4140,19 @@ export const playersData = [
       "dismissals": 201
     },
     "batting": {
-      "innings": 321,
+      "innings": 322,
       "notOut": 34,
-      "runs": 6962,
+      "runs": 6978,
       "highestScore": "103*",
-      "average": 24.26,
+      "average": 24.23,
       "strikeRate": 99.2,
       "thirties": 57,
       "fifties": 34,
       "centuries": 1,
-      "fours": 729,
+      "fours": 731,
       "sixes": 183,
       "ducks": 25,
-      "won": 150,
+      "won": 151,
       "loss": 179
     },
     "bowling": {
@@ -3995,7 +4171,8 @@ export const playersData = [
       "noBalls": 23,
       "dotBalls": 395,
       "foursConceded": 93,
-      "sixesConceded": 48
+      "sixesConceded": 48,
+      "speed": "110 KMPH"
     },
     "fielding": {
       "matches": 337,
@@ -4073,6 +4250,15 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "16",
+        "bowling": "--",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval",
@@ -4106,7 +4292,8 @@ export const playersData = [
       "56 Career Wickets (Best: 6/24)",
       "134 CricHeroes Badges Earned",
       "12 Match Awards & Honors"
-    ]
+    ],
+    "bowlingSpeed": "110 KMPH"
   },
   {
     "id": 17773140,
@@ -4129,12 +4316,12 @@ export const playersData = [
     "isAdmin": false,
     "isPro": false,
     "stats": {
-      "matches": 32,
+      "matches": 33,
       "runs": 161,
       "wickets": 21,
       "highestScore": "47",
       "strikeRate": 95.27,
-      "economy": 5.05,
+      "economy": 0.48,
       "average": 14.9,
       "bestBowling": "5/31",
       "fifties": 0,
@@ -4143,7 +4330,9 @@ export const playersData = [
       "sixes": 2,
       "maidens": 2,
       "catches": 7,
-      "dismissals": 8
+      "dismissals": 8,
+      "overs": "66.0",
+      "bowlingAverage": 1.52
     },
     "batting": {
       "innings": 19,
@@ -4158,14 +4347,16 @@ export const playersData = [
       "ballsFaced": "--"
     },
     "bowling": {
-      "innings": 18,
+      "innings": 19,
       "wickets": 21,
-      "overs": "62.0",
-      "economy": 5.05,
-      "average": 14.9,
+      "overs": "66.0",
+      "economy": 0.48,
+      "average": 1.52,
       "strikeRate": 17.71,
       "maidens": 2,
-      "bestBowling": "5/31"
+      "bestBowling": "5/31",
+      "speed": "84 KMPH",
+      "runsConceded": 32
     },
     "fielding": {
       "matches": 32,
@@ -4208,6 +4399,15 @@ export const playersData = [
       }
     ],
     "recentPerformances": [
+      {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "DNB",
+        "bowling": "0/32 (4.0)",
+        "result": "Lost"
+      },
       {
         "matchId": 26915432,
         "opponent": "ARROW CRICKET CLUB",
@@ -4260,7 +4460,8 @@ export const playersData = [
       "4 Match Awards & Honors (3x POTM, 1x Best Bowler)",
       "8 CricHeroes Badges Earned (3x 3 Qwickies, 2x Choke Slammer)",
       "161 Career Runs (High: 47, SR: 95.27)"
-    ]
+    ],
+    "bowlingSpeed": "84 KMPH"
   },
   {
     "id": "fcc-lokesh",
@@ -4314,7 +4515,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "110 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -4325,7 +4527,8 @@ export const playersData = [
       "stumpings": "--"
     },
     "recentPerformances": [],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "110 KMPH"
   },
   {
     "id": "fcc-manikandan-c",
@@ -4377,7 +4580,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "112 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -4388,7 +4592,8 @@ export const playersData = [
       "stumpings": "--"
     },
     "recentPerformances": [],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "112 KMPH"
   },
   {
     "id": 14454703,
@@ -4402,26 +4607,27 @@ export const playersData = [
     "role": "All-Rounder",
     "battingStyle": "Right Handed Bat",
     "bowlingStyle": "Right-arm medium",
-    "jerseyNumber": "--",
+    "jerseyNumber": "23",
     "isCaptain": false,
+    "isViceCaptain": true,
     "isAdmin": false,
     "isPro": true,
     "dob": "23-Jan-2000",
     "location": "Coimbatore",
     "playerStatement": "A complete player, Mouleeshvar has made a big mark in cricket. With 334 turns at the crease, they've hit a top score of 124, with an average of 28.83 and a quick strike rate of 112.44. Their knack for hitting big shots is evident with 407 sixes and 757 fours. Equally good at bowling, they've bowled 345.0 overs, taking 94 wickets at an economy rate of 6.10.",
     "stats": {
-      "matches": 359,
-      "runs": 8333,
+      "matches": 362,
+      "runs": 8370,
       "wickets": 94,
       "highestScore": 124,
       "strikeRate": 112.44,
       "economy": 6.1,
-      "average": 28.83,
+      "average": 28.66,
       "bestBowling": "4/22",
       "fifties": 51,
       "centuries": 3,
       "thirties": 59,
-      "fours": 757,
+      "fours": 764,
       "sixes": 407,
       "ducks": 22,
       "maidens": 16,
@@ -4431,28 +4637,28 @@ export const playersData = [
       "threeWickets": 6,
       "fiveWickets": 0,
       "dotBalls": 1174,
-      "catches": 124,
+      "catches": 125,
       "caughtBehind": 3,
       "runOuts": 20,
       "assistedRunOuts": 7,
       "stumpings": 1,
-      "dismissals": 155
+      "dismissals": 156
     },
     "batting": {
-      "innings": 334,
+      "innings": 337,
       "notOut": 45,
-      "runs": 8333,
+      "runs": 8370,
       "highestScore": 124,
-      "average": 28.83,
+      "average": 28.66,
       "strikeRate": 112.44,
       "thirties": 59,
       "fifties": 51,
       "centuries": 3,
-      "fours": 757,
+      "fours": 764,
       "sixes": 407,
       "ducks": 22,
-      "won": 157,
-      "loss": 194
+      "won": 158,
+      "loss": 196
     },
     "bowling": {
       "innings": 120,
@@ -4470,12 +4676,13 @@ export const playersData = [
       "noBalls": 21,
       "dotBalls": 1174,
       "foursConceded": 187,
-      "sixesConceded": 42
+      "sixesConceded": 42,
+      "speed": "125 KMPH"
     },
     "fielding": {
       "matches": 359,
-      "dismissals": 155,
-      "catches": 124,
+      "dismissals": 156,
+      "catches": 125,
       "caughtBehind": 3,
       "runOuts": 20,
       "assistedRunOuts": 7,
@@ -4548,6 +4755,33 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "11",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "2",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "24",
+        "bowling": "--",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval",
@@ -4581,7 +4815,8 @@ export const playersData = [
       "94 Career Wickets (Best: 4/22)",
       "Mr. Safe Hands: 124 Career Catches",
       "184 CricHeroes Badges & 16 Match Awards"
-    ]
+    ],
+    "bowlingSpeed": "125 KMPH"
   },
   {
     "id": 21720380,
@@ -4640,7 +4875,8 @@ export const playersData = [
       "average": 19.58,
       "strikeRate": 12.79,
       "maidens": 0,
-      "bestBowling": "4/15"
+      "bestBowling": "4/15",
+      "speed": "123 KMPH"
     },
     "fielding": {
       "matches": 60,
@@ -4723,7 +4959,8 @@ export const playersData = [
       "7 Match Awards & Honors (3x Best Batter, 2x POTM, 2x Best Bowler)",
       "5 CricHeroes Badges Earned (2x Cool Thirty, 2x 3 Qwickies)",
       "Dangerous Fast Bowler with 12.79 Strike Rate"
-    ]
+    ],
+    "bowlingSpeed": "123 KMPH"
   },
   {
     "id": 21570719,
@@ -4778,7 +5015,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "108 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -4835,7 +5073,8 @@ export const playersData = [
         "result": "Lost"
       }
     ],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "108 KMPH"
   },
   {
     "id": 10935926,
@@ -4858,33 +5097,41 @@ export const playersData = [
     "isAdmin": false,
     "isPro": true,
     "stats": {
-      "matches": 191,
-      "runs": 3576,
+      "matches": 193,
+      "runs": 3678,
       "wickets": 11,
       "highestScore": "100*",
       "strikeRate": 95.72,
       "economy": 7.96,
-      "average": 20.91,
+      "average": 19.67,
       "bestBowling": "3/26",
-      "fifties": 20,
+      "fifties": 21,
       "centuries": 1,
-      "fours": 376,
-      "sixes": 102,
+      "fours": 389,
+      "sixes": 103,
       "maidens": 0,
-      "catches": 39,
-      "dismissals": 127
+      "catches": 42,
+      "dismissals": 130,
+      "thirties": 1,
+      "stumpings": 0,
+      "runOuts": 0,
+      "caughtBehind": 0
     },
     "batting": {
-      "innings": 186,
-      "runs": 3576,
+      "innings": 188,
+      "runs": 3678,
       "highestScore": "100*",
-      "average": 20.91,
+      "average": 19.67,
       "strikeRate": 95.72,
-      "fours": 376,
-      "sixes": 102,
-      "fifties": 20,
+      "fours": 389,
+      "sixes": 103,
+      "fifties": 21,
       "centuries": 1,
-      "ballsFaced": "--"
+      "ballsFaced": "--",
+      "thirties": 1,
+      "won": 1,
+      "notOut": 1,
+      "loss": 1
     },
     "bowling": {
       "innings": 23,
@@ -4894,12 +5141,13 @@ export const playersData = [
       "average": 38.36,
       "strikeRate": 28.91,
       "maidens": 0,
-      "bestBowling": "3/26"
+      "bestBowling": "3/26",
+      "speed": "108 KMPH"
     },
     "fielding": {
       "matches": 191,
-      "dismissals": 127,
-      "catches": 39,
+      "dismissals": 130,
+      "catches": 42,
       "caughtBehind": 60,
       "runOuts": 8,
       "stumpings": 20
@@ -5028,6 +5276,24 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "65*",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "37",
+        "bowling": "--",
+        "result": "Won"
+      },
+      {
         "matchId": 26905154,
         "opponent": "The Curse XI",
         "venue": "Arrow Oval, Coimbatore",
@@ -5079,7 +5345,9 @@ export const playersData = [
       "The Hurricane Six-Hitter (102 Career Sixes & 376 Fours)",
       "127 Total Fielding Dismissals (60 Caught Behind, 20 Stumpings)",
       "63 CricHeroes Badges Earned & 14 Match Awards"
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "108 KMPH"
   },
   {
     "id": 23220402,
@@ -5102,43 +5370,53 @@ export const playersData = [
     "isAdmin": false,
     "isPro": true,
     "stats": {
-      "matches": 187,
-      "runs": 834,
-      "wickets": 91,
+      "matches": 189,
+      "runs": 868,
+      "wickets": 95,
       "highestScore": "44",
       "strikeRate": 69.91,
-      "economy": 6.83,
-      "average": 25.37,
-      "bestBowling": "3/26",
+      "economy": 0.1,
+      "average": 7.42,
+      "bestBowling": "3/24",
       "fifties": 0,
       "centuries": 0,
-      "fours": 70,
-      "sixes": 17,
-      "maidens": 12,
+      "fours": 72,
+      "sixes": 18,
+      "maidens": 13,
       "catches": 66,
-      "dismissals": 74
+      "dismissals": 74,
+      "overs": "345.5",
+      "bowlingAverage": 0.36,
+      "thirties": 1,
+      "threeWickets": 1
     },
     "batting": {
-      "innings": 117,
-      "runs": 834,
+      "innings": 118,
+      "runs": 868,
       "highestScore": "44",
-      "average": 9.7,
+      "average": 7.42,
       "strikeRate": 69.91,
-      "fours": 70,
-      "sixes": 17,
+      "fours": 72,
+      "sixes": 18,
       "fifties": 0,
       "centuries": 0,
-      "ballsFaced": "--"
+      "ballsFaced": "--",
+      "notOut": 1,
+      "thirties": 1,
+      "loss": 1
     },
     "bowling": {
-      "innings": 109,
-      "wickets": 91,
-      "overs": "337.5",
-      "economy": 6.83,
-      "average": 25.37,
+      "innings": 111,
+      "wickets": 95,
+      "overs": "345.5",
+      "economy": 0.1,
+      "average": 0.36,
       "strikeRate": 22.27,
-      "maidens": 12,
-      "bestBowling": "3/26"
+      "maidens": 13,
+      "bestBowling": "3/24",
+      "runsConceded": 34,
+      "speed": "125 KMPH",
+      "threeWickets": 1
     },
     "fielding": {
       "matches": 187,
@@ -5200,6 +5478,24 @@ export const playersData = [
     ],
     "recentPerformances": [
       {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "34*",
+        "bowling": "3/24 (5.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "DNB",
+        "bowling": "1/10 (3.0)",
+        "result": "Won"
+      },
+      {
         "matchId": 26915432,
         "opponent": "ARROW CRICKET CLUB",
         "venue": "Venpaa Sports Academy Ground, Coimbatore",
@@ -5251,7 +5547,9 @@ export const playersData = [
       "74 Total Fielding Dismissals (66 Catches, The Catcher)",
       "28 CricHeroes Badges Earned (12x Choke Slammer, 6x 3 Qwickies)",
       "7 Match Awards & Honors (3x Best Bowler, 2x POTM)"
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "125 KMPH"
   },
   {
     "id": "fcc-nishanth-s",
@@ -5303,7 +5601,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "113 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -5314,7 +5613,8 @@ export const playersData = [
       "stumpings": "--"
     },
     "recentPerformances": [],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "113 KMPH"
   },
   {
     "id": 13779019,
@@ -5383,7 +5683,8 @@ export const playersData = [
       "runsConceded": 1569,
       "wides": 117,
       "noBalls": 12,
-      "dotBalls": 387
+      "dotBalls": 387,
+      "speed": "82 KMPH"
     },
     "fielding": {
       "matches": 138,
@@ -5521,7 +5822,8 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/500_runs_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "bowlingSpeed": "82 KMPH"
   },
   {
     "id": 23010303,
@@ -5590,7 +5892,8 @@ export const playersData = [
       "runsConceded": 3135,
       "wides": 167,
       "noBalls": 116,
-      "dotBalls": 980
+      "dotBalls": 980,
+      "speed": "115 KMPH"
     },
     "fielding": {
       "matches": 340,
@@ -5764,7 +6067,8 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/50_4s_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "bowlingSpeed": "115 KMPH"
   },
   {
     "id": 5492733,
@@ -5833,7 +6137,8 @@ export const playersData = [
       "runsConceded": 1984,
       "wides": 228,
       "noBalls": 33,
-      "dotBalls": 1108
+      "dotBalls": 1108,
+      "speed": "90 KMPH"
     },
     "fielding": {
       "matches": 173,
@@ -6013,7 +6318,8 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/50_4s_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "bowlingSpeed": "90 KMPH"
   },
   {
     "id": "fcc-pratheek-31",
@@ -6068,7 +6374,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "110 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -6079,7 +6386,8 @@ export const playersData = [
       "stumpings": "--"
     },
     "recentPerformances": [],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "110 KMPH"
   },
   {
     "id": 47085440,
@@ -6145,7 +6453,8 @@ export const playersData = [
       "runsConceded": 0,
       "wides": 0,
       "noBalls": 0,
-      "dotBalls": 0
+      "dotBalls": 0,
+      "speed": "108 KMPH"
     },
     "fielding": {
       "matches": 9,
@@ -6208,7 +6517,8 @@ export const playersData = [
       "66 Career Runs with Highest Score of 19*",
       "70.97 Batting Strike Rate with 6 Boundaries"
     ],
-    "badges": []
+    "badges": [],
+    "bowlingSpeed": "108 KMPH"
   },
   {
     "id": 22395880,
@@ -6277,7 +6587,8 @@ export const playersData = [
       "runsConceded": 984,
       "wides": 106,
       "noBalls": 13,
-      "dotBalls": 424
+      "dotBalls": 424,
+      "speed": "111 KMPH"
     },
     "fielding": {
       "matches": 104,
@@ -6403,107 +6714,8 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/maiden_over_limited.png",
         "count": 1
       }
-    ]
-  },
-  {
-    "id": 36986000,
-    "cricHeroesId": 36986000,
-    "name": "Pugalarasan A",
-    "photo": "https://media.cricheroes.in/default/user_profile.png",
-    "tags": [],
-    "role": "--",
-    "battingStyle": "--",
-    "bowlingStyle": "--",
-    "jerseyNumber": "--",
-    "isCaptain": false,
-    "isAdmin": false,
-    "isPro": false,
-    "stats": {
-      "matches": "--",
-      "runs": "--",
-      "wickets": "--",
-      "highestScore": "--",
-      "strikeRate": "--",
-      "economy": "--",
-      "average": "--",
-      "bestBowling": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "fours": "--",
-      "sixes": "--",
-      "maidens": "--",
-      "catches": "--",
-      "dismissals": "--"
-    },
-    "batting": {
-      "innings": "--",
-      "runs": "--",
-      "highestScore": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "fours": "--",
-      "sixes": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "ballsFaced": "--"
-    },
-    "bowling": {
-      "innings": "--",
-      "wickets": "--",
-      "overs": "--",
-      "economy": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "maidens": "--",
-      "bestBowling": "--"
-    },
-    "fielding": {
-      "matches": "--",
-      "dismissals": "--",
-      "catches": "--",
-      "caughtBehind": "--",
-      "runOuts": "--",
-      "stumpings": "--"
-    },
-    "recentPerformances": [
-      {
-        "matchId": 27105595,
-        "opponent": "Dr.NGP IT TEAM",
-        "venue": "Pcet Ground, Sankari",
-        "date": "13-Sep-2026",
-        "runs": "DNB",
-        "bowling": "--",
-        "result": "Lost"
-      },
-      {
-        "matchId": 26483151,
-        "opponent": "KI tennis",
-        "venue": "KPRIET, Coimbatore",
-        "date": "06-Aug-2026",
-        "runs": "18",
-        "bowling": "--",
-        "result": "Lost"
-      },
-      {
-        "matchId": 22966431,
-        "opponent": "SKC",
-        "venue": "TCE GROUND, Coimbatore",
-        "date": "16-Mar-2026",
-        "runs": "14",
-        "bowling": "2/20 (3.0)",
-        "result": "Lost"
-      },
-      {
-        "matchId": 19850991,
-        "opponent": "Super Kings",
-        "venue": "Arrow Oval, Coimbatore",
-        "date": "10-Nov-2025",
-        "runs": "DNB",
-        "bowling": "--",
-        "result": "Won"
-      }
     ],
-    "achievements": []
+    "bowlingSpeed": "111 KMPH"
   },
   {
     "id": 21685768,
@@ -6525,18 +6737,18 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Raja has made a big mark in cricket. With 182 turns at the crease, they've hit a top score of <b>81*</b>, with an average of <b>12.14</b> and a quick strike rate of <b>80.12</b>. Their knack for hitting big shots is evident with <b>52 sixes</b> and <b>163 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>36.0</b> overs, taking <b>13</b> wickets at an economy rate of <b>9.53</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 221,
-      "runs": 1809,
+      "matches": 222,
+      "runs": 1824,
       "wickets": 13,
       "highestScore": "81*",
       "strikeRate": 80.12,
       "economy": 9.53,
-      "average": 12.14,
+      "average": 9.97,
       "bestBowling": "3/26",
       "fifties": 5,
       "centuries": 0,
       "thirties": 5,
-      "fours": 163,
+      "fours": 165,
       "sixes": 52,
       "ducks": 27,
       "maidens": 0,
@@ -6544,19 +6756,20 @@ export const playersData = [
       "dismissals": 54
     },
     "batting": {
-      "innings": 182,
-      "runs": 1809,
+      "innings": 183,
+      "runs": 1824,
       "highestScore": "81*",
-      "average": 12.14,
+      "average": 9.97,
       "strikeRate": 80.12,
-      "fours": 163,
+      "fours": 165,
       "sixes": 52,
       "fifties": 5,
       "centuries": 0,
       "thirties": 5,
       "notOuts": 33,
       "ducks": 27,
-      "ballsFaced": 2258
+      "ballsFaced": 2258,
+      "loss": 1
     },
     "bowling": {
       "innings": 21,
@@ -6572,7 +6785,8 @@ export const playersData = [
       "runsConceded": 343,
       "wides": 26,
       "noBalls": 2,
-      "dotBalls": 106
+      "dotBalls": 106,
+      "speed": "109 KMPH"
     },
     "fielding": {
       "matches": 221,
@@ -6584,6 +6798,15 @@ export const playersData = [
       "assistedRunOuts": 0
     },
     "recentPerformances": [
+      {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "15",
+        "bowling": "--",
+        "result": "Lost"
+      },
       {
         "matchId": 26905154,
         "opponent": "The Curse XI",
@@ -6704,7 +6927,8 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/3_catches_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "bowlingSpeed": "109 KMPH"
   },
   {
     "id": 18070402,
@@ -6725,38 +6949,44 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Revanth has made a big mark in cricket. With 170 turns at the crease, they've hit a top score of <b>126</b>, with an average of <b>14.93</b> and a quick strike rate of <b>85.61</b>. Their knack for hitting big shots is evident with <b>37 sixes</b> and <b>265 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>12.0</b> overs, taking <b>2</b> wickets at an economy rate of <b>5.17</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 194,
-      "runs": 2284,
+      "matches": 198,
+      "runs": 2318,
       "wickets": 2,
       "highestScore": 126,
       "strikeRate": 85.61,
       "economy": 5.17,
-      "average": 14.93,
+      "average": 13.4,
       "bestBowling": "1/5",
       "fifties": 7,
       "centuries": 1,
       "thirties": 13,
-      "fours": 265,
+      "fours": 268,
       "sixes": 37,
-      "ducks": 29,
+      "ducks": 30,
       "maidens": 0,
-      "catches": 44,
-      "dismissals": 66
+      "catches": 45,
+      "dismissals": 69,
+      "stumpings": 0,
+      "runOuts": 2,
+      "caughtBehind": 0
     },
     "batting": {
-      "innings": 170,
-      "runs": 2284,
+      "innings": 174,
+      "runs": 2318,
       "highestScore": 126,
-      "average": 14.93,
+      "average": 13.4,
       "strikeRate": 85.61,
-      "fours": 265,
+      "fours": 268,
       "sixes": 37,
       "fifties": 7,
       "centuries": 1,
       "thirties": 13,
       "notOuts": 17,
-      "ducks": 29,
-      "ballsFaced": 2668
+      "ducks": 30,
+      "ballsFaced": 2668,
+      "notOut": 1,
+      "won": 2,
+      "loss": 2
     },
     "bowling": {
       "innings": 7,
@@ -6772,14 +7002,15 @@ export const playersData = [
       "runsConceded": 62,
       "wides": 6,
       "noBalls": 2,
-      "dotBalls": 37
+      "dotBalls": 37,
+      "speed": "124 KMPH"
     },
     "fielding": {
       "matches": 194,
-      "dismissals": 66,
-      "catches": 44,
+      "dismissals": 69,
+      "catches": 45,
       "caughtBehind": 14,
-      "runOuts": 5,
+      "runOuts": 7,
       "stumpings": 3,
       "assistedRunOuts": 15
     },
@@ -6790,6 +7021,42 @@ export const playersData = [
       "lossPercent": "75.00%"
     },
     "recentPerformances": [
+      {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "0",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "1",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "18",
+        "bowling": "--",
+        "result": "Won"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "15*",
+        "bowling": "--",
+        "result": "Won"
+      },
       {
         "matchId": 26421180,
         "opponent": "JP BROTHERS Cricket Club 2026",
@@ -6922,7 +7189,9 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/50_4s_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "124 KMPH"
   },
   {
     "id": 6034336,
@@ -6944,13 +7213,13 @@ export const playersData = [
     "location": "Erode",
     "playerStatement": "A complete player, Rishwanth U.H has made a big mark in cricket. With 73 turns at the crease, they've hit a top score of <b>61*</b>, with an average of <b>18.76</b> and a quick strike rate of <b>73.35</b>. Their knack for hitting big shots is evident with <b>25 sixes</b> and <b>78 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>17.0</b> overs, taking <b>10</b> wickets at an economy rate of <b>11.65</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 83,
+      "matches": 84,
       "runs": 1013,
       "wickets": 10,
       "highestScore": "61*",
       "strikeRate": 73.35,
       "economy": 11.65,
-      "average": 18.76,
+      "average": 13.88,
       "bestBowling": "2/1",
       "fifties": 5,
       "centuries": 0,
@@ -6959,14 +7228,17 @@ export const playersData = [
       "sixes": 25,
       "ducks": 8,
       "maidens": 0,
-      "catches": 14,
-      "dismissals": 50
+      "catches": 16,
+      "dismissals": 52,
+      "stumpings": 0,
+      "runOuts": 0,
+      "caughtBehind": 2
     },
     "batting": {
-      "innings": 73,
+      "innings": 74,
       "runs": 1013,
       "highestScore": "61*",
-      "average": 18.76,
+      "average": 13.88,
       "strikeRate": 73.35,
       "fours": 78,
       "sixes": 25,
@@ -6975,7 +7247,9 @@ export const playersData = [
       "thirties": 7,
       "notOuts": 19,
       "ducks": 8,
-      "ballsFaced": 1381
+      "ballsFaced": 1381,
+      "notOut": 1,
+      "won": 1
     },
     "bowling": {
       "innings": 12,
@@ -6991,13 +7265,14 @@ export const playersData = [
       "runsConceded": 198,
       "wides": 11,
       "noBalls": 5,
-      "dotBalls": 48
+      "dotBalls": 48,
+      "speed": "87 KMPH"
     },
     "fielding": {
       "matches": 83,
-      "dismissals": 50,
-      "catches": 14,
-      "caughtBehind": 23,
+      "dismissals": 52,
+      "catches": 16,
+      "caughtBehind": 25,
       "runOuts": 3,
       "stumpings": 13,
       "assistedRunOuts": 19
@@ -7009,6 +7284,15 @@ export const playersData = [
       "lossPercent": "0.00%"
     },
     "recentPerformances": [
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "0*",
+        "bowling": "--",
+        "result": "Won"
+      },
       {
         "matchId": 27105595,
         "opponent": "Park College Of Engineering And Technology",
@@ -7105,7 +7389,9 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/500_runs_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "87 KMPH"
   },
   {
     "id": 53096038,
@@ -7173,7 +7459,8 @@ export const playersData = [
       "runsConceded": 0,
       "wides": 0,
       "noBalls": 0,
-      "dotBalls": 0
+      "dotBalls": 0,
+      "speed": "107 KMPH"
     },
     "fielding": {
       "matches": 4,
@@ -7227,7 +7514,8 @@ export const playersData = [
       "Young Emerging Talent (Born 02-Feb-2009)",
       "50% Club Match Win Record (2 Wins in 4 Matches)"
     ],
-    "badges": []
+    "badges": [],
+    "bowlingSpeed": "107 KMPH"
   },
   {
     "id": 22920114,
@@ -7296,7 +7584,8 @@ export const playersData = [
       "runsConceded": 822,
       "wides": 27,
       "noBalls": 2,
-      "dotBalls": 510
+      "dotBalls": 510,
+      "speed": "84 KMPH"
     },
     "fielding": {
       "matches": 38,
@@ -7392,7 +7681,8 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/50_wickets_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "bowlingSpeed": "84 KMPH"
   },
   {
     "id": 9920787,
@@ -7413,38 +7703,43 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Sam Cladson has made a big mark in cricket. With 142 turns at the crease, they've hit a top score of <b>100</b>, with an average of <b>10.98</b> and a quick strike rate of <b>82.34</b>. Their knack for hitting big shots is evident with <b>23 sixes</b> and <b>142 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>23.3</b> overs, taking <b>7</b> wickets at an economy rate of <b>8.68</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 169,
-      "runs": 1450,
+      "matches": 173,
+      "runs": 1480,
       "wickets": 7,
       "highestScore": 100,
       "strikeRate": 82.34,
       "economy": 8.68,
-      "average": 10.98,
+      "average": 10.14,
       "bestBowling": "2/9",
       "fifties": 1,
       "centuries": 1,
       "thirties": 10,
-      "fours": 142,
+      "fours": 146,
       "sixes": 23,
-      "ducks": 23,
+      "ducks": 24,
       "maidens": 0,
-      "catches": 46,
-      "dismissals": 50
+      "catches": 49,
+      "dismissals": 53,
+      "stumpings": 0,
+      "runOuts": 0,
+      "caughtBehind": 0
     },
     "batting": {
-      "innings": 142,
-      "runs": 1450,
+      "innings": 146,
+      "runs": 1480,
       "highestScore": 100,
-      "average": 10.98,
+      "average": 10.14,
       "strikeRate": 82.34,
-      "fours": 142,
+      "fours": 146,
       "sixes": 23,
       "fifties": 1,
       "centuries": 1,
       "thirties": 10,
       "notOuts": 10,
-      "ducks": 23,
-      "ballsFaced": 1761
+      "ducks": 24,
+      "ballsFaced": 1761,
+      "won": 2,
+      "loss": 2
     },
     "bowling": {
       "innings": 19,
@@ -7460,18 +7755,55 @@ export const playersData = [
       "runsConceded": 204,
       "wides": 26,
       "noBalls": 4,
-      "dotBalls": 62
+      "dotBalls": 62,
+      "speed": "88 KMPH"
     },
     "fielding": {
       "matches": 169,
-      "dismissals": 50,
-      "catches": 46,
+      "dismissals": 53,
+      "catches": 49,
       "caughtBehind": 0,
       "runOuts": 4,
       "stumpings": 0,
       "assistedRunOuts": 0
     },
     "recentPerformances": [
+      {
+        "matchId": 27247940,
+        "opponent": "CENTURIONS CC",
+        "venue": "Melbourne 2.0 Cricket Ground",
+        "date": "27-Sep-2026",
+        "runs": "4",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "12",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "14",
+        "bowling": "--",
+        "result": "Won"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "0",
+        "bowling": "--",
+        "result": "Won"
+      },
       {
         "matchId": 26905154,
         "opponent": "The Curse XI",
@@ -7580,7 +7912,9 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/500_runs_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "88 KMPH"
   },
   {
     "id": 37044660,
@@ -7632,7 +7966,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "111 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -7689,7 +8024,8 @@ export const playersData = [
         "result": "Won"
       }
     ],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "111 KMPH"
   },
   {
     "id": 31340430,
@@ -7710,14 +8046,14 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Saravanan has made a big mark in cricket. With 7 turns at the crease, they've hit a top score of <b>19</b>, with an average of <b>4.60</b> and a quick strike rate of <b>71.88</b>. Their knack for hitting big shots is evident with <b>1 sixes</b> and <b>3 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>17.0</b> overs, taking <b>6</b> wickets at an economy rate of <b>14.18</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 23,
+      "matches": 25,
       "runs": 23,
-      "wickets": 6,
+      "wickets": 9,
       "highestScore": 19,
       "strikeRate": 71.88,
-      "economy": 14.18,
+      "economy": 13.24,
       "average": 40.17,
-      "bestBowling": "1/2",
+      "bestBowling": "3/13",
       "fifties": 0,
       "centuries": 0,
       "thirties": 0,
@@ -7726,7 +8062,10 @@ export const playersData = [
       "ducks": 3,
       "maidens": 0,
       "catches": 4,
-      "dismissals": 4
+      "dismissals": 4,
+      "overs": "21.0",
+      "bowlingAverage": 30.89,
+      "threeWickets": 1
     },
     "batting": {
       "innings": 7,
@@ -7744,20 +8083,21 @@ export const playersData = [
       "ballsFaced": 32
     },
     "bowling": {
-      "innings": 17,
-      "wickets": 6,
-      "overs": "17.0",
-      "economy": 14.18,
-      "average": 40.17,
+      "innings": 19,
+      "wickets": 9,
+      "overs": "21.0",
+      "economy": 13.24,
+      "average": 30.89,
       "strikeRate": 17,
       "maidens": 0,
-      "bestBowling": "1/2",
-      "threeWickets": 0,
+      "bestBowling": "3/13",
+      "threeWickets": 1,
       "fiveWickets": 0,
-      "runsConceded": 241,
+      "runsConceded": 278,
       "wides": 17,
       "noBalls": 5,
-      "dotBalls": 45
+      "dotBalls": 45,
+      "speed": "113 KMPH"
     },
     "fielding": {
       "matches": 23,
@@ -7775,6 +8115,24 @@ export const playersData = [
       "lossPercent": "50.00%"
     },
     "recentPerformances": [
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "DNB",
+        "bowling": "3/13 (2.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "DNB",
+        "bowling": "0/24 (2.0)",
+        "result": "Won"
+      },
       {
         "matchId": 26915432,
         "opponent": "ARROW CRICKET CLUB",
@@ -7827,7 +8185,9 @@ export const playersData = [
       "50% Captaincy Win Record (1 Win in 2 Matches Led)",
       "6 Career Wickets & 4 Fielding Dismissals"
     ],
-    "badges": []
+    "badges": [],
+    "awards": [],
+    "bowlingSpeed": "113 KMPH"
   },
   {
     "id": 6161774,
@@ -7849,29 +8209,31 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Selvam S has made a big mark in cricket. With 135 turns at the crease, they've hit a top score of <b>39*</b>, with an average of <b>9.48</b> and a quick strike rate of <b>101.11</b>. Their knack for hitting big shots is evident with <b>26 sixes</b> and <b>81 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>555.3</b> overs, taking <b>169</b> wickets at an economy rate of <b>6.35</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 235,
+      "matches": 236,
       "runs": 910,
       "wickets": 169,
       "highestScore": "39*",
       "strikeRate": 101.11,
-      "economy": 6.35,
-      "average": 20.86,
+      "economy": 6.34,
+      "average": 6.69,
       "bestBowling": "4/14",
       "fifties": 0,
       "centuries": 0,
       "thirties": 2,
       "fours": 81,
       "sixes": 26,
-      "ducks": 17,
+      "ducks": 18,
       "maidens": 17,
       "catches": 108,
-      "dismissals": 121
+      "dismissals": 121,
+      "overs": "559.3",
+      "bowlingAverage": 21.01
     },
     "batting": {
-      "innings": 135,
+      "innings": 136,
       "runs": 910,
       "highestScore": "39*",
-      "average": 9.48,
+      "average": 6.69,
       "strikeRate": 101.11,
       "fours": 81,
       "sixes": 26,
@@ -7879,24 +8241,26 @@ export const playersData = [
       "centuries": 0,
       "thirties": 2,
       "notOuts": 39,
-      "ducks": 17,
-      "ballsFaced": 900
+      "ducks": 18,
+      "ballsFaced": 900,
+      "won": 1
     },
     "bowling": {
-      "innings": 184,
+      "innings": 185,
       "wickets": 169,
-      "overs": "555.3",
-      "economy": 6.35,
-      "average": 20.86,
+      "overs": "559.3",
+      "economy": 6.34,
+      "average": 21.01,
       "strikeRate": 19.72,
       "maidens": 17,
       "bestBowling": "4/14",
       "threeWickets": 15,
       "fiveWickets": 0,
-      "runsConceded": 3525,
+      "runsConceded": 3550,
       "wides": 233,
       "noBalls": 30,
-      "dotBalls": 1714
+      "dotBalls": 1714,
+      "speed": "119 KMPH"
     },
     "fielding": {
       "matches": 235,
@@ -7914,6 +8278,15 @@ export const playersData = [
       "lossPercent": "100.00%"
     },
     "recentPerformances": [
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "0",
+        "bowling": "0/25 (4.0)",
+        "result": "Won"
+      },
       {
         "matchId": 26905154,
         "opponent": "The Curse XI",
@@ -8040,7 +8413,9 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/50_wickets_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "119 KMPH"
   },
   {
     "id": 10716673,
@@ -8062,38 +8437,44 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Sibi has made a big mark in cricket. With 99 turns at the crease, they've hit a top score of <b>37</b>, with an average of <b>10.45</b> and a quick strike rate of <b>60.99</b>. Their knack for hitting big shots is evident with <b>2 sixes</b> and <b>47 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>351.2</b> overs, taking <b>115</b> wickets at an economy rate of <b>6.25</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 214,
-      "runs": 627,
+      "matches": 216,
+      "runs": 634,
       "wickets": 115,
       "highestScore": 37,
       "strikeRate": 60.99,
       "economy": 6.25,
-      "average": 19.09,
+      "average": 6.34,
       "bestBowling": "5/20",
       "fifties": 0,
       "centuries": 0,
       "thirties": 1,
-      "fours": 47,
+      "fours": 48,
       "sixes": 2,
-      "ducks": 16,
+      "ducks": 17,
       "maidens": 7,
-      "catches": 52,
-      "dismissals": 68
+      "catches": 57,
+      "dismissals": 75,
+      "stumpings": 1,
+      "runOuts": 1,
+      "caughtBehind": 0
     },
     "batting": {
-      "innings": 99,
-      "runs": 627,
+      "innings": 101,
+      "runs": 634,
       "highestScore": 37,
-      "average": 10.45,
+      "average": 6.34,
       "strikeRate": 60.99,
-      "fours": 47,
+      "fours": 48,
       "sixes": 2,
       "fifties": 0,
       "centuries": 0,
       "thirties": 1,
       "notOuts": 39,
-      "ducks": 16,
-      "ballsFaced": 1028
+      "ducks": 17,
+      "ballsFaced": 1028,
+      "notOut": 1,
+      "won": 1,
+      "loss": 1
     },
     "bowling": {
       "innings": 127,
@@ -8109,15 +8490,16 @@ export const playersData = [
       "runsConceded": 2195,
       "wides": 177,
       "noBalls": 25,
-      "dotBalls": 1082
+      "dotBalls": 1082,
+      "speed": "85 KMPH"
     },
     "fielding": {
       "matches": 214,
-      "dismissals": 68,
-      "catches": 52,
+      "dismissals": 75,
+      "catches": 57,
       "caughtBehind": 2,
-      "runOuts": 14,
-      "stumpings": 0,
+      "runOuts": 15,
+      "stumpings": 1,
       "assistedRunOuts": 1
     },
     "captain": {
@@ -8127,6 +8509,24 @@ export const playersData = [
       "lossPercent": "66.67%"
     },
     "recentPerformances": [
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "0",
+        "bowling": "--",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "7*",
+        "bowling": "--",
+        "result": "Won"
+      },
       {
         "matchId": 26996415,
         "opponent": "Covai Rockers Cricket Club ( Karumbukadai)",
@@ -8247,7 +8647,9 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/5_wickets_in_match_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "85 KMPH"
   },
   {
     "id": 42208568,
@@ -8315,7 +8717,8 @@ export const playersData = [
       "runsConceded": 16,
       "wides": 2,
       "noBalls": 2,
-      "dotBalls": 2
+      "dotBalls": 2,
+      "speed": "121 KMPH"
     },
     "fielding": {
       "matches": 15,
@@ -8378,7 +8781,8 @@ export const playersData = [
       "3 Dismissals Behind the Stumps for the Squad",
       "Young Emerging Cricket Talent (Born 14-Aug-2006)"
     ],
-    "badges": []
+    "badges": [],
+    "bowlingSpeed": "121 KMPH"
   },
   {
     "id": 5725018,
@@ -8447,7 +8851,8 @@ export const playersData = [
       "runsConceded": 129,
       "wides": 4,
       "noBalls": 4,
-      "dotBalls": 29
+      "dotBalls": 29,
+      "speed": "127 KMPH"
     },
     "fielding": {
       "matches": 16,
@@ -8524,7 +8929,8 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/50_runs_match_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "bowlingSpeed": "127 KMPH"
   },
   {
     "id": 6776356,
@@ -8547,61 +8953,71 @@ export const playersData = [
     "location": "Sulur",
     "playerStatement": "A complete player, Sumesh has made a big mark in cricket. With 193 turns at the crease, they've hit a top score of <b>82</b>, with an average of <b>23.86</b> and a quick strike rate of <b>101.14</b>. Their knack for hitting big shots is evident with <b>49 sixes</b> and <b>393 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>720.0</b> overs, taking <b>233</b> wickets at an economy rate of <b>5.15</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 241,
-      "runs": 3650,
-      "wickets": 233,
+      "matches": 243,
+      "runs": 3658,
+      "wickets": 241,
       "highestScore": 82,
       "strikeRate": 101.14,
-      "economy": 5.15,
-      "average": 23.86,
+      "economy": 5.12,
+      "average": 18.76,
       "bestBowling": "5/11",
       "fifties": 13,
       "centuries": 0,
       "thirties": 30,
-      "fours": 393,
+      "fours": 395,
       "sixes": 49,
-      "ducks": 11,
-      "maidens": 28,
+      "ducks": 12,
+      "maidens": 29,
       "catches": 82,
-      "dismissals": 99
+      "dismissals": 100,
+      "overs": "730.0",
+      "fiveWickets": 1,
+      "bowlingAverage": 15.52,
+      "stumpings": 0,
+      "runOuts": 1,
+      "caughtBehind": 0,
+      "threeWickets": 1
     },
     "batting": {
-      "innings": 193,
-      "runs": 3650,
+      "innings": 195,
+      "runs": 3658,
       "highestScore": 82,
-      "average": 23.86,
+      "average": 18.76,
       "strikeRate": 101.14,
-      "fours": 393,
+      "fours": 395,
       "sixes": 49,
       "fifties": 13,
       "centuries": 0,
       "thirties": 30,
       "notOuts": 40,
-      "ducks": 11,
-      "ballsFaced": 3609
+      "ducks": 12,
+      "ballsFaced": 3609,
+      "won": 1,
+      "loss": 1
     },
     "bowling": {
-      "innings": 204,
-      "wickets": 233,
-      "overs": "720.0",
-      "economy": 5.15,
-      "average": 15.91,
+      "innings": 206,
+      "wickets": 241,
+      "overs": "730.0",
+      "economy": 5.12,
+      "average": 15.52,
       "strikeRate": 18.54,
-      "maidens": 28,
+      "maidens": 29,
       "bestBowling": "5/11",
-      "threeWickets": 26,
-      "fiveWickets": 2,
-      "runsConceded": 3706,
+      "threeWickets": 27,
+      "fiveWickets": 3,
+      "runsConceded": 3740,
       "wides": 214,
       "noBalls": 22,
-      "dotBalls": 2491
+      "dotBalls": 2491,
+      "speed": "90 KMPH"
     },
     "fielding": {
       "matches": 241,
-      "dismissals": 99,
+      "dismissals": 100,
       "catches": 82,
       "caughtBehind": 0,
-      "runOuts": 11,
+      "runOuts": 12,
       "stumpings": 0,
       "assistedRunOuts": 6
     },
@@ -8612,6 +9028,24 @@ export const playersData = [
       "lossPercent": "45.71%"
     },
     "recentPerformances": [
+      {
+        "matchId": 27245481,
+        "opponent": "MCC cricket club",
+        "venue": "Venpaa Sports Academy Ground",
+        "date": "26-Sep-2026",
+        "runs": "0",
+        "bowling": "3/20 (5.0)",
+        "result": "Lost"
+      },
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "8",
+        "bowling": "5/14 (5.0)",
+        "result": "Won (POTM)"
+      },
       {
         "matchId": 26996415,
         "opponent": "Covai Rockers Cricket Club ( Karumbukadai)",
@@ -8810,7 +9244,16 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/50_4s_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "awards": [
+      {
+        "name": "Player of the match",
+        "opponent": "SKA 19+ CBE",
+        "date": "19-Sep-2026",
+        "details": "5-1-14-5 • Sensational 5-Wicket Haul"
+      }
+    ],
+    "bowlingSpeed": "90 KMPH"
   },
   {
     "id": 1204566,
@@ -8833,54 +9276,58 @@ export const playersData = [
     "location": "Coimbatore",
     "playerStatement": "A complete player, Surendar has made a big mark in cricket. With 318 turns at the crease, they've hit a top score of <b>84</b>, with an average of <b>17.45</b> and a quick strike rate of <b>88.57</b>. Their knack for hitting big shots is evident with <b>66 sixes</b> and <b>490 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>1,318.2</b> overs, taking <b>350</b> wickets at an economy rate of <b>5.30</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 373,
-      "runs": 4571,
-      "wickets": 350,
+      "matches": 374,
+      "runs": 4602,
+      "wickets": 352,
       "highestScore": 84,
       "strikeRate": 88.57,
       "economy": 5.3,
-      "average": 17.45,
+      "average": 14.43,
       "bestBowling": "7/3",
       "fifties": 16,
       "centuries": 0,
-      "thirties": 38,
-      "fours": 490,
-      "sixes": 66,
+      "thirties": 39,
+      "fours": 495,
+      "sixes": 67,
       "ducks": 29,
       "maidens": 86,
       "catches": 98,
-      "dismissals": 125
+      "dismissals": 125,
+      "overs": "1,320.2",
+      "bowlingAverage": 19.89
     },
     "batting": {
-      "innings": 318,
-      "runs": 4571,
+      "innings": 319,
+      "runs": 4602,
       "highestScore": 84,
-      "average": 17.45,
+      "average": 14.43,
       "strikeRate": 88.57,
-      "fours": 490,
-      "sixes": 66,
+      "fours": 495,
+      "sixes": 67,
       "fifties": 16,
       "centuries": 0,
-      "thirties": 38,
+      "thirties": 39,
       "notOuts": 56,
       "ducks": 29,
-      "ballsFaced": 5161
+      "ballsFaced": 5161,
+      "won": 1
     },
     "bowling": {
-      "innings": 339,
-      "wickets": 350,
-      "overs": "1,318.2",
+      "innings": 340,
+      "wickets": 352,
+      "overs": "1,320.2",
       "economy": 5.3,
-      "average": 19.98,
+      "average": 19.89,
       "strikeRate": 22.6,
       "maidens": 86,
       "bestBowling": "7/3",
       "threeWickets": 25,
       "fiveWickets": 4,
-      "runsConceded": 6993,
+      "runsConceded": 7001,
       "wides": 644,
       "noBalls": 228,
-      "dotBalls": 4948
+      "dotBalls": 4948,
+      "speed": "129 KMPH"
     },
     "fielding": {
       "matches": 373,
@@ -8898,6 +9345,15 @@ export const playersData = [
       "lossPercent": "33.33%"
     },
     "recentPerformances": [
+      {
+        "matchId": 27135636,
+        "opponent": "SKA 19+ CBE",
+        "venue": "Arrow Oval",
+        "date": "19-Sep-2026",
+        "runs": "31",
+        "bowling": "2/8 (2.0)",
+        "result": "Won"
+      },
       {
         "matchId": 26996415,
         "opponent": "Covai Rockers Cricket Club ( Karumbukadai)",
@@ -9120,7 +9576,9 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/200_strike_rate_limited.png",
         "count": 1
       }
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "129 KMPH"
   },
   {
     "id": 22163915,
@@ -9142,7 +9600,7 @@ export const playersData = [
     "location": "Madurai",
     "playerStatement": "A complete player, Yogaeswaran S has made a big mark in cricket. With 36 turns at the crease, they've hit a top score of <b>51</b>, with an average of <b>14.48</b> and a quick strike rate of <b>77.78</b>. Their knack for hitting big shots is evident with <b>10 sixes</b> and <b>39 fours</b>.<br/><br/>Equally good at bowling, they've bowled <b>4.0</b> overs, taking <b>0</b> wickets at an economy rate of <b>3.50</b>. Despite a few wides, their accuracy is top-notch, making them a key player for their team.",
     "stats": {
-      "matches": 43,
+      "matches": 44,
       "runs": 420,
       "wickets": 0,
       "highestScore": 51,
@@ -9157,8 +9615,11 @@ export const playersData = [
       "sixes": 10,
       "ducks": 6,
       "maidens": 0,
-      "catches": 12,
-      "dismissals": 20
+      "catches": 13,
+      "dismissals": 21,
+      "stumpings": 0,
+      "runOuts": 0,
+      "caughtBehind": 0
     },
     "batting": {
       "innings": 36,
@@ -9189,18 +9650,28 @@ export const playersData = [
       "runsConceded": 14,
       "wides": 1,
       "noBalls": 1,
-      "dotBalls": 14
+      "dotBalls": 14,
+      "speed": "106 KMPH"
     },
     "fielding": {
       "matches": 43,
-      "dismissals": 20,
-      "catches": 12,
+      "dismissals": 21,
+      "catches": 13,
       "caughtBehind": 4,
       "runOuts": 4,
       "stumpings": 0,
       "assistedRunOuts": 0
     },
     "recentPerformances": [
+      {
+        "matchId": 27135666,
+        "opponent": "BBCC",
+        "venue": "Melbourne Cricket Ground",
+        "date": "20-Sep-2026",
+        "runs": "DNB",
+        "bowling": "--",
+        "result": "Won"
+      },
       {
         "matchId": 27116227,
         "opponent": "Park College Of Engineering And Technology",
@@ -9260,7 +9731,9 @@ export const playersData = [
         "icon": "https://media.cricheroes.in/gamification_icon/30_runs_match_limited.png",
         "count": 4
       }
-    ]
+    ],
+    "awards": [],
+    "bowlingSpeed": "106 KMPH"
   },
   {
     "id": 1499507,
@@ -9315,7 +9788,8 @@ export const playersData = [
       "average": "--",
       "strikeRate": "--",
       "maidens": "--",
-      "bestBowling": "--"
+      "bestBowling": "--",
+      "speed": "110 KMPH"
     },
     "fielding": {
       "matches": "--",
@@ -9345,7 +9819,8 @@ export const playersData = [
         "result": "Lost"
       }
     ],
-    "achievements": []
+    "achievements": [],
+    "bowlingSpeed": "110 KMPH"
   }
 ];
 

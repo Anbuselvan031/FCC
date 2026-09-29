@@ -101,6 +101,15 @@ export default function Footer() {
                   <ArrowUpRight className="w-3 h-3 text-slate-600 group-hover:text-orange-400 transition-colors" />
                 </Link>
               </li>
+              <li>
+                <button
+                  onClick={() => window.dispatchEvent(new CustomEvent('open-admin-contact'))}
+                  className="hover:text-orange-400 transition-colors flex items-center justify-between group w-full text-left cursor-pointer"
+                >
+                  <span>Direct Club Contact</span>
+                  <ArrowUpRight className="w-3 h-3 text-slate-600 group-hover:text-orange-400 transition-colors" />
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -236,16 +245,79 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {currentYear} FAHRENHEIT CRICKET CLUB • All Rights Reserved.</p>
-          <div className="flex items-center gap-4 text-[11px]">
-            <span>Official Digital Home</span>
-            <span>•</span>
-            <span>Coimbatore, Tamil Nadu</span>
-            <span>•</span>
-            <span className="text-slate-400">Passion • Performance • Brotherhood</span>
+        {/* Professional Website Credits & Final Footer Structure */}
+        <div className="pt-8 mt-2 border-t border-slate-800/80 flex flex-col items-center text-center space-y-4">
+          {/* Main Brand Header */}
+          <div className="space-y-1">
+            <h4 className="font-display text-base sm:text-lg font-black tracking-widest text-white uppercase">
+              FAHRENHEIT CRICKET CLUB
+            </h4>
+            <div className="flex flex-wrap items-center justify-center gap-x-2.5 sm:gap-x-3 gap-y-1 text-xs text-slate-400 font-sans">
+              <Link to="/team" className="hover:text-orange-400 transition-colors">Team</Link>
+              <span className="text-slate-600">•</span>
+              <Link to="/players" className="hover:text-orange-400 transition-colors">Players</Link>
+              <span className="text-slate-600">•</span>
+              <Link to="/matches" className="hover:text-orange-400 transition-colors">Matches</Link>
+              <span className="text-slate-600">•</span>
+              <Link to="/stats" className="hover:text-orange-400 transition-colors">Stats</Link>
+              <span className="text-slate-600">•</span>
+              <Link to="/gallery" className="hover:text-orange-400 transition-colors">Photos</Link>
+              <span className="text-slate-600">•</span>
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent('open-admin-contact'))}
+                className="hover:text-orange-400 transition-colors cursor-pointer"
+              >
+                Contact
+              </button>
+            </div>
           </div>
+
+          {/* Designer / Developer Credit Card (Image 1 Style) */}
+          <div className="p-5 sm:p-6 rounded-3xl bg-[#090d16]/95 border border-slate-800/90 max-w-lg w-full flex flex-col items-center gap-1.5 shadow-xl backdrop-blur-sm">
+            <div className="text-xs sm:text-sm text-slate-300">
+              Designed &amp; Developed by <strong className="text-white font-semibold">Akash</strong>
+            </div>
+            <div className="text-xs sm:text-sm text-orange-400 font-semibold tracking-wide">
+              Freelance UI/UX Designer &amp; Frontend Developer
+            </div>
+            <div className="flex items-center justify-center gap-1.5 text-xs sm:text-sm text-slate-300 pt-0.5">
+              <span>Have a project in mind?</span>
+              <span className="text-slate-600">&rarr;</span>
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent('open-work-with-me'))}
+                className="text-amber-400 hover:text-amber-300 font-bold underline underline-offset-4 decoration-amber-500/50 hover:decoration-amber-300 transition-colors inline-flex items-center gap-0.5 cursor-pointer"
+              >
+                <span>Work With Me</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+
+            {/* Direct Contact Links */}
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs text-slate-300 pt-1 font-mono">
+              <a
+                href="mailto:akashworkofficial27@gmail.com"
+                className="hover:text-orange-400 transition-colors flex items-center gap-1.5 truncate max-w-full"
+                title="Email Akash"
+              >
+                <span>📧</span>
+                <span className="truncate">akashworkofficial27@gmail.com</span>
+              </a>
+              <span className="text-slate-700 hidden sm:inline">•</span>
+              <a
+                href="tel:7708231810"
+                className="hover:text-emerald-400 transition-colors flex items-center gap-1.5"
+                title="Call Akash"
+              >
+                <span>📱</span>
+                <span>7708231810</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-[11px] text-slate-500 font-sans">
+            © {currentYear} Fahrenheit Cricket Club. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -4,29 +4,29 @@
 
 export const statsData = {
   "overall": {
-    "totalMatches": 319,
-    "upcoming": 2,
-    "won": 148,
-    "lost": 162,
+    "totalMatches": 324,
+    "upcoming": 1,
+    "won": 150,
+    "lost": 164,
     "tie": 3,
     "drawn": 0,
     "noResult": 4,
-    "winPercentage": 47.7,
-    "tossWon": 159,
-    "batFirst": 83,
+    "winPercentage": 46.3,
+    "tossWon": 160,
+    "batFirst": 84,
     "fieldFirst": 76,
-    "totalRunsScored": "--",
-    "totalWicketsTaken": "--"
+    "totalRunsScored": "71,270",
+    "totalWicketsTaken": "3,399"
   },
   "batting": {
-    "highestScore": "--",
-    "lowestScore": "--",
-    "averageScore": "--",
-    "totalRuns": "--",
-    "totalFours": "--",
-    "totalSixes": "--",
-    "totalFifties": "--",
-    "totalCenturies": "--",
+    "highestScore": "232/5",
+    "lowestScore": "42",
+    "averageScore": "139.6",
+    "totalRuns": "71,270",
+    "totalFours": "6,504",
+    "totalSixes": "2,440",
+    "totalFifties": 246,
+    "totalCenturies": 7,
     "topBatters": [
       {
         "rank": 1,
@@ -116,12 +116,12 @@ export const statsData = {
     ]
   },
   "bowling": {
-    "totalWickets": "--",
-    "totalOvers": "--",
-    "runsConceded": "--",
-    "teamEconomy": "--",
-    "bestBowlingFigures": "--",
-    "totalMaidens": "--",
+    "totalWickets": "3,399",
+    "totalOvers": "4,885.3",
+    "runsConceded": "29,480",
+    "teamEconomy": "6.04",
+    "bestBowlingFigures": "7/16",
+    "totalMaidens": 351,
     "topBowlers": [
       {
         "rank": 1,
@@ -141,22 +141,6 @@ export const statsData = {
       },
       {
         "rank": 2,
-        "id": 33295041,
-        "name": "SP",
-        "photo": "https://media.cricheroes.in/user_profile/1744103690367_n3Hze0kLULjq.jpeg",
-        "role": "--",
-        "wickets": 210,
-        "innings": 176,
-        "overs": "701.3",
-        "economy": 6.3,
-        "average": 21.04,
-        "strikeRate": 20.04,
-        "maidens": 19,
-        "bestBowling": "5 wkts",
-        "runsConceded": 12
-      },
-      {
-        "rank": 3,
         "id": 26544328,
         "name": "Prem",
         "photo": "https://media.cricheroes.in/user_profile/1728208382515_JBAGFitFmHjB.jpg",
@@ -172,7 +156,7 @@ export const statsData = {
         "runsConceded": 4
       },
       {
-        "rank": 4,
+        "rank": 3,
         "id": 9139646,
         "name": "Jeevesh V",
         "photo": "https://media.cricheroes.in/user_profile/1772942999217_4Ggpv0DnZcR0.jpg",
@@ -188,7 +172,7 @@ export const statsData = {
         "runsConceded": 41
       },
       {
-        "rank": 5,
+        "rank": 4,
         "id": 1204566,
         "name": "Surendar",
         "photo": "https://media.cricheroes.in/user_profile/1721067214959_DKnTIsQMYQN2.jpg",
@@ -202,14 +186,30 @@ export const statsData = {
         "maidens": 21,
         "bestBowling": "7 wkts",
         "runsConceded": 16
+      },
+      {
+        "rank": 5,
+        "id": 6161774,
+        "name": "Selvam S",
+        "photo": "https://media.cricheroes.in/user_profile/1763867691584_fyXyEsvSh9Rn.jpg",
+        "role": "Bowler",
+        "wickets": 110,
+        "innings": 104,
+        "overs": "358.0",
+        "economy": 6.01,
+        "average": 19.35,
+        "strikeRate": 19.31,
+        "maidens": 10,
+        "bestBowling": "4 wkts",
+        "runsConceded": 17
       }
     ]
   },
   "fielding": {
-    "totalCatches": "--",
-    "totalRunOuts": "--",
-    "totalStumpings": "--",
-    "totalDismissals": "--",
+    "totalCatches": "1,910",
+    "totalRunOuts": 194,
+    "totalStumpings": 28,
+    "totalDismissals": "2,574",
     "topFielders": [
       {
         "rank": 1,
@@ -265,16 +265,16 @@ export const statsData = {
       },
       {
         "rank": 5,
-        "id": 28249990,
-        "name": "Saravanan Govindharaju",
-        "photo": "https://media.cricheroes.in/user_profile/1708966724897_qeVPsdFlWxWG.jpg",
+        "id": 20307948,
+        "name": "Anbu",
+        "photo": "https://media.cricheroes.in/user_profile/1752306190289_4IfWOraKmbml.jpeg",
         "role": "--",
-        "dismissals": 77,
-        "matches": 128,
-        "catches": 43,
-        "caughtBehind": 8,
-        "runOuts": 8,
-        "stumpings": 9
+        "dismissals": 56,
+        "matches": 101,
+        "catches": 47,
+        "caughtBehind": 5,
+        "runOuts": 4,
+        "stumpings": 0
       }
     ]
   },
@@ -349,10 +349,6 @@ export const statsData = {
       {
         "name": "Vicky",
         "wickets": 340
-      },
-      {
-        "name": "SP",
-        "wickets": 210
       },
       {
         "name": "Prem",

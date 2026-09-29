@@ -192,7 +192,7 @@ export default function ScorecardView({ match }) {
 
                 {/* Batting Table - Responsive Horizontal Scroll */}
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                  <table className="w-full min-w-[500px] text-left border-collapse text-xs sm:text-sm">
                     <thead>
                       <tr className="border-b border-slate-800/90 text-slate-400 font-bold uppercase text-[11px] tracking-wider bg-slate-950/40">
                         <th className="py-3.5 px-4 sm:px-6">BATTER</th>
@@ -270,7 +270,7 @@ export default function ScorecardView({ match }) {
                 </div>
 
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                  <table className="w-full min-w-[500px] text-left border-collapse text-xs sm:text-sm">
                     <thead>
                       <tr className="border-b border-slate-800/90 text-slate-400 font-bold uppercase text-[11px] tracking-wider bg-slate-950/40">
                         <th className="py-3.5 px-4 sm:px-6">BOWLER</th>

@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import Match from '../models/Match.js';
 import matchesFallback from '../../../src/data/matches.js';
+import syncMatchPlayerStats from '../utils/syncPlayerStats.js';
 
 // @desc    Get all matches
 // @route   GET /api/matches
@@ -110,6 +111,7 @@ export const createMatch = async (req, res, next) => {
     }
 
     const match = await Match.create(req.body);
+    await syncMatchPlayerStats(match);
 
     res.status(201).json({
       success: true,
@@ -154,6 +156,8 @@ export const updateMatch = async (req, res, next) => {
         message: 'Match not found',
       });
     }
+
+    await syncMatchPlayerStats(match);
 
     res.status(200).json({
       success: true,

@@ -620,69 +620,6 @@ export const playersData = [
     ]
   },
   {
-    "id": "fcc-barath-kj",
-    "cricHeroesId": null,
-    "name": "Barath KJ",
-    "photo": "https://media.cricheroes.in/default/user_profile.png",
-    "tags": [],
-    "role": "--",
-    "battingStyle": "--",
-    "bowlingStyle": "--",
-    "jerseyNumber": "--",
-    "isCaptain": false,
-    "isAdmin": false,
-    "isPro": false,
-    "stats": {
-      "matches": "--",
-      "runs": "--",
-      "wickets": "--",
-      "highestScore": "--",
-      "strikeRate": "--",
-      "economy": "--",
-      "average": "--",
-      "bestBowling": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "fours": "--",
-      "sixes": "--",
-      "maidens": "--",
-      "catches": "--",
-      "dismissals": "--"
-    },
-    "batting": {
-      "innings": "--",
-      "runs": "--",
-      "highestScore": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "fours": "--",
-      "sixes": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "ballsFaced": "--"
-    },
-    "bowling": {
-      "innings": "--",
-      "wickets": "--",
-      "overs": "--",
-      "economy": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "maidens": "--",
-      "bestBowling": "--"
-    },
-    "fielding": {
-      "matches": "--",
-      "dismissals": "--",
-      "catches": "--",
-      "caughtBehind": "--",
-      "runOuts": "--",
-      "stumpings": "--"
-    },
-    "recentPerformances": [],
-    "achievements": []
-  },
-  {
     "id": 408386,
     "cricHeroesId": 408386,
     "name": "C. Anbalagan (Anbu 24)",
@@ -6293,69 +6230,6 @@ export const playersData = [
         "count": 1
       }
     ]
-  },
-  {
-    "id": "fcc-pugalarasan-a",
-    "cricHeroesId": null,
-    "name": "Pugalarasan A",
-    "photo": "https://media.cricheroes.in/default/user_profile.png",
-    "tags": [],
-    "role": "--",
-    "battingStyle": "--",
-    "bowlingStyle": "--",
-    "jerseyNumber": "--",
-    "isCaptain": false,
-    "isAdmin": false,
-    "isPro": false,
-    "stats": {
-      "matches": "--",
-      "runs": "--",
-      "wickets": "--",
-      "highestScore": "--",
-      "strikeRate": "--",
-      "economy": "--",
-      "average": "--",
-      "bestBowling": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "fours": "--",
-      "sixes": "--",
-      "maidens": "--",
-      "catches": "--",
-      "dismissals": "--"
-    },
-    "batting": {
-      "innings": "--",
-      "runs": "--",
-      "highestScore": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "fours": "--",
-      "sixes": "--",
-      "fifties": "--",
-      "centuries": "--",
-      "ballsFaced": "--"
-    },
-    "bowling": {
-      "innings": "--",
-      "wickets": "--",
-      "overs": "--",
-      "economy": "--",
-      "average": "--",
-      "strikeRate": "--",
-      "maidens": "--",
-      "bestBowling": "--"
-    },
-    "fielding": {
-      "matches": "--",
-      "dismissals": "--",
-      "catches": "--",
-      "caughtBehind": "--",
-      "runOuts": "--",
-      "stumpings": "--"
-    },
-    "recentPerformances": [],
-    "achievements": []
   },
   {
     "id": 21685768,

@@ -40,6 +40,11 @@ export default function PlayerCard({ player, style, className = '' }) {
               CAPTAIN
             </span>
           )}
+          {player.isViceCaptain && (
+            <span className="px-2 py-0.5 rounded bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 font-black text-[10px] uppercase tracking-wider shadow-sm">
+              VICE CAPTAIN
+            </span>
+          )}
           {player.role && player.role !== '--' ? (
             <span className="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700 font-bold text-[10px] uppercase tracking-wider group-hover:border-orange-500/30 transition-colors">
               {player.role}

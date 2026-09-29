@@ -46,7 +46,7 @@ export default function TeamOverviewStats() {
   ];
 
   return (
-    <section className="relative -mt-10 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative mt-4 sm:-mt-10 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5">
         {cards.map((card) => (
           <StatCard

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Shield,
@@ -28,11 +28,22 @@ export default function ThreeDPlayerCard({
   const [rotateY, setRotateY] = useState(0);
   const [glarePos, setGlarePos] = useState({ x: 50, y: 50 });
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const defaultAvatar = 'https://media.cricheroes.in/default/user_profile.png';
   const stats = player?.stats || {};
   const role = (player?.role || 'All-Rounder').toUpperCase();
   const isCaptain = player?.isCaptain;
+  const isViceCaptain = player?.isViceCaptain;
 
   // Determine Role-Based 3D Styling Theme
   const getTheme = () => {
@@ -44,6 +55,16 @@ export default function ThreeDPlayerCard({
         ringColor: 'from-amber-400 via-orange-500 to-yellow-300',
         icon: Trophy,
         label: 'OFFICIAL CAPTAIN'
+      };
+    }
+    if (isViceCaptain) {
+      return {
+        borderGlow: 'border-amber-400/60 shadow-[0_0_35px_rgba(251,191,36,0.35)]',
+        badgeBg: 'bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950',
+        accentColor: 'text-amber-300',
+        ringColor: 'from-amber-300 via-yellow-400 to-orange-400',
+        icon: Shield,
+        label: 'VICE CAPTAIN'
       };
     }
     if (role.includes('BOWLER')) {
@@ -123,17 +144,17 @@ export default function ThreeDPlayerCard({
   return (
     <div
       className="relative w-full max-w-lg select-none py-2"
-      style={{ perspective: '1200px' }}
+      style={{ perspective: isMobile ? 'none' : '1200px' }}
     >
       {/* 3D TILT WRAPPER */}
       <div
         ref={cardRef}
-        onMouseMove={handleMouseMove}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseMove={isMobile ? undefined : handleMouseMove}
+        onMouseEnter={isMobile ? undefined : handleMouseEnter}
+        onMouseLeave={isMobile ? undefined : handleMouseLeave}
         className={`relative w-full rounded-3xl bg-gradient-to-br from-[#0e1628] via-[#090e1b] to-[#070b14] border-2 ${
           theme.borderGlow
-        } p-6 transition-transform duration-200 ease-out will-change-transform ${
+        } p-6 transition-transform duration-200 ease-out will-change-transform preserve-3d-mobile ${
           isSliding
             ? slideDirection === 'right'
               ? 'animate-slide-right'
@@ -141,25 +162,29 @@ export default function ThreeDPlayerCard({
             : ''
         }`}
         style={{
-          transformStyle: 'preserve-3d',
-          transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${
-            isHovered ? '1.02, 1.02, 1.02' : '1, 1, 1'
-          })`,
+          transformStyle: isMobile ? 'flat' : 'preserve-3d',
+          transform: isMobile
+            ? 'none'
+            : `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${
+                isHovered ? '1.02, 1.02, 1.02' : '1, 1, 1'
+              })`,
         }}
       >
-        {/* HOLOGRAPHIC SPECULAR GLARE LAYER */}
-        <div
-          className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-300"
-          style={{
-            background: `radial-gradient(circle at ${glarePos.x}% ${glarePos.y}%, rgba(255, 255, 255, 0.15) 0%, transparent 65%)`,
-            transform: 'translateZ(10px)',
-          }}
-        />
+        {/* HOLOGRAPHIC SPECULAR GLARE LAYER (Desktop only) */}
+        {!isMobile && (
+          <div
+            className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-300"
+            style={{
+              background: `radial-gradient(circle at ${glarePos.x}% ${glarePos.y}%, rgba(255, 255, 255, 0.15) 0%, transparent 65%)`,
+              transform: 'translateZ(10px)',
+            }}
+          />
+        )}
 
-        {/* LAYER 1: CARD TOP HEADER (translateZ: 45px) */}
+        {/* LAYER 1: CARD TOP HEADER */}
         <div
-          className="flex items-center justify-between pb-4 border-b border-slate-800/80"
-          style={{ transform: 'translateZ(45px)' }}
+          className="three-d-layer flex items-center justify-between pb-4 border-b border-slate-800/80"
+          style={isMobile ? undefined : { transform: 'translateZ(45px)' }}
         >
           <div className="flex items-center gap-2 flex-wrap">
             <span className={`font-mono text-3xl font-black ${theme.accentColor}`}>
@@ -175,12 +200,19 @@ export default function ThreeDPlayerCard({
               </span>
             )}
 
+            {isViceCaptain && (
+              <span className="px-2.5 py-1 rounded-md bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 font-black text-[10px] uppercase tracking-wider shadow-md shadow-amber-950 flex items-center gap-1">
+                <Shield className="w-3 h-3" />
+                VICE CAPTAIN
+              </span>
+            )}
+
             <span className={`px-2.5 py-1 rounded-md ${theme.badgeBg} font-black text-[10px] uppercase tracking-wider shadow-md`}>
               {player.role || 'PLAYER'}
             </span>
           </div>
 
-          <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/80 border border-slate-700/80 text-[11px] font-mono text-slate-300 shadow-inner">
+          <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950 border border-slate-700/80 text-[11px] font-mono text-slate-300 shadow-inner">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
             <span>
               PLAYER <strong className="text-white">{slideIndex}</strong> / {totalPlayers}
@@ -188,18 +220,18 @@ export default function ThreeDPlayerCard({
           </div>
         </div>
 
-        {/* LAYER 2: 3D PLAYER MAIN DISPLAY (translateZ: 55px) */}
+        {/* LAYER 2: PLAYER MAIN DISPLAY */}
         <div
-          className="flex flex-col sm:flex-row items-center gap-6 my-6"
-          style={{ transform: 'translateZ(55px)' }}
+          className="three-d-layer flex flex-col sm:flex-row items-center gap-6 my-6"
+          style={isMobile ? undefined : { transform: 'translateZ(55px)' }}
         >
-          {/* Avatar with 3D Elevation Ring */}
+          {/* Avatar with Elevation Ring */}
           <div className="relative flex-shrink-0">
-            {/* 3D Floating Official Jersey Number Badge on Photo */}
+            {/* Jersey Number Badge */}
             {player.jerseyNumber && player.jerseyNumber !== '--' && (
               <div
                 className="absolute -top-3 -left-3 px-2.5 py-1 rounded-xl bg-gradient-to-r from-orange-600 via-amber-500 to-orange-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-xl shadow-orange-950/80 border-2 border-slate-950 flex items-center gap-0.5 z-20"
-                style={{ transform: 'translateZ(35px)' }}
+                style={isMobile ? undefined : { transform: 'translateZ(35px)' }}
                 title={`Official Jersey #${player.jerseyNumber}`}
               >
                 <span className="text-[10px] font-black text-slate-950">#</span>
@@ -221,7 +253,7 @@ export default function ThreeDPlayerCard({
             </div>
             <div
               className="absolute -bottom-2.5 -right-2.5 p-1.5 rounded-full bg-slate-900 border-2 border-orange-500 shadow-lg"
-              style={{ transform: 'translateZ(20px)' }}
+              style={isMobile ? undefined : { transform: 'translateZ(20px)' }}
             >
               <ThemeIcon className={`w-4 h-4 ${theme.accentColor}`} />
             </div>
@@ -260,41 +292,41 @@ export default function ThreeDPlayerCard({
           </div>
         </div>
 
-        {/* LAYER 3: 3D CAREER STATS GRID (translateZ: 35px) */}
+        {/* LAYER 3: CAREER STATS GRID */}
         <div
-          className="grid grid-cols-3 gap-2.5 p-3 rounded-2xl bg-slate-950/80 border border-slate-800 shadow-inner"
-          style={{ transform: 'translateZ(35px)' }}
+          className="three-d-layer grid grid-cols-3 gap-2.5 p-3 rounded-2xl bg-slate-950 border border-slate-800 shadow-inner"
+          style={isMobile ? undefined : { transform: 'translateZ(35px)' }}
         >
-          <div className="text-center p-2.5 rounded-xl bg-slate-900/90 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
+          <div className="text-center p-2.5 rounded-xl bg-slate-900 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">MATCHES</p>
             <p className="text-lg font-black text-white font-mono">{stats.matches ?? '--'}</p>
           </div>
-          <div className="text-center p-2.5 rounded-xl bg-slate-900/90 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
+          <div className="text-center p-2.5 rounded-xl bg-slate-900 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
             <p className="text-[10px] font-bold text-orange-400 uppercase tracking-wider">RUNS</p>
             <p className="text-lg font-black text-orange-400 font-mono">{stats.runs ?? '--'}</p>
           </div>
-          <div className="text-center p-2.5 rounded-xl bg-slate-900/90 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
+          <div className="text-center p-2.5 rounded-xl bg-slate-900 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
             <p className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">WICKETS</p>
             <p className="text-lg font-black text-emerald-400 font-mono">{stats.wickets ?? '--'}</p>
           </div>
-          <div className="text-center p-2.5 rounded-xl bg-slate-900/90 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
+          <div className="text-center p-2.5 rounded-xl bg-slate-900 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">HIGH SCORE</p>
             <p className="text-sm font-black text-white font-mono">{stats.highestScore ?? '--'}</p>
           </div>
-          <div className="text-center p-2.5 rounded-xl bg-slate-900/90 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
+          <div className="text-center p-2.5 rounded-xl bg-slate-900 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
             <p className="text-[10px] font-bold text-amber-400 uppercase tracking-wider">STRIKE RATE</p>
             <p className="text-sm font-black text-amber-400 font-mono">{stats.strikeRate ?? '--'}</p>
           </div>
-          <div className="text-center p-2.5 rounded-xl bg-slate-900/90 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
+          <div className="text-center p-2.5 rounded-xl bg-slate-900 border border-slate-800/80 hover:border-orange-500/40 transition-colors">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">AVERAGE</p>
             <p className="text-sm font-black text-white font-mono">{stats.average ?? '--'}</p>
           </div>
         </div>
 
-        {/* LAYER 4: 3D ACTION BUTTONS (translateZ: 50px) */}
+        {/* LAYER 4: ACTION BUTTONS */}
         <div
-          className="mt-5 flex items-center gap-3"
-          style={{ transform: 'translateZ(50px)' }}
+          className="three-d-layer mt-5 flex items-center gap-3"
+          style={isMobile ? undefined : { transform: 'translateZ(50px)' }}
         >
           <Link
             to={`/players/${player.id}`}

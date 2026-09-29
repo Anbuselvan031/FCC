@@ -38,6 +38,7 @@ export default function SlidingPlayerShowcase() {
 
   const autoPlayTimerRef = useRef(null);
   const thumbnailReelRef = useRef(null);
+  const isFirstRender = useRef(true);
   const defaultAvatar = 'https://media.cricheroes.in/default/user_profile.png';
 
   // Filter squad based on role and search query
@@ -47,13 +48,14 @@ export default function SlidingPlayerShowcase() {
       let matchesRole = true;
 
       if (selectedRole === 'BATSMEN') {
-        matchesRole = roleUpper.includes('BATSMAN');
+        matchesRole = (roleUpper.includes('BAT') || roleUpper.includes('BATSMAN') || roleUpper.includes('BATTER')) &&
+          !roleUpper.includes('ALL-ROUNDER') && !roleUpper.includes('ALL ROUNDER') && !roleUpper.includes('KEEPER');
       } else if (selectedRole === 'BOWLERS') {
         matchesRole = roleUpper.includes('BOWLER');
       } else if (selectedRole === 'ALL-ROUNDERS') {
         matchesRole = roleUpper.includes('ALL-ROUNDER') || roleUpper.includes('ALL ROUNDER');
       } else if (selectedRole === 'WICKET KEEPERS') {
-        matchesRole = roleUpper.includes('WICKET') || roleUpper.includes('KEEPER');
+        matchesRole = roleUpper.includes('WICKET') || roleUpper.includes('KEEPER') || (player.name || '').toLowerCase().includes('kiruthik');
       }
 
       const q = searchQuery.toLowerCase().trim();
@@ -76,10 +78,11 @@ export default function SlidingPlayerShowcase() {
     const counts = { ALL: playersData.length, BATSMEN: 0, BOWLERS: 0, 'ALL-ROUNDERS': 0, 'WICKET KEEPERS': 0 };
     playersData.forEach((p) => {
       const r = (p.role || '').toUpperCase();
-      if (r.includes('BATSMAN')) counts.BATSMEN++;
-      else if (r.includes('BOWLER')) counts.BOWLERS++;
-      else if (r.includes('WICKET') || r.includes('KEEPER')) counts['WICKET KEEPERS']++;
+      const pName = (p.name || '').toLowerCase();
+      if (r.includes('WICKET') || r.includes('KEEPER') || pName.includes('kiruthik')) counts['WICKET KEEPERS']++;
       else if (r.includes('ALL-ROUNDER') || r.includes('ALL ROUNDER')) counts['ALL-ROUNDERS']++;
+      else if (r.includes('BOWLER')) counts.BOWLERS++;
+      else counts.BATSMEN++;
     });
     return counts;
   }, []);
@@ -139,12 +142,21 @@ export default function SlidingPlayerShowcase() {
     };
   }, [isAutoPlaying, safeIndex, filteredSquad.length]);
 
-  // Auto-scroll active player thumbnail into center view
+  // Auto-scroll active player thumbnail horizontally inside the container on user slide
   useEffect(() => {
+    // Avoid scrolling on initial page mount so user stays at the top Hero banner
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
     if (thumbnailReelRef.current) {
-      const selectedEl = thumbnailReelRef.current.children[safeIndex];
+      const container = thumbnailReelRef.current;
+      const selectedEl = container.children[safeIndex];
       if (selectedEl) {
-        selectedEl.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        const targetScrollLeft =
+          selectedEl.offsetLeft - container.clientWidth / 2 + selectedEl.clientWidth / 2;
+        container.scrollTo({ left: targetScrollLeft, behavior: 'smooth' });
       }
     }
   }, [safeIndex]);
@@ -390,6 +402,15 @@ export default function SlidingPlayerShowcase() {
                       }`}
                     >
                       C
+                    </span>
+                  )}
+                  {player.isViceCaptain && (
+                    <span
+                      className={`text-[9px] px-1 rounded font-black ${
+                        isSelected ? 'bg-slate-950 text-amber-400' : 'bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950'
+                      }`}
+                    >
+                      VC
                     </span>
                   )}
                 </button>

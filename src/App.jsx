@@ -1,10 +1,10 @@
-import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
 import AdminContactModal from './components/common/AdminContactModal';
-import CricketMascotWidget from './components/animation/CricketMascotWidget';
+import FreelanceContactModal from './components/common/FreelanceContactModal';
 
 import HomePage from './pages/HomePage';
 import TeamPage from './pages/TeamPage';
@@ -19,6 +19,13 @@ import GalleryPage from './pages/GalleryPage';
 import NotFoundPage from './pages/NotFoundPage';
 import AdminLoginPage from './pages/admin/AdminLoginPage';
 import AdminDashboardPage from './pages/admin/AdminDashboardPage';
+
+function ContactModalRedirect({ type }) {
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent(type === 'work-with-me' ? 'open-work-with-me' : 'open-admin-contact'));
+  }, [type]);
+  return <Navigate to="/" replace />;
+}
 
 export default function App() {
   const location = useLocation();
@@ -41,6 +48,8 @@ export default function App() {
           <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/stats" element={<StatsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<ContactModalRedirect type="admin" />} />
+          <Route path="/work-with-me" element={<ContactModalRedirect type="work-with-me" />} />
           <Route path="/admin/login" element={<AdminLoginPage />} />
           <Route path="/admin" element={<AdminDashboardPage />} />
           <Route path="*" element={<NotFoundPage />} />
@@ -49,7 +58,7 @@ export default function App() {
 
       <Footer />
       <AdminContactModal />
-      {isHomePage && <CricketMascotWidget />}
+      <FreelanceContactModal />
     </div>
   );
 }

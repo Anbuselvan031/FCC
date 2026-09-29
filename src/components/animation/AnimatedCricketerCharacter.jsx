@@ -43,7 +43,11 @@ export function getPlayerDiscipline(player, fallbackRole = '') {
     name.includes('mukhil') ||
     name.includes('lalith') ||
     name === 'vicky' ||
-    name.includes('vicky')
+    name.includes('vicky') ||
+    name.includes('moulee') ||
+    name.includes('prabu') ||
+    name.includes('adhithyan') ||
+    name.includes('aadhi')
   ) {
     return 'bowler';
   }
@@ -51,7 +55,6 @@ export function getPlayerDiscipline(player, fallbackRole = '') {
   // Batsmen (top order, middle order, batting all-rounders)
   if (
     name.includes('anbu') ||
-    name.includes('moulee') ||
     name.includes('kiruthik') ||
     name.includes('guru') ||
     name.includes('sumesh') ||
@@ -81,11 +84,39 @@ export function getPlayerDiscipline(player, fallbackRole = '') {
 }
 
 /**
+ * Resolves the player's authentic bowling speed in KMPH:
+ * 1. Uses explicit player.bowlingSpeed or player.bowling.speed if defined in roster data.
+ * 2. If absent, derives realistically from bowling style (Spin: 80–90 KMPH, Fast/Medium: 100–130 KMPH).
+ * 3. Never returns 145 KMPH.
+ */
+export function getPlayerBowlingSpeed(player) {
+  let speed = player?.bowlingSpeed || player?.bowling?.speed;
+  if (speed) {
+    if (typeof speed === 'number') return `${speed} KMPH`;
+    if (!speed.toUpperCase().includes('KMPH')) return `${speed} KMPH`;
+    return speed;
+  }
+
+  const style = (player?.bowlingStyle || '').toLowerCase();
+  const isSpinner = style.includes('break') || style.includes('spin') || style.includes('slow');
+  const nameOrId = String(player?.id || player?.name || 'FCC');
+  const charSum = nameOrId.split('').reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
+
+  if (isSpinner) {
+    const s = 80 + (charSum % 11); // 80 - 90 KMPH
+    return `${s} KMPH`;
+  }
+
+  const s = 105 + (charSum % 25); // 105 - 129 KMPH (within 100 - 130 KMPH)
+  return `${s} KMPH`;
+}
+
+/**
  * AnimatedCricketerCharacter
  * Role-aware 3D cinematic action character component.
  * Ensures the 3D slide photo is 100% relevant to the selected athlete:
  * - Batsmen => 3D Batsman Crease Dive & Bat Slide photo (/animations/cricket_slide_crease.jpg)
- * - Bowlers => 3D Fast Bowler Delivery Stride photo (/animations/cricket_bowler_slide.jpg)
+ * - Bowlers => 3D Bowler Delivery Stride photo (/animations/cricket_bowler_slide.jpg)
  * - Wicket Keepers => 3D Wicket Keeper Dive photo (/animations/cricket_fielder_slide.jpg)
  */
 export default function AnimatedCricketerCharacter({
@@ -109,10 +140,11 @@ export default function AnimatedCricketerCharacter({
   const getActionConfig = () => {
     // 1. BOWLER: 3D Delivery Stride Slide
     if (discipline === 'bowler') {
+      const bowlingSpeed = getPlayerBowlingSpeed(player);
       return {
         image: '/animations/cricket_bowler_slide.jpg',
         title: 'Bowler 3D Delivery Stride Slide',
-        subtitle: '145+ KMPH Delivery Stride & Follow-Through',
+        subtitle: `${bowlingSpeed} Delivery Stride & Follow-Through`,
         tag: 'BOWLER 3D SLIDE',
         glowColor: 'shadow-[0_15px_50px_rgba(6,182,212,0.3)]',
         badgeColor: 'text-cyan-400 border-cyan-500/50 bg-cyan-950/70',

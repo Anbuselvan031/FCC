@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Camera, Trophy, Sparkles, Filter, Eye, Calendar, MapPin } from 'lucide-react';
 import FilterTabs from '../components/common/FilterTabs';
 import GalleryGrid from '../components/gallery/GalleryGrid';
@@ -7,13 +8,16 @@ import galleryService from '../services/galleryService';
 import galleryDataFallback, { galleryCategories, galleryData } from '../data/galleryData';
 
 export default function GalleryPage() {
+  const [searchParams] = useSearchParams();
+  const photoParam = searchParams.get('photo');
+
   const [galleryList, setGalleryList] = useState(galleryDataFallback);
   const [loading, setLoading] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     let isMounted = true;
     const fetchGallery = async () => {
       setLoading(true);
@@ -31,6 +35,31 @@ export default function GalleryPage() {
     fetchGallery();
     return () => { isMounted = false; };
   }, []);
+
+  // Handle direct photo linking (e.g., from Home View Honors -> /gallery?photo=1025283)
+  useEffect(() => {
+    if (!photoParam || galleryList.length === 0) return;
+
+    const foundIdx = galleryList.findIndex(
+      (p) => String(p.id) === String(photoParam) || String(p.title).toLowerCase().includes('champions as one')
+    );
+
+    if (foundIdx !== -1) {
+      if (selectedCategory !== 'ALL') {
+        setSelectedCategory('ALL');
+      }
+      setActivePhotoIndex(foundIdx);
+      setLightboxOpen(true);
+
+      // Scroll into view in the gallery grid
+      setTimeout(() => {
+        const targetEl = document.getElementById(`photo-${galleryList[foundIdx].id}`);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 150);
+    }
+  }, [photoParam, galleryList]);
 
   // Filtered gallery items
   const filteredPhotos = useMemo(() => {

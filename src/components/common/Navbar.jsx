@@ -12,6 +12,7 @@ const navLinks = [
   { name: 'TEAM STATS', path: '/stats' },
   { name: 'GALLERY', path: '/gallery' },
   { name: 'ABOUT', path: '/about' },
+  { name: 'CONTACT', action: 'open-admin-contact' },
 ];
 
 export default function Navbar() {
@@ -41,8 +42,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'glass-nav py-3 shadow-xl shadow-black/40'
-          : 'bg-gradient-to-b from-[#070a0f]/95 via-[#070a0f]/70 to-transparent py-4'
+          ? 'glass-nav bg-[#070a0f] py-3 shadow-xl shadow-black/60 border-b border-white/10'
+          : 'bg-[#070a0f] md:bg-gradient-to-b md:from-[#070a0f]/95 md:via-[#070a0f]/70 md:to-transparent py-3 sm:py-4 border-b border-white/5 md:border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,6 +79,17 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden xl:flex items-center gap-1">
             {navLinks.map((link) => {
+              if (link.action) {
+                return (
+                  <button
+                    key={link.name}
+                    onClick={() => window.dispatchEvent(new CustomEvent(link.action))}
+                    className="relative px-3.5 py-1.5 text-xs font-bold tracking-wider transition-all duration-200 rounded-md text-slate-300 hover:text-white hover:bg-white/5 cursor-pointer"
+                  >
+                    {link.name}
+                  </button>
+                );
+              }
               const isActive = location.pathname === link.path;
               return (
                 <Link
@@ -168,6 +180,21 @@ export default function Navbar() {
           {/* Drawer Navigation Links */}
           <div className="py-6 flex flex-col gap-1.5">
             {navLinks.map((link) => {
+              if (link.action) {
+                return (
+                  <button
+                    key={link.name}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      window.dispatchEvent(new CustomEvent(link.action));
+                    }}
+                    className="flex items-center justify-between px-4 py-3 rounded-lg text-sm font-bold tracking-wider uppercase transition-all text-slate-300 hover:bg-slate-800/40 hover:text-white text-left w-full cursor-pointer"
+                  >
+                    <span>{link.name}</span>
+                    <ChevronRight className="w-4 h-4 text-slate-600" />
+                  </button>
+                );
+              }
               const isActive = location.pathname === link.path;
               return (
                 <Link

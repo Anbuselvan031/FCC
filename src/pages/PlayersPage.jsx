@@ -45,12 +45,22 @@ export default function PlayersPage() {
   const filteredPlayers = useMemo(() => {
     return playersList.filter((player) => {
       // Role filter
-      const matchesRole =
-        selectedRole === 'ALL' ||
-        (player.role && (
-          player.role.toUpperCase() === selectedRole.toUpperCase() ||
-          (selectedRole === 'WICKET KEEPER' && player.role.toUpperCase().includes('WICKET KEEPER'))
-        ));
+      const r = (player.role || '').toUpperCase();
+      const pName = (player.name || '').toLowerCase();
+      let matchesRole = true;
+
+      if (selectedRole === 'ALL') {
+        matchesRole = true;
+      } else if (selectedRole === 'WICKET KEEPER') {
+        matchesRole = r.includes('KEEPER') || r.includes('WICKET') || pName.includes('kiruthik');
+      } else if (selectedRole === 'ALL-ROUNDER') {
+        matchesRole = r.includes('ALL-ROUNDER') || r.includes('ALL ROUNDER') || r.includes('ALLROUNDER');
+      } else if (selectedRole === 'BOWLER') {
+        matchesRole = r.includes('BOWLER');
+      } else if (selectedRole === 'BATSMAN') {
+        matchesRole = (r.includes('BAT') || r.includes('BATSMAN') || r.includes('BATTER')) &&
+          !r.includes('ALL-ROUNDER') && !r.includes('ALL ROUNDER') && !r.includes('KEEPER');
+      }
 
       // Search query filter (support name, tags, role, and ID)
       const query = searchQuery.toLowerCase().trim();

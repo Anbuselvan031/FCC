@@ -56,36 +56,36 @@ export default function StatCard({
 
   const colorStyles = {
     orange: {
-      border: 'border-orange-500/20 hover:border-orange-500/60',
-      bg: 'from-orange-500/10 via-slate-900/40 to-transparent',
+      border: 'border-orange-500/25 hover:border-orange-500/60',
+      bg: 'from-orange-500/15 via-[#0e1628] to-[#0a0f1d]',
       text: 'text-orange-400',
       iconBg: 'bg-orange-500/15 text-orange-400',
       glow: 'hover:shadow-[0_10px_30px_rgba(249,115,22,0.25)]'
     },
     emerald: {
-      border: 'border-emerald-500/20 hover:border-emerald-500/60',
-      bg: 'from-emerald-500/10 via-slate-900/40 to-transparent',
+      border: 'border-emerald-500/25 hover:border-emerald-500/60',
+      bg: 'from-emerald-500/15 via-[#0e1628] to-[#0a0f1d]',
       text: 'text-emerald-400',
       iconBg: 'bg-emerald-500/15 text-emerald-400',
       glow: 'hover:shadow-[0_10px_30px_rgba(16,185,129,0.25)]'
     },
     gold: {
-      border: 'border-amber-500/20 hover:border-amber-500/60',
-      bg: 'from-amber-500/10 via-slate-900/40 to-transparent',
+      border: 'border-amber-500/25 hover:border-amber-500/60',
+      bg: 'from-amber-500/15 via-[#0e1628] to-[#0a0f1d]',
       text: 'text-amber-400',
       iconBg: 'bg-amber-500/15 text-amber-400',
       glow: 'hover:shadow-[0_10px_30px_rgba(245,158,11,0.25)]'
     },
     cyan: {
-      border: 'border-cyan-500/20 hover:border-cyan-500/60',
-      bg: 'from-cyan-500/10 via-slate-900/40 to-transparent',
+      border: 'border-cyan-500/25 hover:border-cyan-500/60',
+      bg: 'from-cyan-500/15 via-[#0e1628] to-[#0a0f1d]',
       text: 'text-cyan-400',
       iconBg: 'bg-cyan-500/15 text-cyan-400',
       glow: 'hover:shadow-[0_10px_30px_rgba(6,182,212,0.25)]'
     },
     crimson: {
-      border: 'border-red-500/20 hover:border-red-500/60',
-      bg: 'from-red-500/10 via-slate-900/40 to-transparent',
+      border: 'border-red-500/25 hover:border-red-500/60',
+      bg: 'from-red-500/15 via-[#0e1628] to-[#0a0f1d]',
       text: 'text-red-400',
       iconBg: 'bg-red-500/15 text-red-400',
       glow: 'hover:shadow-[0_10px_30px_rgba(239,68,68,0.25)]'
@@ -96,7 +96,7 @@ export default function StatCard({
 
   return (
     <div
-      className={`relative p-5 rounded-2xl bg-gradient-to-br ${style.bg} bg-[#0b101b] border ${style.border} transition-all duration-300 transform hover:-translate-y-1 ${style.glow} group shine-sweep cursor-default animate-scale-in`}
+      className={`relative p-5 rounded-2xl bg-gradient-to-br ${style.bg} border ${style.border} transition-all duration-300 transform hover:-translate-y-1 ${style.glow} group shine-sweep cursor-default animate-scale-in`}
     >
       <div className="flex items-start justify-between gap-4">
         <div className="space-y-1">

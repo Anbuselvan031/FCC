@@ -15,6 +15,7 @@ export default function GalleryGrid({ photos = [], onPhotoClick }) {
       {photos.map((photo, index) => (
         <div
           key={photo.id || index}
+          id={photo.id ? `photo-${photo.id}` : undefined}
           onClick={() => onPhotoClick(index)}
           style={{ animationDelay: `${(index % 8) * 60}ms` }}
           className="group relative rounded-2xl bg-[#0d1424] border border-slate-800 hover:border-orange-500/50 shadow-xl overflow-hidden cursor-pointer transform transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 shine-sweep animate-fade-in-up"
