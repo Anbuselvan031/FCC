@@ -257,7 +257,7 @@ export default function SlidingPlayerShowcase() {
               setSearchQuery(e.target.value);
               setCurrentIndex(0);
             }}
-            placeholder="Search 53 players..."
+            placeholder={`Search ${players.length} players...`}
             className="w-full pl-9 pr-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-orange-500 text-xs text-white placeholder-slate-500 outline-none transition-all"
           />
         </div>
@@ -350,7 +350,7 @@ export default function SlidingPlayerShowcase() {
           <div className="flex items-center justify-between mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">
             <span className="flex items-center gap-1.5 text-orange-400">
               <Sparkles className="w-3.5 h-3.5" />
-              Direct Jump to Any of 53 Players:
+              Direct Jump to Any of {players.length} Players:
             </span>
             <span className="text-[11px] font-mono text-slate-500">
               Hover over card for 3D tilt

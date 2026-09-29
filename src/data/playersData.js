@@ -53,21 +53,17 @@ export const jerseyMapping = {
 
   // Image 3
   'sabi': '1',
-  'sibi vishal': '1',
   'gugu': '28',
   'gugan': '28',
   'hanshi': '4',
-  'nishanth': '4',
   'sena': '17',
-  'saranvel': '17',
   'sri-hn': '10',
   'sivamani': '10',
   'surendar': '21',
   'ranju': '16',
   'raja': '16',
   'vicky': '7',
-  'nandha': '11',
-  'pratheek': '31'
+  'nandha': '11'
 };
 
 function resolveJersey(p) {
@@ -75,13 +71,13 @@ function resolveJersey(p) {
   if (name === 'vicky') return '7';
   if (name.includes('anbu 24') || name.includes('anbalagan')) return '24';
   if (name.includes('anbu') && !name.includes('anbu 24')) return '31';
-  if (name.includes('sibi vishal') || name.includes('sabi')) return '1';
-  if (name === 'sibi' || (name.startsWith('sibi ') && !name.includes('vishal'))) return '27';
+  if (name.includes('sabi')) return '1';
+  if (name === 'sibi' || name.startsWith('sibi ')) return '27';
   if (name.includes('hariselvam')) return '18';
   if (name.includes('selvam') && !name.includes('hariselvam')) return '0';
   if (name.includes('sam cladson') || name.includes('cladson')) return '3';
   if (name.includes('gugan') || name.includes('gugu')) return '28';
-  if (name.includes('nishanth') || name.includes('hanshi')) return '4';
+  if (name.includes('hanshi')) return '4';
   if (name.includes('sivamani') || name.includes('sri-hn')) return '10';
 
   for (const [key, val] of Object.entries(jerseyMapping)) {
