@@ -68,7 +68,7 @@ export default function FreelanceContactModal({ isOpen: propsIsOpen, onClose: pr
           <div className="flex items-center gap-4 p-4 rounded-2xl bg-[#090d16] border border-slate-800">
             <div className="w-16 h-16 rounded-full p-1 bg-gradient-to-tr from-amber-500 via-orange-500 to-amber-400 flex items-center justify-center flex-shrink-0 shadow-lg shadow-orange-950">
               <div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center text-amber-400 font-display font-black text-xl">
-                AK
+                LK
               </div>
             </div>
             <div>
@@ -76,7 +76,7 @@ export default function FreelanceContactModal({ isOpen: propsIsOpen, onClose: pr
                 FREELANCE UI/UX &amp; FRONTEND DEVELOPER
               </span>
               <h3 className="font-display text-2xl font-bold uppercase text-white tracking-wide">
-                AKASH
+                LAKSHMAN
               </h3>
               <p className="text-xs text-slate-400 font-mono flex items-center gap-1.5 mt-0.5">
                 <MapPin className="w-3.5 h-3.5 text-orange-400" />
@@ -108,7 +108,7 @@ export default function FreelanceContactModal({ isOpen: propsIsOpen, onClose: pr
                   <span>Call Now</span>
                 </a>
                 <a
-                  href="https://wa.me/917708231810?text=Hi%20Akash%2C%20I'd%20like%20to%20discuss%20a%20website%20project."
+                  href="https://wa.me/917708231810?text=Hi%20Lakshman%2C%20I'd%20like%20to%20discuss%20a%20website%20project."
                   target="_blank"
                   rel="noreferrer"
                   className="flex-1 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 shadow transition-colors"
@@ -129,11 +129,11 @@ export default function FreelanceContactModal({ isOpen: propsIsOpen, onClose: pr
                 <span className="text-[10px] text-amber-400 font-bold uppercase tracking-wider">FREELANCE</span>
               </div>
               <p className="text-sm sm:text-base font-bold text-white break-all font-mono">
-                akashworkofficial27@gmail.com
+                lakshmanworkofficial@gmail.com
               </p>
               <div className="mt-3">
                 <a
-                  href="mailto:akashworkofficial27@gmail.com?subject=Freelance%20Project%20Inquiry&body=Hi%20Akash%2C%20I%20have%20a%20project%20in%20mind%20and%20would%20like%20to%20discuss%20it%20with%20you."
+                  href="mailto:lakshmanworkofficial@gmail.com?subject=Freelance%20Project%20Inquiry&body=Hi%20Lakshman%2C%20I%20have%20a%20project%20in%20mind%20and%20would%20like%20to%20discuss%20it%20with%20you."
                   className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-400 hover:from-amber-400 hover:to-orange-300 text-slate-950 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 shadow transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5 text-slate-950" />
@@ -161,7 +161,7 @@ export default function FreelanceContactModal({ isOpen: propsIsOpen, onClose: pr
         {/* Modal Footer */}
         <div className="px-6 py-3.5 bg-slate-950/90 border-t border-slate-800 text-center">
           <p className="text-[11px] text-slate-500 font-sans">
-            Designed &amp; Developed by Akash &bull; Available for Freelance Projects
+            Designed &amp; Developed by Lakshman &bull; Available for Freelance Projects
           </p>
         </div>
       </div>

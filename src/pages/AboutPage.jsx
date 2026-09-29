@@ -477,7 +477,7 @@ export default function AboutPage() {
             DIGITAL PLATFORM &amp; ENGINEERING
           </span>
           <h4 className="font-display text-xl sm:text-2xl font-bold uppercase text-white">
-            Designed &amp; Developed by Akash
+            Designed &amp; Developed by Lakshman
           </h4>
           <p className="text-xs text-slate-400 font-sans max-w-xl leading-relaxed">
             Freelance UI/UX Designer &amp; Frontend Developer specializing in modern, responsive web experiences, sports platforms, and custom brand websites.

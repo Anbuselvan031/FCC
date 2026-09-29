@@ -275,7 +275,7 @@ export default function Footer() {
           {/* Designer / Developer Credit Card (Image 1 Style) */}
           <div className="p-5 sm:p-6 rounded-3xl bg-[#090d16]/95 border border-slate-800/90 max-w-lg w-full flex flex-col items-center gap-1.5 shadow-xl backdrop-blur-sm">
             <div className="text-xs sm:text-sm text-slate-300">
-              Designed &amp; Developed by <strong className="text-white font-semibold">Akash</strong>
+              Designed &amp; Developed by <strong className="text-white font-semibold">Lakshman</strong>
             </div>
             <div className="text-xs sm:text-sm text-orange-400 font-semibold tracking-wide">
               Freelance UI/UX Designer &amp; Frontend Developer
@@ -295,18 +295,18 @@ export default function Footer() {
             {/* Direct Contact Links */}
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs text-slate-300 pt-1 font-mono">
               <a
-                href="mailto:akashworkofficial27@gmail.com"
+                href="mailto:lakshmanworkofficial@gmail.com"
                 className="hover:text-orange-400 transition-colors flex items-center gap-1.5 truncate max-w-full"
-                title="Email Akash"
+                title="Email Lakshman"
               >
                 <span>📧</span>
-                <span className="truncate">akashworkofficial27@gmail.com</span>
+                <span className="truncate">lakshmanworkofficial@gmail.com</span>
               </a>
               <span className="text-slate-700 hidden sm:inline">•</span>
               <a
                 href="tel:7708231810"
                 className="hover:text-emerald-400 transition-colors flex items-center gap-1.5"
-                title="Call Akash"
+                title="Call Lakshman"
               >
                 <span>📱</span>
                 <span>7708231810</span>
