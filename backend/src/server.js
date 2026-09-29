@@ -16,8 +16,13 @@ import authRoutes from './routes/authRoutes.js';
 // Middleware imports
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
-// Load environment variables
-dotenv.config();
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Load environment variables reliably from backend/.env
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 // Connect to MongoDB Atlas
 connectDB();
