@@ -97,18 +97,18 @@ export default function FreelanceContactModal({ isOpen: propsIsOpen, onClose: pr
                 <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">DIRECT LINE</span>
               </div>
               <p className="font-mono text-xl font-black text-white tracking-wide">
-                7708231810
+                7708011031
               </p>
               <div className="mt-3 flex items-center gap-2">
                 <a
-                  href="tel:7708231810"
+                  href="tel:7708011031"
                   className="flex-1 py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 border border-slate-700 transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Call Now</span>
                 </a>
                 <a
-                  href="https://wa.me/917708231810?text=Hi%20Lakshman%2C%20I'd%20like%20to%20discuss%20a%20website%20project."
+                  href="https://wa.me/917708011031?text=Hi%20Lakshman%2C%20I'd%20like%20to%20discuss%20a%20website%20project."
                   target="_blank"
                   rel="noreferrer"
                   className="flex-1 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 shadow transition-colors"

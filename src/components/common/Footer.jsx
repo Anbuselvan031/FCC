@@ -304,12 +304,12 @@ export default function Footer() {
               </a>
               <span className="text-slate-700 hidden sm:inline">•</span>
               <a
-                href="tel:7708231810"
+                href="tel:7708011031"
                 className="hover:text-emerald-400 transition-colors flex items-center gap-1.5"
                 title="Call Lakshman"
               >
                 <span>📱</span>
-                <span>7708231810</span>
+                <span>7708011031</span>
               </a>
             </div>
           </div>
