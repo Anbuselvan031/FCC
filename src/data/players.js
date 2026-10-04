@@ -82,8 +82,7 @@ export const playersData = [
       "noBalls": 83,
       "dotBalls": 4014,
       "foursConceded": 647,
-      "sixesConceded": 236,
-      "speed": "88 KMPH"
+      "sixesConceded": 236
     },
     "fielding": {
       "matches": 366,

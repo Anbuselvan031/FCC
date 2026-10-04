@@ -90,6 +90,11 @@ export function getPlayerDiscipline(player, fallbackRole = '') {
  * 3. Never returns 145 KMPH.
  */
 export function getPlayerBowlingSpeed(player) {
+  const name = (player?.name || '').toLowerCase();
+  if (name === 'vicky' || name.includes('vicky')) {
+    return null;
+  }
+
   let speed = player?.bowlingSpeed || player?.bowling?.speed;
   if (speed) {
     if (typeof speed === 'number') return `${speed} KMPH`;
@@ -141,10 +146,13 @@ export default function AnimatedCricketerCharacter({
     // 1. BOWLER: 3D Delivery Stride Slide
     if (discipline === 'bowler') {
       const bowlingSpeed = getPlayerBowlingSpeed(player);
+      const subtitleText = bowlingSpeed
+        ? `${bowlingSpeed} Delivery Stride & Follow-Through`
+        : `${player?.bowlingStyle || 'Right-arm Off Break'} Delivery Stride & Follow-Through`;
       return {
         image: '/animations/cricket_bowler_slide.jpg',
         title: 'Bowler 3D Delivery Stride Slide',
-        subtitle: `${bowlingSpeed} Delivery Stride & Follow-Through`,
+        subtitle: subtitleText,
         tag: 'BOWLER 3D SLIDE',
         glowColor: 'shadow-[0_15px_50px_rgba(6,182,212,0.3)]',
         badgeColor: 'text-cyan-400 border-cyan-500/50 bg-cyan-950/70',

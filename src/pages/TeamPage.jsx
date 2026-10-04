@@ -168,7 +168,7 @@ export default function TeamPage() {
                       {captain.name}
                     </h3>
                     <p className="text-xs text-amber-400 font-mono mt-0.5">
-                      All-Rounder • Right-arm Medium (120 KMPH)
+                      {captain.role || 'All-Rounder'} • {captain.bowlingStyle || 'Right-arm Off Break'}
                     </p>
                     <p className="text-xs text-slate-400 font-sans mt-1">
                       Founding captain leading through disciplined bowling spells and strategic batting in death overs.
