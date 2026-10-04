@@ -4,25 +4,25 @@
 
 export const statsData = {
   "overall": {
-    "totalMatches": 324,
-    "upcoming": 1,
-    "won": 150,
-    "lost": 164,
+    "totalMatches": 326,
+    "upcoming": 0,
+    "won": 151,
+    "lost": 165,
     "tie": 3,
     "drawn": 0,
     "noResult": 4,
     "winPercentage": 46.3,
     "tossWon": 160,
     "batFirst": 84,
-    "fieldFirst": 76,
-    "totalRunsScored": "71,270",
-    "totalWicketsTaken": "3,399"
+    "fieldFirst": 78,
+    "totalRunsScored": "71,492",
+    "totalWicketsTaken": "3,419"
   },
   "batting": {
     "highestScore": "232/5",
     "lowestScore": "42",
     "averageScore": "139.6",
-    "totalRuns": "71,270",
+    "totalRuns": "71,492",
     "totalFours": "6,504",
     "totalSixes": "2,440",
     "totalFifties": 246,
@@ -368,6 +368,30 @@ export const statsData = {
       }
     ],
     "recentFormMatches": [
+      {
+        "match": "vs Future Tech Cc",
+        "scored": 101,
+        "conceded": 99,
+        "result": "Won"
+      },
+      {
+        "match": "vs V Wizards",
+        "scored": 121,
+        "conceded": 164,
+        "result": "Lost"
+      },
+      {
+        "match": "vs CENTURIONS CC",
+        "scored": 152,
+        "conceded": 172,
+        "result": "Lost"
+      },
+      {
+        "match": "vs MCC cricket club",
+        "scored": 107,
+        "conceded": 210,
+        "result": "Lost"
+      },
       {
         "match": "vs The Curse XI",
         "scored": 122,

@@ -25,18 +25,18 @@ export const teamData = {
   heroImage: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1600&auto=format&fit=crop",
   slogan: "Passion. Performance. Brotherhood.",
   statsSummary: {
-    totalMatches: 324,
-    wins: 150,
-    losses: 164,
+    totalMatches: 326,
+    wins: 151,
+    losses: 165,
     ties: 3,
     drawn: 0,
     noResult: 4,
     winPercentage: 46.3,
     totalPlayers: playersData.length,
-    upcomingMatches: 2,
+    upcomingMatches: 0,
     tossWon: 160,
     batFirst: 84,
-    fieldFirst: 76
+    fieldFirst: 78
   },
   contact: {
     email: "Fahrenheitcricketclub@gmail.com",
