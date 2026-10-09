@@ -31,12 +31,12 @@ export const teamData = {
     ties: 3,
     drawn: 0,
     noResult: 4,
-    winPercentage: 46.3,
+    winPercentage: 47.8,
     totalPlayers: playersData.length,
-    upcomingMatches: 0,
+    upcomingMatches: 2,
     tossWon: 160,
     batFirst: 84,
-    fieldFirst: 78
+    fieldFirst: 76
   },
   contact: {
     email: "Fahrenheitcricketclub@gmail.com",

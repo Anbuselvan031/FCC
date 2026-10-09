@@ -5,16 +5,16 @@
 export const statsData = {
   "overall": {
     "totalMatches": 326,
-    "upcoming": 0,
+    "upcoming": 2,
     "won": 151,
     "lost": 165,
     "tie": 3,
     "drawn": 0,
     "noResult": 4,
-    "winPercentage": 46.3,
+    "winPercentage": 47.8,
     "tossWon": 160,
     "batFirst": 84,
-    "fieldFirst": 78,
+    "fieldFirst": 76,
     "totalRunsScored": "71,492",
     "totalWicketsTaken": "3,419"
   },
