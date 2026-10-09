@@ -1,7 +1,7 @@
 @echo off
 echo ===================================================
 echo  Pushing Fahrenheit Cricket Club to GitHub
-echo  Target: https://github.com/Anbuselvan031/FCC.git
+echo  Targets: FCC-1.git & FCC.git
 echo ===================================================
 echo.
 git push -u origin main
