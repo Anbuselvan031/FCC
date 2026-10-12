@@ -55,7 +55,7 @@ export default function Hero() {
           </div>
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:border-amber-500/40 backdrop-blur-sm transition-colors group cursor-default">
             <Trophy className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
-            <span>Matches: <strong className="text-white">319+ Clashes</strong></span>
+            <span>Matches: <strong className="text-white">326+ Clashes</strong></span>
           </div>
         </div>
 

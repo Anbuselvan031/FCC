@@ -27,15 +27,15 @@ export const teamData = {
   statsSummary: {
     totalMatches: 326,
     wins: 151,
-    losses: 165,
+    losses: 167,
     ties: 3,
     drawn: 0,
     noResult: 4,
-    winPercentage: 47.8,
+    winPercentage: 47.5,
     totalPlayers: playersData.length,
-    upcomingMatches: 2,
-    tossWon: 160,
-    batFirst: 84,
+    upcomingMatches: 1,
+    tossWon: 161,
+    batFirst: 85,
     fieldFirst: 76
   },
   contact: {

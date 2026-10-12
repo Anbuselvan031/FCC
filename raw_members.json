@@ -20,22 +20,6 @@
         "bowler_category_info": "This bowler delivers tight spells and seizes wickets at regular intervals."
       },
       {
-        "player_id": 44357008,
-        "name": "*S E N A*",
-        "profile_photo": "https://media.cricheroes.in/user_profile/1789112248993_JgVmVRyBYf3E.jpg",
-        "player_skill": "",
-        "is_verified": 1,
-        "is_captain": 0,
-        "is_admin": 0,
-        "is_player_pro": 1,
-        "association_tag": "",
-        "is_primary_login": 0,
-        "batter_category": "Hard Hitter",
-        "batter_category_info": "One who deals in boundaries more than singles. Tap here to know more.",
-        "bowler_category": "Economist",
-        "bowler_category_info": "This bowler delivers tight spells and seizes wickets at regular intervals."
-      },
-      {
         "player_id": 9402399,
         "name": "Abinesh S",
         "profile_photo": "https://media.cricheroes.in/user_profile/1676869348595_0WjDNIP2atXQ.jpg",
@@ -55,7 +39,7 @@
         "player_id": 22703935,
         "name": "Adhithyan  .S",
         "profile_photo": "https://media.cricheroes.in/user_profile/1770541538863_wOumDS68AwPc.jpg",
-        "player_skill": "",
+        "player_skill": "ALL",
         "is_verified": 1,
         "is_captain": 0,
         "is_admin": 0,
@@ -66,6 +50,22 @@
         "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
         "bowler_category": "Wildcard",
         "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
+      },
+      {
+        "player_id": 5588075,
+        "name": "Akilan Velusamy",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1602049057334_ZQgGzQ1Sy4F2.jpeg",
+        "player_skill": "BAT",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 0,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "Accumulator",
+        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
+        "bowler_category": "Aspirant",
+        "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
       },
       {
         "player_id": 20307948,
@@ -180,9 +180,9 @@
         "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
       },
       {
-        "player_id": 37104540,
-        "name": "Guna M",
-        "profile_photo": "https://media.cricheroes.in/user_profile/1746115634635_2B6VbKARN1DL.jpg",
+        "player_id": 50262297,
+        "name": "Guhan M",
+        "profile_photo": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=50262297",
         "player_skill": "BOWL",
         "is_verified": 1,
         "is_captain": 0,
@@ -190,10 +190,10 @@
         "is_player_pro": 0,
         "association_tag": "",
         "is_primary_login": 0,
-        "batter_category": "Accumulator",
-        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
-        "bowler_category": "Aspirant",
-        "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
+        "batter_category": "",
+        "batter_category_info": "",
+        "bowler_category": "",
+        "bowler_category_info": ""
       },
       {
         "player_id": 5038546,
@@ -208,13 +208,13 @@
         "is_primary_login": 0,
         "batter_category": "Destroyer",
         "batter_category_info": "One who mostly deals in boundaries. Tap here to know more.",
-        "bowler_category": "Aspirant",
-        "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
+        "bowler_category": "Wildcard",
+        "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
       },
       {
         "player_id": 50623114,
         "name": "Hariprasath M",
-        "profile_photo": "https://media.cricheroes.in/user_profile/1780589930336_9IKkkIt3a9g8.jpg",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1789978728802_1H6602KiiwJI.jpg",
         "player_skill": "BOWL",
         "is_verified": 1,
         "is_captain": 0,
@@ -244,6 +244,22 @@
         "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
       },
       {
+        "player_id": 50731398,
+        "name": "Harri shuthan",
+        "profile_photo": "https://media.cricheroes.in/default/user_profile.png",
+        "player_skill": "ALL",
+        "is_verified": 0,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 0,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "",
+        "batter_category_info": "",
+        "bowler_category": "",
+        "bowler_category_info": ""
+      },
+      {
         "player_id": 22901405,
         "name": "Jawahar",
         "profile_photo": "https://media.cricheroes.in/user_profile/1707739945658_8UaXDi8kxqNd.jpg",
@@ -258,22 +274,6 @@
         "batter_category_info": "One who can rotate strikes more than any other batter. Tap here to know more.",
         "bowler_category": "",
         "bowler_category_info": ""
-      },
-      {
-        "player_id": 6776330,
-        "name": "Jayaseelan",
-        "profile_photo": "https://media.cricheroes.in/user_profile/1757252989209_wIwiOed1b4Kt.jpg",
-        "player_skill": "BAT",
-        "is_verified": 1,
-        "is_captain": 0,
-        "is_admin": 0,
-        "is_player_pro": 1,
-        "association_tag": "",
-        "is_primary_login": 0,
-        "batter_category": "Accumulator",
-        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
-        "bowler_category": "Wildcard",
-        "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
       },
       {
         "player_id": 9139646,
@@ -414,8 +414,8 @@
         "is_player_pro": 1,
         "association_tag": "",
         "is_primary_login": 0,
-        "batter_category": "Classicist",
-        "batter_category_info": "One who can rotate strikes more than any other batter. Tap here to know more.",
+        "batter_category": "Accumulator",
+        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
         "bowler_category": "Wildcard",
         "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
       },
@@ -450,6 +450,38 @@
         "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
         "bowler_category": "Aspirant",
         "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
+      },
+      {
+        "player_id": 6776330,
+        "name": "Poda P",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1757252989209_wIwiOed1b4Kt.jpg",
+        "player_skill": "BAT",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 1,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "Accumulator",
+        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
+        "bowler_category": "Wildcard",
+        "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
+      },
+      {
+        "player_id": 5080253,
+        "name": "Povesh Povesh",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1740717706080_0b0YYxU5hlrz.jpg",
+        "player_skill": "BAT",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 0,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "",
+        "batter_category_info": "",
+        "bowler_category": "",
+        "bowler_category_info": ""
       },
       {
         "player_id": 5492733,
@@ -612,6 +644,22 @@
         "bowler_category_info": ""
       },
       {
+        "player_id": 52014813,
+        "name": "Selvaganapathi 24",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1781330984548_9E94b6ttCxvu.jpeg",
+        "player_skill": "BOWL",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 0,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "",
+        "batter_category_info": "",
+        "bowler_category": "",
+        "bowler_category_info": ""
+      },
+      {
         "player_id": 6161774,
         "name": "Selvam S",
         "profile_photo": "https://media.cricheroes.in/user_profile/1763867691584_fyXyEsvSh9Rn.jpg",
@@ -646,7 +694,7 @@
       {
         "player_id": 42208568,
         "name": "Sibi Vishal T",
-        "profile_photo": "https://media.cricheroes.in/user_profile/1767889088909_86QnjKCzm2Dx.jpg",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1791093254644_8VjbjF9BiqJj.jpg",
         "player_skill": "BAT",
         "is_verified": 1,
         "is_captain": 0,
@@ -706,22 +754,6 @@
         "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
         "bowler_category": "Economist",
         "bowler_category_info": "This bowler delivers tight spells and seizes wickets at regular intervals."
-      },
-      {
-        "player_id": 22163915,
-        "name": "Yogaeswaran S",
-        "profile_photo": "https://media.cricheroes.in/user_profile/1773889048369_0WWCQ9szf5xH.jpg",
-        "player_skill": "BAT",
-        "is_verified": 1,
-        "is_captain": 0,
-        "is_admin": 0,
-        "is_player_pro": 0,
-        "association_tag": "",
-        "is_primary_login": 0,
-        "batter_category": "Accumulator",
-        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
-        "bowler_category": "",
-        "bowler_category_info": ""
       }
     ],
     "team_id": 4978895,
@@ -736,8 +768,8 @@
     "city_name": "Coimbatore",
     "is_team_secure": 1,
     "is_association_team": 0,
-    "is_verified": 1,
+    "is_verified": 0,
     "team_logo": "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg",
-    "total_team_players": 45
+    "total_team_players": 47
   }
 }
