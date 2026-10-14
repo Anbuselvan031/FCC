@@ -33,7 +33,7 @@ export const teamData = {
     noResult: 4,
     winPercentage: 47.5,
     totalPlayers: playersData.length,
-    upcomingMatches: 1,
+    upcomingMatches: 2,
     tossWon: 161,
     batFirst: 85,
     fieldFirst: 76

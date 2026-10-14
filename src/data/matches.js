@@ -12,7 +12,7 @@ export const matchesData = [
     "date": "17 Oct 2026",
     "time": "8:00 AM IST",
     "dateTimeRaw": "2026-10-17T02:30:26.000Z",
-    "venue": "Venpaa Sports Academy Ground",
+    "venue": "Y Not CC Ground",
     "city": "Coimbatore",
     "tournament": "Friendly Match",
     "tournamentRound": "--",
@@ -24,6 +24,37 @@ export const matchesData = [
     "opponent": {
       "name": "Anbu Cc",
       "logo": "https://media.cricheroes.in/default/teamintital/AC.png",
+      "score": ""
+    },
+    "winner": "",
+    "isWonByFCC": null,
+    "result": "",
+    "toss": "",
+    "playerOfTheMatch": null,
+    "scorecard": null
+  },
+  {
+    "id": 27643226,
+    "type": "upcoming",
+    "status": "UPCOMING",
+    "matchType": "Limited Overs",
+    "overs": 25,
+    "ballType": "LEATHER",
+    "date": "18 Oct 2026",
+    "time": "8:00 AM IST",
+    "dateTimeRaw": "2026-10-18T02:30:00.000Z",
+    "venue": "Melbourne Cricket Ground",
+    "city": "Coimbatore",
+    "tournament": "Friendly Match",
+    "tournamentRound": "--",
+    "fcc": {
+      "name": "Fahrenheit Cricket Club",
+      "logo": "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg",
+      "score": ""
+    },
+    "opponent": {
+      "name": "BlaZer Cricket Club (BCC)",
+      "logo": "https://media.cricheroes.in/team_logo/1675132762393_uyMDFhvmVga3.jpg",
       "score": ""
     },
     "winner": "",
