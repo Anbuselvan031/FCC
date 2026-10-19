@@ -129,11 +129,11 @@ export default function FreelanceContactModal({ isOpen: propsIsOpen, onClose: pr
                 <span className="text-[10px] text-amber-400 font-bold uppercase tracking-wider">FREELANCE</span>
               </div>
               <p className="text-sm sm:text-base font-bold text-white break-all font-mono">
-                lakshmanworkofficial@gmail.com
+                lakshmanwork10@gmail.com
               </p>
               <div className="mt-3">
                 <a
-                  href="mailto:lakshmanworkofficial@gmail.com?subject=Freelance%20Project%20Inquiry&body=Hi%20Lakshman%2C%20I%20have%20a%20project%20in%20mind%20and%20would%20like%20to%20discuss%20it%20with%20you."
+                  href="mailto:lakshmanwork10@gmail.com?subject=Freelance%20Project%20Inquiry&body=Hi%20Lakshman%2C%20I%20have%20a%20project%20in%20mind%20and%20would%20like%20to%20discuss%20it%20with%20you."
                   className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-400 hover:from-amber-400 hover:to-orange-300 text-slate-950 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 shadow transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5 text-slate-950" />

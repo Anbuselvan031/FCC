@@ -295,12 +295,12 @@ export default function Footer() {
             {/* Direct Contact Links */}
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs text-slate-300 pt-1 font-mono">
               <a
-                href="mailto:lakshmanworkofficial@gmail.com"
+                href="mailto:lakshmanwork10@gmail.com"
                 className="hover:text-orange-400 transition-colors flex items-center gap-1.5 truncate max-w-full"
                 title="Email Lakshman"
               >
                 <span>📧</span>
-                <span className="truncate">lakshmanworkofficial@gmail.com</span>
+                <span className="truncate">lakshmanwork10@gmail.com</span>
               </a>
               <span className="text-slate-700 hidden sm:inline">•</span>
               <a
