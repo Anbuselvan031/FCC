@@ -3,16 +3,16 @@
 
 export const matchesData = [
   {
-    "id": 27639007,
+    "id": 27767232,
     "type": "upcoming",
     "status": "UPCOMING",
     "matchType": "Limited Overs",
-    "overs": 30,
+    "overs": 25,
     "ballType": "LEATHER",
-    "date": "17 Oct 2026",
-    "time": "8:00 AM IST",
-    "dateTimeRaw": "2026-10-17T02:30:26.000Z",
-    "venue": "Y Not CC Ground",
+    "date": "24 Oct 2026",
+    "time": "8:30 AM IST",
+    "dateTimeRaw": "2026-10-24T03:00:24.000Z",
+    "venue": "Venpaa Sports Academy Ground",
     "city": "Coimbatore",
     "tournament": "Friendly Match",
     "tournamentRound": "--",
@@ -22,8 +22,70 @@ export const matchesData = [
       "score": ""
     },
     "opponent": {
-      "name": "Anbu Cc",
-      "logo": "https://media.cricheroes.in/default/teamintital/AC.png",
+      "name": "C4U",
+      "logo": "https://media.cricheroes.in/team_logo/1741497027157_zeQguluNilmC.jpeg",
+      "score": ""
+    },
+    "winner": "",
+    "isWonByFCC": null,
+    "result": "",
+    "toss": "",
+    "playerOfTheMatch": null,
+    "scorecard": null
+  },
+  {
+    "id": 27773630,
+    "type": "upcoming",
+    "status": "UPCOMING",
+    "matchType": "Limited Overs",
+    "overs": 25,
+    "ballType": "LEATHER",
+    "date": "25 Oct 2026",
+    "time": "8:00 AM IST",
+    "dateTimeRaw": "2026-10-25T02:30:40.000Z",
+    "venue": "Melbourne 2.0 Cricket Ground",
+    "city": "Coimbatore",
+    "tournament": "Friendly Match",
+    "tournamentRound": "--",
+    "fcc": {
+      "name": "Fahrenheit Cricket Club",
+      "logo": "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg",
+      "score": ""
+    },
+    "opponent": {
+      "name": "KM CRICKET ACADEMY",
+      "logo": "https://media.cricheroes.in/team_logo/1721709535392_3yGQoy7VyL6L.jpg",
+      "score": ""
+    },
+    "winner": "",
+    "isWonByFCC": null,
+    "result": "",
+    "toss": "",
+    "playerOfTheMatch": null,
+    "scorecard": null
+  },
+  {
+    "id": 27775747,
+    "type": "upcoming",
+    "status": "UPCOMING",
+    "matchType": "Limited Overs",
+    "overs": 25,
+    "ballType": "LEATHER",
+    "date": "01 Nov 2026",
+    "time": "8:00 AM IST",
+    "dateTimeRaw": "2026-11-01T02:30:50.000Z",
+    "venue": "Melbourne Cricket Ground",
+    "city": "Coimbatore",
+    "tournament": "Friendly Match",
+    "tournamentRound": "--",
+    "fcc": {
+      "name": "Fahrenheit Cricket Club",
+      "logo": "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg",
+      "score": ""
+    },
+    "opponent": {
+      "name": "NEW MAGNUM CC",
+      "logo": "https://media.cricheroes.in/default/teamintital/NM.png",
       "score": ""
     },
     "winner": "",
@@ -35,14 +97,14 @@ export const matchesData = [
   },
   {
     "id": 27643226,
-    "type": "upcoming",
-    "status": "UPCOMING",
+    "type": "completed",
+    "status": "WON",
     "matchType": "Limited Overs",
     "overs": 25,
     "ballType": "LEATHER",
     "date": "18 Oct 2026",
-    "time": "8:00 AM IST",
-    "dateTimeRaw": "2026-10-18T02:30:00.000Z",
+    "time": "9:25 AM IST",
+    "dateTimeRaw": "2026-10-18T03:55:55.000Z",
     "venue": "Melbourne Cricket Ground",
     "city": "Coimbatore",
     "tournament": "Friendly Match",
@@ -50,19 +112,709 @@ export const matchesData = [
     "fcc": {
       "name": "Fahrenheit Cricket Club",
       "logo": "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg",
-      "score": ""
+      "score": "133/5"
     },
     "opponent": {
       "name": "BlaZer Cricket Club (BCC)",
       "logo": "https://media.cricheroes.in/team_logo/1675132762393_uyMDFhvmVga3.jpg",
-      "score": ""
+      "score": "132/9"
     },
-    "winner": "",
-    "isWonByFCC": null,
-    "result": "",
-    "toss": "",
-    "playerOfTheMatch": null,
-    "scorecard": null
+    "winner": "Fahrenheit Cricket Club",
+    "isWonByFCC": true,
+    "result": "Fahrenheit Cricket Club won by 5 wickets",
+    "toss": "Fahrenheit Cricket Club won the toss and elected to field",
+    "playerOfTheMatch": {
+      "id": 53917685,
+      "name": "G",
+      "performance": "3/16 (5.0)"
+    },
+    "scorecard": {
+      "toss": "Fahrenheit Cricket Club won the toss and elected to field",
+      "innings": [
+        {
+          "teamName": "BlaZer Cricket Club (BCC)",
+          "totalScore": "132/9",
+          "overs": "25.0",
+          "runRate": "5.28",
+          "extras": {
+            "total": 23,
+            "b": 5,
+            "lb": 1,
+            "w": 14,
+            "nb": 3
+          },
+          "batting": [
+            {
+              "player": "Nathan",
+              "dismissal": "c Anbu 24 b Vicky",
+              "runs": 0,
+              "balls": 2,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "Carmel",
+              "dismissal": "c Anbu 24 b Harriprasath",
+              "runs": 0,
+              "balls": 6,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "Nirmalkumar M  (wk)",
+              "dismissal": "b G",
+              "runs": 48,
+              "balls": 60,
+              "fours": 6,
+              "sixes": 0,
+              "strikeRate": "80.00"
+            },
+            {
+              "player": "Sarath Shanmugam",
+              "dismissal": "run out Harriprasath / Anbu 24",
+              "runs": 0,
+              "balls": 0,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "Sakthi Murugan",
+              "dismissal": "c Anbu 24 b Vicky",
+              "runs": 0,
+              "balls": 1,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "MUTHUKUMAR SPORTS",
+              "dismissal": "lbw b Vicky",
+              "runs": 6,
+              "balls": 10,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "60.00"
+            },
+            {
+              "player": "Ramesh Tony",
+              "dismissal": "hit wkt b G",
+              "runs": 8,
+              "balls": 21,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "38.10"
+            },
+            {
+              "player": "Deepan",
+              "dismissal": "not out",
+              "runs": 37,
+              "balls": 40,
+              "fours": 5,
+              "sixes": 0,
+              "strikeRate": "92.50"
+            },
+            {
+              "player": "Gokulakrishnan V",
+              "dismissal": "c&b G",
+              "runs": 0,
+              "balls": 2,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "Harish",
+              "dismissal": "c Prithiv SS b Harriprasath",
+              "runs": 10,
+              "balls": 10,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "100.00"
+            },
+            {
+              "player": "Harish Prasanna",
+              "dismissal": "not out",
+              "runs": 0,
+              "balls": 1,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            }
+          ],
+          "bowling": [
+            {
+              "bowler": "Vicky  (c)",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 14,
+              "wickets": 3,
+              "economy": "2.80"
+            },
+            {
+              "bowler": "Harriprasath",
+              "overs": "4.0",
+              "maidens": 0,
+              "runs": 29,
+              "wickets": 2,
+              "economy": "7.25"
+            },
+            {
+              "bowler": "Jeevesh V",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 32,
+              "wickets": 0,
+              "economy": "6.40"
+            },
+            {
+              "bowler": "G",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 16,
+              "wickets": 3,
+              "economy": "3.20"
+            },
+            {
+              "bowler": "GUGAN",
+              "overs": "4.0",
+              "maidens": 0,
+              "runs": 15,
+              "wickets": 0,
+              "economy": "3.75"
+            },
+            {
+              "bowler": "Hari",
+              "overs": "1.0",
+              "maidens": 0,
+              "runs": 10,
+              "wickets": 0,
+              "economy": "10.00"
+            },
+            {
+              "bowler": "Surendar",
+              "overs": "1.0",
+              "maidens": 0,
+              "runs": 10,
+              "wickets": 0,
+              "economy": "10.00"
+            }
+          ]
+        },
+        {
+          "teamName": "Fahrenheit Cricket Club",
+          "totalScore": "133/5",
+          "overs": "21.1",
+          "runRate": "6.28",
+          "extras": {
+            "total": 27,
+            "b": 0,
+            "lb": 1,
+            "w": 23,
+            "nb": 3
+          },
+          "batting": [
+            {
+              "player": "Kiruthik Vinayak",
+              "dismissal": "not out",
+              "runs": 47,
+              "balls": 56,
+              "fours": 4,
+              "sixes": 0,
+              "strikeRate": "83.93"
+            },
+            {
+              "player": "Mouleeshvar",
+              "dismissal": "lbw b MUTHUKUMAR SPORTS",
+              "runs": 0,
+              "balls": 3,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "Nidhish",
+              "dismissal": "c †Nirmalkumar M b MUTHUKUMAR SPORTS",
+              "runs": 7,
+              "balls": 10,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "70.00"
+            },
+            {
+              "player": "Surendar",
+              "dismissal": "c Carmel b Deepan",
+              "runs": 1,
+              "balls": 5,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "20.00"
+            },
+            {
+              "player": "Harriprasath",
+              "dismissal": "lbw b MANI RHODES",
+              "runs": 23,
+              "balls": 19,
+              "fours": 3,
+              "sixes": 0,
+              "strikeRate": "121.05"
+            },
+            {
+              "player": "Anbu 24  (wk)",
+              "dismissal": "c Harish b MANI RHODES",
+              "runs": 27,
+              "balls": 34,
+              "fours": 2,
+              "sixes": 0,
+              "strikeRate": "79.41"
+            },
+            {
+              "player": "Prithiv SS",
+              "dismissal": "not out",
+              "runs": 1,
+              "balls": 3,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "33.33"
+            }
+          ],
+          "bowling": [
+            {
+              "bowler": "Deepan",
+              "overs": "3.0",
+              "maidens": 0,
+              "runs": 16,
+              "wickets": 1,
+              "economy": "5.33"
+            },
+            {
+              "bowler": "MUTHUKUMAR SPORTS",
+              "overs": "3.1",
+              "maidens": 0,
+              "runs": 16,
+              "wickets": 2,
+              "economy": "5.05"
+            },
+            {
+              "bowler": "Sakthi Murugan",
+              "overs": "3.0",
+              "maidens": 0,
+              "runs": 26,
+              "wickets": 0,
+              "economy": "8.67"
+            },
+            {
+              "bowler": "Harish",
+              "overs": "2.0",
+              "maidens": 0,
+              "runs": 19,
+              "wickets": 0,
+              "economy": "9.50"
+            },
+            {
+              "bowler": "Ramesh Tony",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 26,
+              "wickets": 0,
+              "economy": "5.20"
+            },
+            {
+              "bowler": "MANI RHODES",
+              "overs": "3.0",
+              "maidens": 0,
+              "runs": 16,
+              "wickets": 2,
+              "economy": "5.33"
+            },
+            {
+              "bowler": "Nirmalkumar M",
+              "overs": "2.0",
+              "maidens": 0,
+              "runs": 13,
+              "wickets": 0,
+              "economy": "6.50"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 27639007,
+    "type": "completed",
+    "status": "LOST",
+    "matchType": "Limited Overs",
+    "overs": 25,
+    "ballType": "LEATHER",
+    "date": "17 Oct 2026",
+    "time": "9:43 AM IST",
+    "dateTimeRaw": "2026-10-17T04:13:33.000Z",
+    "venue": "MMCC Ground Kariyam Palayam",
+    "city": "Coimbatore",
+    "tournament": "Friendly Match",
+    "tournamentRound": "--",
+    "fcc": {
+      "name": "Fahrenheit Cricket Club",
+      "logo": "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg",
+      "score": "96/8"
+    },
+    "opponent": {
+      "name": "Anbu Cc",
+      "logo": "https://media.cricheroes.in/default/teamintital/AC.png",
+      "score": "133/9"
+    },
+    "winner": "Anbu Cc",
+    "isWonByFCC": false,
+    "result": "Anbu Cc won by 37 runs",
+    "toss": "Anbu Cc won the toss and elected to bat",
+    "playerOfTheMatch": {
+      "id": 15785294,
+      "name": "Mithun Prabhu",
+      "performance": "3/12 (4.0) & 6 (11)"
+    },
+    "scorecard": {
+      "toss": "Anbu Cc won the toss and elected to bat",
+      "innings": [
+        {
+          "teamName": "Anbu Cc",
+          "totalScore": "133/9",
+          "overs": "25.0",
+          "runRate": "5.32",
+          "extras": {
+            "total": 13,
+            "b": 0,
+            "lb": 0,
+            "w": 11,
+            "nb": 2
+          },
+          "batting": [
+            {
+              "player": "A Ravi Kishore",
+              "dismissal": "c Jeevesh V b Caleb Stanly D",
+              "runs": 9,
+              "balls": 11,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "81.82"
+            },
+            {
+              "player": "Nandhu",
+              "dismissal": "c (sub) Sivamani C b Sharvesh NPS",
+              "runs": 41,
+              "balls": 36,
+              "fours": 6,
+              "sixes": 0,
+              "strikeRate": "113.89"
+            },
+            {
+              "player": "Haashif",
+              "dismissal": "c Caleb Stanly D b Sharvesh NPS",
+              "runs": 25,
+              "balls": 22,
+              "fours": 1,
+              "sixes": 2,
+              "strikeRate": "113.64"
+            },
+            {
+              "player": "Jackson",
+              "dismissal": "st †Kiruthik Vinayak b Sharvesh NPS",
+              "runs": 19,
+              "balls": 31,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "61.29"
+            },
+            {
+              "player": "Anbu",
+              "dismissal": "b Vicky",
+              "runs": 9,
+              "balls": 19,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "47.37"
+            },
+            {
+              "player": "Kathiravan",
+              "dismissal": "c Caleb Stanly D b Vicky",
+              "runs": 0,
+              "balls": 1,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "R.Nikhil  (c)",
+              "dismissal": "c †Kiruthik Vinayak b GUGAN",
+              "runs": 0,
+              "balls": 3,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "RITHIK R",
+              "dismissal": "not out",
+              "runs": 10,
+              "balls": 13,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "76.92"
+            },
+            {
+              "player": "Mukul",
+              "dismissal": "c Sibi b Sharvesh NPS",
+              "runs": 0,
+              "balls": 2,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "Mithun Prabhu",
+              "dismissal": "c Sharvesh NPS b GUGAN",
+              "runs": 6,
+              "balls": 11,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "54.55"
+            },
+            {
+              "player": "SAHADEVA",
+              "dismissal": "not out",
+              "runs": 1,
+              "balls": 3,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "33.33"
+            }
+          ],
+          "bowling": [
+            {
+              "bowler": "Vicky  (c)",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 21,
+              "wickets": 2,
+              "economy": "4.20"
+            },
+            {
+              "bowler": "Caleb Stanly D",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 28,
+              "wickets": 1,
+              "economy": "5.60"
+            },
+            {
+              "bowler": "Hariprasath M",
+              "overs": "2.0",
+              "maidens": 0,
+              "runs": 23,
+              "wickets": 0,
+              "economy": "11.50"
+            },
+            {
+              "bowler": "Sharvesh NPS",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 19,
+              "wickets": 4,
+              "economy": "3.80"
+            },
+            {
+              "bowler": "Jeevesh V",
+              "overs": "2.0",
+              "maidens": 0,
+              "runs": 15,
+              "wickets": 0,
+              "economy": "7.50"
+            },
+            {
+              "bowler": "GUGAN",
+              "overs": "5.0",
+              "maidens": 0,
+              "runs": 17,
+              "wickets": 2,
+              "economy": "3.40"
+            },
+            {
+              "bowler": "Surendar",
+              "overs": "1.0",
+              "maidens": 0,
+              "runs": 10,
+              "wickets": 0,
+              "economy": "10.00"
+            }
+          ]
+        },
+        {
+          "teamName": "Fahrenheit Cricket Club",
+          "totalScore": "96/8",
+          "overs": "25.0",
+          "runRate": "3.84",
+          "extras": {
+            "total": 14,
+            "b": 1,
+            "lb": 0,
+            "w": 9,
+            "nb": 4
+          },
+          "batting": [
+            {
+              "player": "Sam Cladson",
+              "dismissal": "c R.Nikhil b Muhammed Farhan",
+              "runs": 11,
+              "balls": 15,
+              "fours": 1,
+              "sixes": 1,
+              "strikeRate": "73.33"
+            },
+            {
+              "player": "Kiruthik Vinayak  (wk)",
+              "dismissal": "c R.Nikhil b Muhammed Farhan",
+              "runs": 0,
+              "balls": 6,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            },
+            {
+              "player": "Surendar",
+              "dismissal": "c Haashif b Mukul",
+              "runs": 5,
+              "balls": 10,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "50.00"
+            },
+            {
+              "player": "Povesh Povesh",
+              "dismissal": "b RAGUPATHI",
+              "runs": 2,
+              "balls": 4,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "50.00"
+            },
+            {
+              "player": "Vicky  (c)",
+              "dismissal": "c&b Mithun Prabhu",
+              "runs": 15,
+              "balls": 25,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "60.00"
+            },
+            {
+              "player": "Sibi",
+              "dismissal": "not out",
+              "runs": 23,
+              "balls": 63,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "36.51"
+            },
+            {
+              "player": "GUGAN",
+              "dismissal": "c R.Nikhil b Mithun Prabhu",
+              "runs": 2,
+              "balls": 4,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "50.00"
+            },
+            {
+              "player": "Sharvesh NPS",
+              "dismissal": "c RAGUPATHI b Mithun Prabhu",
+              "runs": 13,
+              "balls": 15,
+              "fours": 1,
+              "sixes": 1,
+              "strikeRate": "86.67"
+            },
+            {
+              "player": "Caleb Stanly D",
+              "dismissal": "run out Haashif",
+              "runs": 11,
+              "balls": 11,
+              "fours": 1,
+              "sixes": 0,
+              "strikeRate": "100.00"
+            },
+            {
+              "player": "Jeevesh V",
+              "dismissal": "not out",
+              "runs": 0,
+              "balls": 1,
+              "fours": 0,
+              "sixes": 0,
+              "strikeRate": "0.00"
+            }
+          ],
+          "bowling": [
+            {
+              "bowler": "Muhammed Farhan",
+              "overs": "3.0",
+              "maidens": 0,
+              "runs": 16,
+              "wickets": 2,
+              "economy": "5.33"
+            },
+            {
+              "bowler": "R.Nikhil  (c)",
+              "overs": "5.0",
+              "maidens": 1,
+              "runs": 19,
+              "wickets": 0,
+              "economy": "3.80"
+            },
+            {
+              "bowler": "Mukul",
+              "overs": "3.0",
+              "maidens": 0,
+              "runs": 12,
+              "wickets": 1,
+              "economy": "4.00"
+            },
+            {
+              "bowler": "RAGUPATHI",
+              "overs": "3.0",
+              "maidens": 0,
+              "runs": 7,
+              "wickets": 1,
+              "economy": "2.33"
+            },
+            {
+              "bowler": "Mithun Prabhu",
+              "overs": "4.0",
+              "maidens": 0,
+              "runs": 12,
+              "wickets": 3,
+              "economy": "3.00"
+            },
+            {
+              "bowler": "Surjith",
+              "overs": "3.0",
+              "maidens": 1,
+              "runs": 10,
+              "wickets": 0,
+              "economy": "3.33"
+            },
+            {
+              "bowler": "SAHADEVA",
+              "overs": "4.0",
+              "maidens": 0,
+              "runs": 19,
+              "wickets": 0,
+              "economy": "4.75"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": 27506894,

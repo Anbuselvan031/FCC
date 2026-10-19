@@ -3,7 +3,7 @@
   "data": [
     {
       "title": "Matches",
-      "value": 322
+      "value": 330
     },
     {
       "title": "Upcoming",
@@ -11,11 +11,11 @@
     },
     {
       "title": "Won",
-      "value": 150
+      "value": 152
     },
     {
       "title": "Lost",
-      "value": 162
+      "value": 168
     },
     {
       "title": "Tie",
@@ -31,19 +31,19 @@
     },
     {
       "title": "Win",
-      "value": "48.1%"
+      "value": "47.5%"
     },
     {
       "title": "Toss Won",
-      "value": 160
+      "value": 162
     },
     {
       "title": "Bat First",
-      "value": 84
+      "value": 85
     },
     {
       "title": "Field First",
-      "value": 76
+      "value": 77
     }
   ]
 }

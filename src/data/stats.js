@@ -4,27 +4,27 @@
 
 export const statsData = {
   "overall": {
-    "totalMatches": 326,
-    "upcoming": 2,
-    "won": 151,
-    "lost": 167,
+    "totalMatches": 330,
+    "upcoming": 3,
+    "won": 152,
+    "lost": 168,
     "tie": 3,
     "drawn": 0,
     "noResult": 4,
     "winPercentage": 47.5,
-    "tossWon": 161,
+    "tossWon": 162,
     "batFirst": 85,
-    "fieldFirst": 76,
-    "totalRunsScored": "71,702",
-    "totalWicketsTaken": "3,430"
+    "fieldFirst": 77,
+    "totalRunsScored": "71,931",
+    "totalWicketsTaken": "3,448"
   },
   "batting": {
     "highestScore": "232/5",
     "lowestScore": "42",
     "averageScore": "139.6",
-    "totalRuns": "71,702",
-    "totalFours": "6,504",
-    "totalSixes": "2,440",
+    "totalRuns": "71,931",
+    "totalFours": "6,520",
+    "totalSixes": "2,442",
     "totalFifties": 246,
     "totalCenturies": 7,
     "topBatters": [
