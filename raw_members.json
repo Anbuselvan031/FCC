@@ -180,22 +180,6 @@
         "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
       },
       {
-        "player_id": 50262297,
-        "name": "Guhan M",
-        "profile_photo": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=50262297",
-        "player_skill": "BOWL",
-        "is_verified": 1,
-        "is_captain": 0,
-        "is_admin": 0,
-        "is_player_pro": 0,
-        "association_tag": "",
-        "is_primary_login": 0,
-        "batter_category": "",
-        "batter_category_info": "",
-        "bowler_category": "",
-        "bowler_category_info": ""
-      },
-      {
         "player_id": 5038546,
         "name": "Guru Prasath S",
         "profile_photo": "https://media.cricheroes.in/default/user_profile.png",
@@ -244,20 +228,20 @@
         "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
       },
       {
-        "player_id": 50731398,
-        "name": "Harri shuthan",
-        "profile_photo": "https://media.cricheroes.in/default/user_profile.png",
+        "player_id": 688817,
+        "name": "Harriprasath",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1792246096139_DVkSTHEXO2Sf.jpeg",
         "player_skill": "ALL",
-        "is_verified": 0,
+        "is_verified": 1,
         "is_captain": 0,
         "is_admin": 0,
-        "is_player_pro": 0,
+        "is_player_pro": 1,
         "association_tag": "",
         "is_primary_login": 0,
-        "batter_category": "",
+        "batter_category": "Destroyer",
         "batter_category_info": "",
-        "bowler_category": "",
-        "bowler_category_info": ""
+        "bowler_category": "Wildcard",
+        "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
       },
       {
         "player_id": 22901405,
@@ -276,6 +260,22 @@
         "bowler_category_info": ""
       },
       {
+        "player_id": 6776330,
+        "name": "Jayaseelan",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1757252989209_wIwiOed1b4Kt.jpg",
+        "player_skill": "BAT",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 1,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "Accumulator",
+        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
+        "bowler_category": "Wildcard",
+        "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
+      },
+      {
         "player_id": 9139646,
         "name": "Jeevesh V",
         "profile_photo": "https://media.cricheroes.in/user_profile/1772942999217_4Ggpv0DnZcR0.jpg",
@@ -290,6 +290,22 @@
         "batter_category_info": "",
         "bowler_category": "Wildcard",
         "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
+      },
+      {
+        "player_id": 36578696,
+        "name": "Kabilan 7",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1780301824535_teoIxutKjA21.jpg",
+        "player_skill": "ALL",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 0,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "Hard Hitter",
+        "batter_category_info": "One who deals in boundaries more than singles. Tap here to know more.",
+        "bowler_category": "Aspirant",
+        "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
       },
       {
         "player_id": 11256143,
@@ -452,22 +468,6 @@
         "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
       },
       {
-        "player_id": 6776330,
-        "name": "Poda P",
-        "profile_photo": "https://media.cricheroes.in/user_profile/1757252989209_wIwiOed1b4Kt.jpg",
-        "player_skill": "BAT",
-        "is_verified": 1,
-        "is_captain": 0,
-        "is_admin": 0,
-        "is_player_pro": 1,
-        "association_tag": "",
-        "is_primary_login": 0,
-        "batter_category": "Accumulator",
-        "batter_category_info": "One who can change pace of the innings as required. Tap here to know more.",
-        "bowler_category": "Wildcard",
-        "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
-      },
-      {
         "player_id": 5080253,
         "name": "Povesh Povesh",
         "profile_photo": "https://media.cricheroes.in/user_profile/1740717706080_0b0YYxU5hlrz.jpg",
@@ -530,6 +530,22 @@
         "batter_category_info": "One who deals in boundaries more than singles. Tap here to know more.",
         "bowler_category": "Aspirant",
         "bowler_category_info": "This bowler may carry incredible potential and skills but may need more game time."
+      },
+      {
+        "player_id": 33996501,
+        "name": "Pushpa",
+        "profile_photo": "https://media.cricheroes.in/user_profile/1763255675321_82KTU1oOmnzL.jpg",
+        "player_skill": "ALL",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 0,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "Destroyer",
+        "batter_category_info": "One who mostly deals in boundaries. Tap here to know more.",
+        "bowler_category": "",
+        "bowler_category_info": ""
       },
       {
         "player_id": 21685768,
@@ -676,6 +692,22 @@
         "bowler_category_info": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler."
       },
       {
+        "player_id": 52153942,
+        "name": "Sharvesh NPS",
+        "profile_photo": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=52153942",
+        "player_skill": "ALL",
+        "is_verified": 1,
+        "is_captain": 0,
+        "is_admin": 0,
+        "is_player_pro": 0,
+        "association_tag": "",
+        "is_primary_login": 0,
+        "batter_category": "",
+        "batter_category_info": "",
+        "bowler_category": "",
+        "bowler_category_info": ""
+      },
+      {
         "player_id": 10716673,
         "name": "Sibi",
         "profile_photo": "https://media.cricheroes.in/user_profile/1783867213477_f9jHjCdcRNK6.jpg",
@@ -770,6 +802,6 @@
     "is_association_team": 0,
     "is_verified": 0,
     "team_logo": "https://media.cricheroes.in/team_logo/1786358460380_fCa1Oa8BMzeU.jpeg",
-    "total_team_players": 47
+    "total_team_players": 49
   }
 }
