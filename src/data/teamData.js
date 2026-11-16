@@ -25,9 +25,9 @@ export const teamData = {
   heroImage: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1600&auto=format&fit=crop",
   slogan: "Passion. Performance. Brotherhood.",
   statsSummary: {
-    totalMatches: 335,
-    wins: 157,
-    losses: 169,
+    totalMatches: 337,
+    wins: 158,
+    losses: 170,
     ties: 3,
     drawn: 0,
     noResult: 4,
